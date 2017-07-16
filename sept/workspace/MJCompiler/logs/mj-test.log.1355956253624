@@ -1,0 +1,33 @@
+INFO  23:29:26,332 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  23:29:26,373 - #2 program
+INFO  23:29:26,374 - #15 MJProgram
+INFO  23:29:26,374 - #15 int
+INFO  23:29:26,374 - #15 x
+INFO  23:29:26,375 - #5 ;
+INFO  23:29:26,375 - #15 int
+INFO  23:29:26,375 - Deklarisana promenljiva x na liniji 2
+INFO  23:29:26,375 - #15 y
+INFO  23:29:26,375 - #5 ;
+INFO  23:29:26,376 - #3 {
+INFO  23:29:26,376 - Deklarisana promenljiva y na liniji 2
+INFO  23:29:26,376 - #15 int
+INFO  23:29:26,376 - #15 k
+INFO  23:29:26,377 - #6 (
+INFO  23:29:26,377 - Obradjuje se funkcija k na liniji 5
+INFO  23:29:26,377 - #7 )
+INFO  23:29:26,377 - #15 int
+INFO  23:29:26,377 - #15 c
+INFO  23:29:26,378 - #5 ;
+INFO  23:29:26,378 - #3 {
+INFO  23:29:26,378 - Deklarisana promenljiva c na liniji 5
+INFO  23:29:26,378 - #15 c
+INFO  23:29:26,379 - #12 =
+INFO  23:29:26,379 - #14 0
+INFO  23:29:26,379 - #5 ;
+INFO  23:29:26,383 - #10 return
+INFO  23:29:26,383 - #15 c
+INFO  23:29:26,383 - #11 +
+INFO  23:29:26,384 - #14 3
+INFO  23:29:26,384 - #5 ;
+INFO  23:29:26,384 - #4 }
+INFO  23:29:26,384 - #15 int

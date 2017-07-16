@@ -1,0 +1,59 @@
+INFO  20:30:22,368 - Compiling source file: C:\Users\Stefan Djelekar\Desktop\anaworkspace\MJCompiler\test\program.mj
+INFO  20:30:22,383 - #2 program
+INFO  20:30:22,383 - #32 test301
+INFO  20:30:22,383 - #19 const
+INFO  20:30:22,383 - #32 int
+INFO  20:30:22,383 - #32 jedan
+INFO  20:30:22,383 - #13 =
+INFO  20:30:22,383 - #30 1
+INFO  20:30:22,383 - #5 ;
+INFO  20:30:22,383 - #19 const
+INFO  20:30:22,383 - Deklarisana konstanta jedan na liniji 4
+INFO  20:30:22,383 - #32 int
+INFO  20:30:22,383 - #32 pet
+INFO  20:30:22,383 - #13 =
+INFO  20:30:22,383 - #30 5
+INFO  20:30:22,383 - #5 ;
+INFO  20:30:22,383 - #32 int
+INFO  20:30:22,383 - Deklarisana konstanta pet na liniji 5
+INFO  20:30:22,383 - #32 niz
+INFO  20:30:22,383 - #16 [
+INFO  20:30:22,383 - #17 ]
+INFO  20:30:22,383 - #5 ;
+INFO  20:30:22,383 - #32 char
+INFO  20:30:22,383 - Deklarisan niz niz na liniji 7
+INFO  20:30:22,383 - #32 nizch
+INFO  20:30:22,383 - #16 [
+INFO  20:30:22,383 - #17 ]
+INFO  20:30:22,383 - #5 ;
+INFO  20:30:22,383 - #3 {
+INFO  20:30:22,383 - Deklarisan niz nizch na liniji 9
+INFO  20:30:22,383 - #14 void
+INFO  20:30:22,383 - #32 main
+INFO  20:30:22,383 - #6 (
+INFO  20:30:22,383 - Obradjuje se funkcija main na liniji 12
+INFO  20:30:22,383 - #7 )
+INFO  20:30:22,383 - #32 int
+INFO  20:30:22,383 - #32 bodovi
+INFO  20:30:22,383 - #5 ;
+INFO  20:30:22,383 - #3 {
+INFO  20:30:22,383 - Deklarisana promenljiva bodovi na liniji 12
+INFO  20:30:22,383 - #32 bodovi
+INFO  20:30:22,383 - #13 =
+INFO  20:30:22,383 - #30 0
+INFO  20:30:22,383 - #5 ;
+INFO  20:30:22,383 - #32 bodovi
+INFO  20:30:22,383 - #11 ++
+INFO  20:30:22,383 - #5 ;
+INFO  20:30:22,383 - #32 bodovi
+INFO  20:30:22,383 - #13 =
+INFO  20:30:22,383 - #32 bodovi
+INFO  20:30:22,383 - #22 +
+INFO  20:30:22,383 - #32 jedan
+INFO  20:30:22,383 - #5 ;
+INFO  20:30:22,383 - #32 bodovi
+INFO  20:30:22,383 - #25 +=
+INFO  20:30:22,383 - #32 bodovi
+INFO  20:30:22,383 - #27 *=
+INFO  20:30:22,383 - #32 pet
+INFO  20:30:22,383 - #5 ;

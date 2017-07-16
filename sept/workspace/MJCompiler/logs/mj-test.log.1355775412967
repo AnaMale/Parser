@@ -1,0 +1,37 @@
+INFO  21:13:51,700 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  21:13:51,735 - #2 program
+INFO  21:13:51,735 - #15 MJProgram
+INFO  21:13:51,735 - #15 int
+INFO  21:13:51,735 - #15 x
+INFO  21:13:51,736 - #5 ;
+INFO  21:13:51,736 - #15 int
+INFO  21:13:51,736 - Deklarisana promenljiva x na liniji 2
+INFO  21:13:51,736 - #15 y
+INFO  21:13:51,737 - #5 ;
+INFO  21:13:51,737 - #3 {
+INFO  21:13:51,737 - Deklarisana promenljiva y na liniji 2
+INFO  21:13:51,737 - #15 int
+INFO  21:13:51,737 - #15 main
+INFO  21:13:51,738 - #6 (
+INFO  21:13:51,738 - Obradjuje se funkcijamain na liniji 4
+INFO  21:13:51,738 - #7 )
+INFO  21:13:51,738 - #3 {
+INFO  21:13:51,738 - #9 print
+INFO  21:13:51,739 - #6 (
+INFO  21:13:51,739 - #14 1
+INFO  21:13:51,739 - #7 )
+INFO  21:13:51,739 - #5 ;
+INFO  21:13:51,739 - #15 x
+INFO  21:13:51,740 - #12 =
+INFO  21:13:51,740 - #15 y
+INFO  21:13:51,740 - #11 +
+INFO  21:13:51,740 - #14 3
+INFO  21:13:51,740 - #5 ;
+INFO  21:13:51,740 - #9 print
+INFO  21:13:51,741 - #6 (
+INFO  21:13:51,741 - #14 2
+INFO  21:13:51,741 - #7 )
+INFO  21:13:51,741 - #5 ;
+INFO  21:13:51,741 - #4 }
+INFO  21:13:51,741 - #4 }
+INFO  21:13:51,742 - Print calls = 2

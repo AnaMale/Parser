@@ -1,0 +1,59 @@
+INFO  00:56:44,476 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  00:56:44,518 - #2 program
+INFO  00:56:44,518 - #15 MJProgram
+INFO  00:56:44,518 - #15 int
+INFO  00:56:44,519 - #15 x
+INFO  00:56:44,519 - #5 ;
+INFO  00:56:44,520 - #15 int
+INFO  00:56:44,520 - Deklarisana promenljiva x na liniji 2
+INFO  00:56:44,520 - #15 y
+INFO  00:56:44,521 - #5 ;
+INFO  00:56:44,521 - #3 {
+INFO  00:56:44,521 - Deklarisana promenljiva y na liniji 2
+INFO  00:56:44,521 - #15 int
+INFO  00:56:44,522 - #15 k
+INFO  00:56:44,522 - #6 (
+INFO  00:56:44,522 - Obradjuje se funkcija k na liniji 5
+INFO  00:56:44,523 - #7 )
+INFO  00:56:44,523 - #15 int
+INFO  00:56:44,523 - #15 c
+INFO  00:56:44,524 - #5 ;
+INFO  00:56:44,524 - #3 {
+INFO  00:56:44,524 - Deklarisana promenljiva c na liniji 5
+INFO  00:56:44,525 - #15 c
+INFO  00:56:44,529 - #12 =
+INFO  00:56:44,529 - #14 0
+INFO  00:56:44,530 - #5 ;
+INFO  00:56:44,530 - #10 return
+INFO  00:56:44,531 - #15 c
+INFO  00:56:44,531 - #11 +
+INFO  00:56:44,531 - #14 3
+INFO  00:56:44,531 - #5 ;
+INFO  00:56:44,532 - #4 }
+INFO  00:56:44,532 - #15 int
+INFO  00:56:44,532 - #15 main
+INFO  00:56:44,533 - #6 (
+INFO  00:56:44,533 - Obradjuje se funkcija main na liniji 10
+INFO  00:56:44,533 - #7 )
+INFO  00:56:44,533 - #3 {
+INFO  00:56:44,533 - #15 x
+INFO  00:56:44,534 - #12 =
+INFO  00:56:44,534 - #14 3
+INFO  00:56:44,534 - #5 ;
+INFO  00:56:44,534 - #9 print
+INFO  00:56:44,535 - #6 (
+INFO  00:56:44,535 - #14 1
+INFO  00:56:44,535 - #7 )
+INFO  00:56:44,536 - #5 ;
+INFO  00:56:44,536 - #9 print
+INFO  00:56:44,537 - #6 (
+INFO  00:56:44,537 - #15 x
+INFO  00:56:44,537 - #7 )
+INFO  00:56:44,537 - #5 ;
+INFO  00:56:44,537 - #10 return
+INFO  00:56:44,538 - #14 0
+INFO  00:56:44,538 - #5 ;
+INFO  00:56:44,538 - #4 }
+INFO  00:56:44,538 - #4 }
+INFO  00:56:44,539 - Print calls = 2
+INFO  00:56:44,544 - Parsiranje uspesno zavrseno!

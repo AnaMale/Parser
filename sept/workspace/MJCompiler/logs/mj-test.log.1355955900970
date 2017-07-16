@@ -1,0 +1,63 @@
+INFO  22:17:38,558 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  22:17:38,593 - #2 program
+INFO  22:17:38,594 - #15 MJProgram
+INFO  22:17:38,594 - #15 int
+INFO  22:17:38,594 - #15 x
+INFO  22:17:38,594 - #5 ;
+INFO  22:17:38,594 - #15 int
+INFO  22:17:38,595 - Deklarisana promenljiva x na liniji 2
+INFO  22:17:38,595 - #15 y
+INFO  22:17:38,595 - #5 ;
+INFO  22:17:38,595 - #3 {
+INFO  22:17:38,596 - Deklarisana promenljiva y na liniji 2
+INFO  22:17:38,596 - #15 int
+INFO  22:17:38,596 - #15 k
+INFO  22:17:38,596 - #6 (
+INFO  22:17:38,596 - Obradjuje se funkcija k na liniji 5
+INFO  22:17:38,597 - #7 )
+INFO  22:17:38,597 - #15 int
+INFO  22:17:38,597 - #15 c
+INFO  22:17:38,597 - #5 ;
+INFO  22:17:38,597 - #3 {
+INFO  22:17:38,598 - Deklarisana promenljiva c na liniji 5
+INFO  22:17:38,598 - #15 c
+INFO  22:17:38,598 - #12 =
+INFO  22:17:38,598 - #14 0
+INFO  22:17:38,598 - #5 ;
+INFO  22:17:38,599 - #10 return
+INFO  22:17:38,599 - #15 c
+INFO  22:17:38,599 - #11 +
+INFO  22:17:38,599 - #14 3
+INFO  22:17:38,600 - #5 ;
+INFO  22:17:38,600 - #4 }
+INFO  22:17:38,600 - #15 int
+INFO  22:17:38,600 - #15 main
+INFO  22:17:38,600 - #6 (
+INFO  22:17:38,601 - Obradjuje se funkcija main na liniji 10
+INFO  22:17:38,601 - #7 )
+INFO  22:17:38,601 - #3 {
+INFO  22:17:38,602 - #9 print
+INFO  22:17:38,602 - #6 (
+INFO  22:17:38,602 - #14 1
+INFO  22:17:38,602 - #7 )
+INFO  22:17:38,602 - #5 ;
+INFO  22:17:38,602 - #15 x
+INFO  22:17:38,603 - #12 =
+INFO  22:17:38,603 - #15 y
+INFO  22:17:38,603 - #11 +
+INFO  22:17:38,603 - #14 3
+INFO  22:17:38,603 - #5 ;
+INFO  22:17:38,603 - #15 k
+INFO  22:17:38,604 - #6 (
+INFO  22:17:38,604 - #7 )
+INFO  22:17:38,604 - #5 ;
+INFO  22:17:38,604 - #9 print
+INFO  22:17:38,604 - Pronadjen poziv funkcije k na liniji 13
+INFO  22:17:38,605 - #6 (
+INFO  22:17:38,605 - #14 2
+INFO  22:17:38,605 - #7 )
+INFO  22:17:38,605 - #5 ;
+INFO  22:17:38,605 - #4 }
+INFO  22:17:38,605 - #4 }
+INFO  22:17:38,606 - Print calls = 2
+INFO  22:17:38,608 - Parsiranje uspesno zavrseno!

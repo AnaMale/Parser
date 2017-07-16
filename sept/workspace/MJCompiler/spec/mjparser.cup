@@ -1,0 +1,281 @@
+
+terminal PROG, IDENT, LBRACE, RBRACE, LPAREN, LPAREN, LSQUARE, RSQUARE, SEMI, CONST, STATIC, EXTENDS, CLASS, DOT;
+terminal READ, PRINT, BREAK, CONTINUE, FOR, OR, AND, IF, FOR, RETURN, INC, DEC;
+terminal PLUS, PLUSEQUAL, MINUSEQUAL, DIVEQUAL, MULEQUAL, MODEQUAL;
+terminal CONDITIONALEQUAL, LESSEQUAL, MOREEQUAL, LESS, MOREEQUAL, MORE, DIFFERENT;
+terminal NUMBER, CHAR, BOOL, NEW;
+terminal MUL, DIV, MOD;
+
+non terminal ProgDeclList, MethodDeclList, Program, ClassVarDeclPart, SingleClassVarDecl, ClassVarDeclList, ClassDecl, ExtType;
+non terminal ClassDeclMethod, RetType, MethodDecl, FormArgs, FormPars, FormalParamDecl, VarArgs,  VarDeclList, VarDecl, StatementList, Statement;
+non terminal VarDeclPart, SingleVarDecl, DesignatorStatement, Condition, Matched, Unmatched, ForPart, Expr, Designator, OptCondition;
+non terminal ActualPars, ActualParamList, CondTerm, CondFact;
+non terminal Relop, AssignOp, ExprFactorType, Addop, Mulop, Factor, MulopLeft, MulopRight, AddopLeft, AddopRight;
+
+Program ::= PROG IDENT ProgDeclList LBRACE MethodDeclList RBRACE;
+
+ConstDecl ::= CONST Type ConstDeclPart SEMI;
+
+ConstDeclPart ::= ConstDeclPart COMMA SingleConstDecl
+					|
+					SingleConstDecl
+					;
+
+SingleConstDecl ::= IDENT EQUAL ConstValue;
+
+ConstValue ::= NUMBER 
+			   |
+			   CHAR
+			   |
+			   BOOL
+			   ;
+			   
+ClassVarDeclList ::= ClassVarDeclList ClassVarDecl
+					 |
+					 /*epsilon*/
+					 ;
+			   
+ClassVarDecl ::= OptStatic Type ClassVarDeclPart SEMI;
+
+ClassVarDeclPart ::= ClassVarDeclPart SingleClassVarDecl
+					 |
+					 SingleClassVarDecl
+					 ;
+SingleClassVarDecl ::= IDENT 
+                       |
+					   IDENT LSQUARE RSQUARE
+					   ;
+					 
+					 
+OptStatic ::= STATIC 
+			  |
+			  ;
+			  
+ExtType ::= EXTENDS Type
+			|
+			/*epsilon*/
+			;
+			  
+ClassDecl	::= CLASS IDENT ExtType LBRACE ClassVarDeclList ClassDeclMethod RBRACE;
+
+ClassDeclMethod ::= LBRACE MethodDeclList RBRACE
+					|
+					;
+
+
+MethodDeclList ::= MethodDeclList MethodDecl
+				   |
+				   /*epsilon*/
+				   ;
+				   
+RetType ::= Type 
+			|
+			VOID
+			;
+				   
+MethodDecl ::= OptStatic RetType IDENT LPAREN FormArgs RPAREN VarDeclList LBRACE StatementList RBRACE;
+
+VarDeclList ::= VarDeclList VarDecl 
+                |
+				;
+				
+VarDecl ::= Type VarDeclPart SEMI;
+
+VarDeclPart ::= VarDeclPart COMMA SingleVarDecl 
+				|
+				SingleVarDecl
+				;
+				
+SingleVarDecl ::= IDENT 
+				  |
+				  IDENT LSQUARE RSQUARE
+				  ;
+
+
+FormArgs ::= FormPars COMMA VarArgs
+			 |
+			 FormPars
+			 |
+			 VarArgs
+			 |
+			 /*epsilon*/
+			 |
+			 ;
+	
+
+VarArgs ::= Type DOT DOT DOT IDENT;	
+			 
+			 
+
+FormPars ::= FormPars COMMA FormalParamDecl
+					|
+					FormalParamDecl
+					;				   
+					
+StatementList ::= StatementList Statement
+				  |
+				  ;
+				  
+Statement ::= Matched | Unmatched; 
+
+OptDesignatorStatement ::= DesignatorStatement | ;
+
+ForPart ::= FOR LPAREN OptDesignatorStatement SEMI OptCondition SEMI OptDesignatorStatement RPAREN ; 
+
+OptCondition ::= Condition | ;
+
+Unmatched ::= IF LPAREN Condition RPAREN Statement
+				|
+				IF LPAREN Condition RPAREN Matched ELSE Unmatched
+				|
+				ForPart
+				Unmatched
+				;
+
+Matched ::= DesignatorStatement SEMI
+			|
+			IF LPAREN Condition RPAREN Matched ELSE Matched
+			|
+			ForPart Matched
+			|
+			BREAK SEMI 
+			|
+			CONTINUE SEMI
+			| 
+			RETURN Expr SEMI
+			|
+            RETURN SEMI
+			|
+			READ LPAREN Designator RPAREN SEMI 
+			| 
+			PRINT LPAREN Expr RBRACE SEMI 
+			|
+			LBRACE StatementList RBRACE 
+			; 
+			
+DesignatorStatement ::= Designator AssignOp Expr
+						|
+						Designator LPAREN ActualPars RPAREN
+						|
+						Designatpr INC 
+						|
+						Designator DEC
+						;
+						
+ActualPars ::= ActualParamList 
+			   |
+			   /*epsilon*/
+			   ;
+			   
+ActualParamList ::= ActualParamList COMMA Expr
+					|
+					Expr
+					;
+					
+					
+Condition ::= Condition OR CondTerm
+			  |
+			  CondTerm
+			  ;
+			  
+CondTerm ::= CondTerm AND CondFact
+			 |
+			 CondFact
+			 ;
+			 
+CondFact ::= Expr Relop Expr
+			|
+			Expr
+			;
+			
+Expr ::= ExprFactorType; 
+
+ExprFactorType ::= ExprFactorType Addop Term 
+				   |
+				   Term 
+				   |
+				   MINUS Term
+				   ;
+
+Term ::= Term Mulop Factor
+		 |
+		 Factor
+		 ;
+			
+Factor ::= Designator 
+		   |
+		   Designator LPAREN ActualPars RPAREN
+		   |
+		   NUMBER
+		   |
+		   CHAR
+		   |
+		   BOOL
+		   |
+		   NEW Type
+		   |
+		   NEW Type LSQUARE Expr RSQUARE
+		   |
+		   LPAREN Expr RPAREN
+		   ;
+		   
+Designator ::= IDENT 
+			   |
+			   IDENT DOT IDENT
+			   |
+			   IDENT LSQUARE Expr RSQUARE
+			   ;
+			   
+AssignOp ::= EQUAL
+			 |
+			 AddopRight
+			 |
+			 MulopRight
+			 ;
+			
+Relop ::= CONDITIONALEQUAL
+		  |
+		  DIFFERENT 
+		  |
+		  LESS
+		  |
+		  MOREEQUAL
+		  |
+		  MORE
+		  |
+		  LESSEQUAL
+		  ;
+		  
+Addop ::= AddopLeft | AddopRight;
+
+AddopLeft ::= PLUS
+			  |
+			  MINUS
+			  ;
+			  
+AddopRight ::= PLUSEQUAL 
+			   |
+			   MINUSEQUAL ;	
+
+Mulop ::= MulopLeft 
+		  |
+		  MulopRight
+		  ;
+		  
+MulopLeft ::= MUL
+			  |
+			  DIV
+			  |
+			  MOD
+			  ;
+			  
+MulopRight ::= MULEQUAL
+			   |
+			   DIVEQUAL
+			   |
+			   MODEQUAL
+			   ;
+			   
+			   
+			  
+		   

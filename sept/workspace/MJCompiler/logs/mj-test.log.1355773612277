@@ -1,0 +1,38 @@
+INFO  22:23:44,482 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  22:23:44,500 - #2 program
+INFO  22:23:44,500 - #15 MJProgram
+INFO  22:23:44,500 - #15 int
+INFO  22:23:44,500 - #15 x
+INFO  22:23:44,501 - #5 ;
+INFO  22:23:44,501 - #15 int
+INFO  22:23:44,501 - #15 y
+INFO  22:23:44,501 - #5 ;
+INFO  22:23:44,502 - #3 {
+INFO  22:23:44,502 - #15 int
+INFO  22:23:44,502 - #15 main
+INFO  22:23:44,502 - #6 (
+INFO  22:23:44,502 - #7 )
+INFO  22:23:44,502 - #3 {
+INFO  22:23:44,503 - #9 print
+INFO  22:23:44,503 - #6 (
+INFO  22:23:44,503 - #14 1
+INFO  22:23:44,503 - #7 )
+INFO  22:23:44,503 - #5 ;
+INFO  22:23:44,504 - #15 x
+INFO  22:23:44,504 - #12 =
+INFO  22:23:44,504 - #15 y
+INFO  22:23:44,504 - #11 +
+INFO  22:23:44,505 - #14 3
+INFO  22:23:44,505 - #11 +
+INFO  22:23:44,505 - #5 ;
+ERROR 22:23:44,506 - 
+Sintaksna greska na liniji 6
+INFO  22:23:44,506 - #9 print
+INFO  22:23:44,506 - #6 (
+INFO  22:23:44,506 - #14 2
+DEBUG 22:23:44,509 - Uspesan oporavak od greske pri dodeli vrednosti.
+INFO  22:23:44,509 - #7 )
+INFO  22:23:44,509 - #5 ;
+INFO  22:23:44,510 - #4 }
+INFO  22:23:44,510 - #4 }
+INFO  22:23:44,510 - Print calls = 2

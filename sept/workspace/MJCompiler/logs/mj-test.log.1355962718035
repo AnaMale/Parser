@@ -1,0 +1,69 @@
+INFO  01:13:35,149 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  01:13:35,181 - #2 program
+INFO  01:13:35,181 - #15 MJProgram
+INFO  01:13:35,181 - #15 int
+INFO  01:13:35,182 - #15 x
+INFO  01:13:35,182 - #5 ;
+INFO  01:13:35,182 - #15 int
+INFO  01:13:35,183 - Deklarisana promenljiva x na liniji 2
+INFO  01:13:35,183 - #15 y
+INFO  01:13:35,183 - #5 ;
+INFO  01:13:35,183 - #3 {
+INFO  01:13:35,184 - Deklarisana promenljiva y na liniji 2
+INFO  01:13:35,184 - #15 int
+INFO  01:13:35,184 - #15 k
+INFO  01:13:35,184 - #6 (
+INFO  01:13:35,185 - Obradjuje se funkcija k na liniji 5
+INFO  01:13:35,185 - #7 )
+INFO  01:13:35,185 - #15 int
+INFO  01:13:35,185 - #15 c
+INFO  01:13:35,185 - #5 ;
+INFO  01:13:35,186 - #3 {
+INFO  01:13:35,186 - Deklarisana promenljiva c na liniji 5
+INFO  01:13:35,186 - #15 c
+INFO  01:13:35,189 - #12 =
+INFO  01:13:35,190 - #14 0
+INFO  01:13:35,190 - #5 ;
+INFO  01:13:35,190 - #9 print
+INFO  01:13:35,191 - #6 (
+INFO  01:13:35,191 - #14 0
+INFO  01:13:35,191 - #7 )
+INFO  01:13:35,191 - #5 ;
+INFO  01:13:35,191 - #10 return
+INFO  01:13:35,191 - #15 c
+INFO  01:13:35,191 - #11 +
+INFO  01:13:35,192 - #14 3
+INFO  01:13:35,192 - #5 ;
+INFO  01:13:35,192 - #4 }
+INFO  01:13:35,192 - #15 int
+INFO  01:13:35,192 - #15 main
+INFO  01:13:35,193 - #6 (
+INFO  01:13:35,193 - Obradjuje se funkcija main na liniji 11
+INFO  01:13:35,193 - #7 )
+INFO  01:13:35,193 - #3 {
+INFO  01:13:35,193 - #15 x
+INFO  01:13:35,193 - #12 =
+INFO  01:13:35,193 - #14 3
+INFO  01:13:35,194 - #5 ;
+INFO  01:13:35,194 - #9 print
+INFO  01:13:35,194 - #6 (
+INFO  01:13:35,194 - #14 1
+INFO  01:13:35,194 - #7 )
+INFO  01:13:35,194 - #5 ;
+INFO  01:13:35,194 - #9 print
+INFO  01:13:35,195 - #6 (
+INFO  01:13:35,195 - #15 x
+INFO  01:13:35,195 - #7 )
+INFO  01:13:35,195 - #5 ;
+INFO  01:13:35,195 - #15 k
+INFO  01:13:35,195 - #6 (
+INFO  01:13:35,196 - #7 )
+INFO  01:13:35,196 - #5 ;
+INFO  01:13:35,196 - #10 return
+INFO  01:13:35,196 - Pronadjen poziv funkcije k na liniji 15
+INFO  01:13:35,196 - #14 0
+INFO  01:13:35,197 - #5 ;
+INFO  01:13:35,197 - #4 }
+INFO  01:13:35,197 - #4 }
+INFO  01:13:35,197 - Print calls = 3
+INFO  01:13:35,201 - Parsiranje uspesno zavrseno!
