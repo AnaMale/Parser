@@ -7,7 +7,7 @@ parser code {:
 
     Logger log = Logger.getLogger(getClass());
     
-    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+   public void report_fatal_error(String message, Object info) throws java.lang.Exception {
       done_parsing();
       report_error(message, info);
     }
@@ -21,12 +21,19 @@ parser code {:
     }
 
     public void report_error(String message, Object info) {
-    	errorDetected = true;
     	StringBuilder msg = new StringBuilder(message); 
     	if (info instanceof Symbol)
-            msg.append (" na liniji ").append(((Symbol)info).left); //dobijamo informaciju o liniji na kojoj se nalazi greska
+            msg.append (" na liniji ").append(((Symbol)info).left);
 		System.err.println(msg.toString());
  //       log.error(msg.toString());
+    }
+    
+    public void report_info(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.info(msg.toString());
+    }
 :}
 
 scan with{:
@@ -40,18 +47,18 @@ Symbol s = this.getScanner().next_token();
 :}
 
 
-terminal PROG, IDENT, LBRACE, RBRACE, LPAREN, LPAREN, LSQUARE, RSQUARE, SEMI, CONST, STATIC, EXTENDS, CLASS, DOT;
-terminal READ, PRINT, BREAK, CONTINUE, FOR, OR, AND, IF, FOR, RETURN, INC, DEC;
-terminal PLUS, PLUSEQUAL, MINUSEQUAL, DIVEQUAL, MULEQUAL, MODEQUAL;
-terminal CONDITIONALEQUAL, LESSEQUAL, MOREEQUAL, LESS, MOREEQUAL, MORE, DIFFERENT;
-terminal NUMBER, CHAR, BOOL, NEW;
+terminal PROG, IDENT, LBRACE, RBRACE, LPAREN, RPAREN, LSQUARE, RSQUARE, SEMI, CONST, STATIC, COMMA, EXTENDS, CLASS, DOT;
+terminal READ, PRINT, BREAK, CONTINUE, OR, AND, IF, FOR, RETURN, INC, DEC, VOID, ELSE, DIFERENT;
+terminal PLUS, PLUSEQUAL, MINUSEQUAL, DIVEQUAL, MULEQUAL, MODEQUAL, EQUAL, MINUS;
+terminal CONDITIONALEQUAL, LESSEQUAL, MOREEQUAL, LESS, MORE, DIFFERENT;
+terminal NUMBER, CHARACTER, BOOL, NEW;
 terminal MUL, DIV, MOD;
 
 non terminal ProgDeclList, MethodDeclList, Program, ClassVarDeclPart, SingleClassVarDecl, ClassVarDeclList, ClassDecl, ExtType;
 non terminal ClassDeclMethod, RetType, MethodDecl, FormArgs, FormPars, FormalParamDecl, VarArgs,  VarDeclList, VarDecl, StatementList, Statement;
 non terminal VarDeclPart, SingleVarDecl, DesignatorStatement, Condition, Matched, Unmatched, ForPart, Expr, Designator, OptCondition;
-non terminal ActualPars, ActualParamList, CondTerm, CondFact;
-non terminal Relop, AssignOp, ExprFactorType, Addop, Mulop, Factor, MulopLeft, MulopRight, AddopLeft, AddopRight;
+non terminal ActualPars, ConstDeclPart, SingleConstDecl, ClassVarDecl, ActualParamList, CondTerm, CondFact, ConstDecl;
+non terminal Relop, AssignOp, Term, OptStatic, OptDesignatorStatement, Type, ExprFactorType, Addop, Mulop, Factor, MulopLeft, MulopRight, AddopLeft, AddopRight;
 non terminal Integer ConstValue;
 
 Program ::= PROG IDENT ProgDeclList LBRACE MethodDeclList RBRACE;
@@ -67,7 +74,7 @@ SingleConstDecl ::= IDENT EQUAL ConstValue;
 
 ConstValue ::= NUMBER 
 			   |
-			   CHAR
+			   CHARACTER
 			   |
 			   BOOL
 			   ;
@@ -141,7 +148,6 @@ FormArgs ::= FormPars COMMA VarArgs
 			 VarArgs
 			 |
 			 /*epsilon*/
-			 |
 			 ;
 	
 
@@ -199,7 +205,7 @@ DesignatorStatement ::= Designator AssignOp Expr
 						|
 						Designator LPAREN ActualPars RPAREN
 						|
-						Designatpr INC 
+						Designator INC 
 						|
 						Designator DEC
 						;
@@ -250,7 +256,7 @@ Factor ::= Designator
 		   |
 		   NUMBER
 		   |
-		   CHAR
+		   CHARACTER
 		   |
 		   BOOL
 		   |
@@ -286,6 +292,8 @@ Relop ::= CONDITIONALEQUAL
 		  MORE
 		  |
 		  LESSEQUAL
+		  |
+		  DIFERENT
 		  ;
 		  
 Addop ::= AddopLeft | AddopRight;
