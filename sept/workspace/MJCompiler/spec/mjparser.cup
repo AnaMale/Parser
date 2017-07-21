@@ -1,7 +1,15 @@
 package rs.ac.bg.etf.pp1;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import java_cup.runtime.*;
 import org.apache.log4j.*;
+
+
+import rs.etf.pp1.symboltable.Tab;
+
+import rs.etf.pp1.symboltable.concepts.*;
 
 parser code {:
 
@@ -46,22 +54,65 @@ Symbol s = this.getScanner().next_token();
 
 :}
 
+init with {: 
+   Tab.init(); //Universe opseg
+:}
 
-terminal PROG, IDENT, LBRACE, RBRACE, LPAREN, RPAREN, LSQUARE, RSQUARE, SEMI, CONST, STATIC, COMMA, EXTENDS, CLASS, DOT;
+action code {:
+boolean fieldsStatic = false;
+Struct currentType = null;
+Obj currentMethod = null; 
+:}
+
+
+terminal PROG, LBRACE, RBRACE, LPAREN, RPAREN, LSQUARE, RSQUARE, SEMI, CONST, STATIC, COMMA, EXTENDS, CLASS, DOT;
+terminal String IDENT ; 
 terminal READ, PRINT, BREAK, CONTINUE, OR, AND, IF, FOR, RETURN, INC, DEC, VOID, ELSE, DIFERENT;
 terminal PLUS, PLUSEQUAL, MINUSEQUAL, DIVEQUAL, MULEQUAL, MODEQUAL, EQUAL, MINUS;
 terminal CONDITIONALEQUAL, LESSEQUAL, MOREEQUAL, LESS, MORE, DIFFERENT;
 terminal NUMBER, CHARACTER, BOOL, NEW;
 terminal MUL, DIV, MOD;
 
-non terminal ProgDeclList, MethodDeclList, Program, ClassVarDeclPart, SingleClassVarDecl, ClassVarDeclList, ClassDecl, ExtType;
-non terminal ClassDeclMethod, RetType, MethodDecl, FormArgs, FormPars, FormalParamDecl, VarArgs,  VarDeclList, VarDecl, StatementList, Statement;
-non terminal VarDeclPart, SingleVarDecl, DesignatorStatement, Condition, Matched, Unmatched, ForPart, Expr, Designator, OptCondition;
+non terminal ProgDeclList,MethodDeclList, Program, ClassVarDeclPart, SingleClassVarDecl, ClassVarDeclList, ClassDecl, ExtType;
+non terminal ClassDeclMethod, MethodDecl, FormArgs, FormPars, FormalParamDecl, VarArgs,  VarDeclList, VarDecl, StatementList, Statement;
+non terminal VarDeclPart, SingleVarDecl, DesignatorStatement, Condition, Matched, Unmatched, ForPart, OptCondition;
 non terminal ActualPars, ConstDeclPart, SingleConstDecl, ClassVarDecl, ActualParamList, CondTerm, CondFact, ConstDecl;
-non terminal Relop, AssignOp, Term, OptStatic, OptDesignatorStatement, Type, ExprFactorType, Addop, Mulop, Factor, MulopLeft, MulopRight, AddopLeft, AddopRight;
+non terminal Relop, AssignOp, OptDesignatorStatement, Addop, Mulop, MulopLeft, MulopRight, AddopLeft, AddopRight;
 non terminal Integer ConstValue;
+non terminal Obj ProgName, Designator, ClassIdent;
+non terminal Struct Type, RetType, Expr, Term, ExprFactorType, Factor;
+non terminal Boolean OptStatic;
 
-Program ::= PROG IDENT ProgDeclList LBRACE MethodDeclList RBRACE;
+Program ::= PROG ProgName:p ProgDeclList LBRACE MethodDeclList RBRACE
+			{:
+			Tab.chainLocalSymbols(p);
+			Tab.closeScope();
+			:}
+			;
+
+ProgName ::= IDENT:pName
+{:
+  RESULT = Tab.insert(Obj.Prog, pName, Tab.noType); //vraca Obj koji je u tabeli simbola
+  Tab.openScope();
+:}
+; 
+
+Type ::= IDENT:typeName
+		 {:
+		 Obj typeNode = Tab.find(typeName);
+		 if( typeNode == Tab.noObj){
+		 parser.report_error("Nije pronadjen tip" + typeName + "u tabeli simbola", null);
+		 }
+		 else {
+		 if( Obj.Type == typeNode.getKind()) 
+		 currentType = RESULT = typeNode.getType();
+		 else { 
+		 parser.report_error("Greska na liniji" + typeNameleft+ ": Ime " + typeName + " ne predstavlja tip ", null);
+		 currentType = RESULT = Tab.noType;
+		 }
+		 }
+		 :}
+		 ;
 
 ConstDecl ::= CONST Type ConstDeclPart SEMI;
 
@@ -84,15 +135,43 @@ ClassVarDeclList ::= ClassVarDeclList ClassVarDecl
 					 /*epsilon*/
 					 ;
 			   
-ClassVarDecl ::= OptStatic Type ClassVarDeclPart SEMI;
+ClassVarDecl ::= OptStatic:b {: if (b) fieldsStatic = true; :} Type ClassVarDeclPart SEMI
+				  {: fieldsStatic = false ; :} 
+				  ;
 
 ClassVarDeclPart ::= ClassVarDeclPart SingleClassVarDecl
 					 |
 					 SingleClassVarDecl
 					 ;
-SingleClassVarDecl ::= IDENT 
+SingleClassVarDecl ::= IDENT:varName
+					   {:
+					   parser.report_info("Deklarisano polje klase "+ varName+" na liniji "+ varNameleft, null);
+					   Obj sym = Tab.currentScope().findSymbol(varName);
+					   if( sym == null ){ 
+					   Tab.insert( Obj.Fld, varName, currentType);
+					   if ( fieldsStatic == true ) {
+					   
+					   }
+					   }
+					   else {
+					   parser.report_info("Greska na liniji, ime nije jedinstveno: "+ varNameleft, null);
+					   }
+					   :}
                        |
-					   IDENT LSQUARE RSQUARE
+					   IDENT:varName LSQUARE RSQUARE
+					   {:
+					   parser.report_info("Deklarisano polje klase "+ varName+" na liniji "+ varNameleft, null);
+					   Obj sym = Tab.currentScope().findSymbol(varName);
+					   if( sym == null ){ 
+	                   Tab.insert( Obj.Fld, varName, new Struct(Struct.Array, currentType));
+					   if ( fieldsStatic == true ) {
+					   
+					   }
+					   }
+					   else {
+					   parser.report_info("Greska na liniji, ime nije jedinstveno: "+ varNameleft, null);
+					   }
+					   :}
 					   ;
 					 
 					 
@@ -122,7 +201,17 @@ RetType ::= Type
 			VOID
 			;
 				   
-MethodDecl ::= OptStatic RetType IDENT LPAREN FormArgs RPAREN VarDeclList LBRACE StatementList RBRACE;
+MethodDecl ::= OptStatic:b RetType:retType IDENT:methName
+			   {:
+			   currentMethod = Tab.insert(Obj.Meth, methName, retType);
+			   Tab.openScope();
+			   parser.report_info("Obradjuje se funkcija " + methName + " na liniji " + methNameleft, null);
+			   :}
+			   LPAREN FormArgs RPAREN VarDeclList LBRACE StatementList RBRACE
+			   {:
+			   Tab.chainLocalSymbols(currentMethod);
+			   Tab.closeScope();
+			   :};
 
 VarDeclList ::= VarDeclList VarDecl 
                 |
@@ -135,9 +224,15 @@ VarDeclPart ::= VarDeclPart COMMA SingleVarDecl
 				SingleVarDecl
 				;
 				
-SingleVarDecl ::= IDENT 
+SingleVarDecl ::= IDENT:varName
+				 {:
+				  parser.report_info("Deklarisana promenljiva "+ varName+" na liniji "+ varNameleft, null);
+				 
+				  Obj sym = Tab.currentScope().findSymbol(varName);
+			      Obj obj = Tab.insert(Obj.Var, varName, currentType);
+			      :}
 				  |
-				  IDENT LSQUARE RSQUARE
+				  IDENT:varName LSQUARE RSQUARE
 				  ;
 
 
@@ -238,21 +333,42 @@ CondFact ::= Expr Relop Expr
 			
 Expr ::= ExprFactorType; 
 
-ExprFactorType ::= ExprFactorType Addop Term 
+ExprFactorType ::= ExprFactorType:t1 Addop Term:t2
+				   {:
+				   if (t1.equals(t2) && t1 == Tab.intType) 
+				      RESULT = t1;
+				   else{
+				   parser.report_error("Greska na liniji "+ t1left+" : nekompatibilni tipovi u izrazu za sabiranje.", null);
+				   RESULT = Tab.noType;
+				   }
+				   :}
 				   |
-				   Term 
+				   Term:t 
+				   {:
+				   RESULT = t;
+				   :}
 				   |
 				   MINUS Term
 				   ;
 
-Term ::= Term Mulop Factor
+Term ::= Term:t1 Mulop Factor:t2
 		 |
-		 Factor
+		 Factor:t
+		 {:
+		 RESULT = t;
+		 :}  
 		 ;
 			
 Factor ::= Designator 
 		   |
-		   Designator LPAREN ActualPars RPAREN
+		   Designator:func LPAREN ActualPars RPAREN
+		   {:
+		   if(func.getKind() == Obj.Meth) 
+		      parser.report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + funcleft, null);
+			else{
+			parser.report_error("Greska na liniji " + funcleft+" : ime " + func.getName() + " nije funkcija!", null);
+			}
+		   :}
 		   |
 		   NUMBER
 		   |
@@ -267,7 +383,14 @@ Factor ::= Designator
 		   LPAREN Expr RPAREN
 		   ;
 		   
-Designator ::= IDENT 
+Designator ::= IDENT:name
+				{:
+					Obj obj = Tab.find(name);
+					if (obj == Tab.noObj) { 
+						parser.report_error("Greska na liniji " + nameleft+ " : ime "+name+" nije deklarisano! ", null);
+					}
+					RESULT = obj;
+				:}
 			   |
 			   IDENT DOT IDENT
 			   |
