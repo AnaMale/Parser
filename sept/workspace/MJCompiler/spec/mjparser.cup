@@ -14,6 +14,8 @@ import rs.etf.pp1.symboltable.concepts.*;
 parser code {:
 
     Logger log = Logger.getLogger(getClass());
+	
+	Struct boolType;
     
    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
       done_parsing();
@@ -56,12 +58,18 @@ Symbol s = this.getScanner().next_token();
 
 init with {: 
    Tab.init(); //Universe opseg
+   boolType = new Struct(Struct.None);
+   Tab.currentScope().addToLocals(new Obj(Obj.Type, "bool" , boolType));
 :}
 
 action code {:
+
+boolean inFor = false; 
+boolean extendClass = false; 
 boolean fieldsStatic = false;
 Struct currentType = null;
 Obj currentMethod = null; 
+
 :}
 
 
@@ -73,14 +81,14 @@ terminal CONDITIONALEQUAL, LESSEQUAL, MOREEQUAL, LESS, MORE, DIFFERENT;
 terminal NUMBER, CHARACTER, BOOL, NEW;
 terminal MUL, DIV, MOD;
 
-non terminal ProgDeclList,MethodDeclList, Program, ClassVarDeclPart, SingleClassVarDecl, ClassVarDeclList, ClassDecl, ExtType;
+non terminal ProgDeclList,MethodDeclList, Program, ClassVarDeclPart, SingleClassVarDecl, ClassVarDeclList, ClassDecl;
 non terminal ClassDeclMethod, MethodDecl, FormArgs, FormPars, FormalParamDecl, VarArgs,  VarDeclList, VarDecl, StatementList, Statement;
 non terminal VarDeclPart, SingleVarDecl, DesignatorStatement, Condition, Matched, Unmatched, ForPart, OptCondition;
 non terminal ActualPars, ConstDeclPart, SingleConstDecl, ClassVarDecl, ActualParamList, CondTerm, CondFact, ConstDecl;
 non terminal Relop, AssignOp, OptDesignatorStatement, Addop, Mulop, MulopLeft, MulopRight, AddopLeft, AddopRight;
 non terminal Integer ConstValue;
 non terminal Obj ProgName, Designator, ClassIdent;
-non terminal Struct Type, RetType, Expr, Term, ExprFactorType, Factor;
+non terminal Struct RetType, Expr, Term, ExprFactorType, Factor, ExtType, Type;
 non terminal Boolean OptStatic;
 
 Program ::= PROG ProgName:p ProgDeclList LBRACE MethodDeclList RBRACE
@@ -114,7 +122,12 @@ Type ::= IDENT:typeName
 		 :}
 		 ;
 
-ConstDecl ::= CONST Type ConstDeclPart SEMI;
+ConstDecl ::= CONST Type:t ConstDeclPart SEMI
+			  {:
+			  if(!t.equals(Tab.intType) && !t.equals(Tab.charType) && !t.equals(parser.boolType)) {
+			  parser.report_info("Greska na liniji:"+ tleft + " tip terminala nije ni numConst ni charConst ni boolConst", null);
+			  }
+			  :};
 
 ConstDeclPart ::= ConstDeclPart COMMA SingleConstDecl
 					|
@@ -149,9 +162,6 @@ SingleClassVarDecl ::= IDENT:varName
 					   Obj sym = Tab.currentScope().findSymbol(varName);
 					   if( sym == null ){ 
 					   Tab.insert( Obj.Fld, varName, currentType);
-					   if ( fieldsStatic == true ) {
-					   
-					   }
 					   }
 					   else {
 					   parser.report_info("Greska na liniji, ime nije jedinstveno: "+ varNameleft, null);
@@ -164,9 +174,6 @@ SingleClassVarDecl ::= IDENT:varName
 					   Obj sym = Tab.currentScope().findSymbol(varName);
 					   if( sym == null ){ 
 	                   Tab.insert( Obj.Fld, varName, new Struct(Struct.Array, currentType));
-					   if ( fieldsStatic == true ) {
-					   
-					   }
 					   }
 					   else {
 					   parser.report_info("Greska na liniji, ime nije jedinstveno: "+ varNameleft, null);
@@ -179,7 +186,13 @@ OptStatic ::= STATIC
 			  |
 			  ;
 			  
-ExtType ::= EXTENDS Type
+ExtType ::= EXTENDS Type:t
+			{:
+			if ( t.getKind() != Struct.Class ) 
+			parser.report_error("Semanticka greska na liniji " +tleft +": Ime "+t+" nije unutrasnja klasa glavnog programa", null);
+			extendClass = true;
+			RESULT = t;
+			:}
 			|
 			/*epsilon*/
 			;
@@ -229,10 +242,24 @@ SingleVarDecl ::= IDENT:varName
 				  parser.report_info("Deklarisana promenljiva "+ varName+" na liniji "+ varNameleft, null);
 				 
 				  Obj sym = Tab.currentScope().findSymbol(varName);
-			      Obj obj = Tab.insert(Obj.Var, varName, currentType);
+				  if( sym == null) 
+			      Tab.insert(Obj.Var, varName, currentType);
+				  else {
+				  parser.report_info("Greska na liniji, nije jedinstveno ime "+  varNameleft, null);
+				  }
 			      :}
 				  |
 				  IDENT:varName LSQUARE RSQUARE
+				  {:
+				  parser.report_info("Deklarisan niz "+ varName+" na liniji "+ varNameleft, null);
+				  
+				  Obj sym = Tab.currentScope().findSymbol(varName);
+				  if( sym == null ) 
+				  Tab.insert(Obj.Var, varName, new Struct(Struct.Array, currentType));
+				  else {
+				  parser.report_info("Greska na liniji, nije jedinstveno ime "+  varNameleft, null);
+				  }
+				  :}
 				  ;
 
 
@@ -263,7 +290,8 @@ Statement ::= Matched | Unmatched;
 
 OptDesignatorStatement ::= DesignatorStatement | ;
 
-ForPart ::= FOR LPAREN OptDesignatorStatement SEMI OptCondition SEMI OptDesignatorStatement RPAREN ; 
+ForPart ::= FOR LPAREN OptDesignatorStatement SEMI OptCondition SEMI OptDesignatorStatement RPAREN
+			{: inFor = true; :} ; 
 
 OptCondition ::= Condition | ;
 
@@ -296,13 +324,38 @@ Matched ::= DesignatorStatement SEMI
 			LBRACE StatementList RBRACE 
 			; 
 			
-DesignatorStatement ::= Designator AssignOp Expr
+DesignatorStatement ::= Designator:d AssignOp Expr:e
+						{:
+						if (!( d.getKind() == Obj.Var || d.getKind() == Obj.Fld || d.getKind() == Obj.Elem ))
+						    parser.report_error("Greska na liniji " + dleft+" : Designator nije varijabla, element niza ili polje unutar objekta", null);
+						else if ( !( e.assignableTo(d.getType()) ) )
+							 parser.report_error("Greska na liniji " + dleft + " : " + " nekompatibilni tipovi u dodeli vrednosti ", null);
+						else {
+						
+						}
+						:}
 						|
 						Designator LPAREN ActualPars RPAREN
 						|
-						Designator INC 
+						Designator:d INC 
+						{:
+						if (!( d.getKind() == Obj.Var || d.getKind() == Obj.Fld || d.getKind() == Obj.Elem )) 
+						   if ( d.getType() != Tab.intType )
+						   parser.report_error("Greska na liniji " + dleft+" : Designator nije varijabla, element niza ili polje klase, pa ne moze biti inkrementiran.", null);
+						else {
+						parser.report_error("Greska na liniji " + dleft+" : Designator nije varijabla, element niza ili polje klase, pa ne moze biti inkrementiran.", null);
+						}
+						:}
 						|
-						Designator DEC
+						Designator:d DEC
+						{:
+						if (!( d.getKind() == Obj.Var || d.getKind() == Obj.Fld || d.getKind() == Obj.Elem ))
+						  if( d.getType() != Tab.intType ) 
+						   parser.report_error("Greska na liniji " + dleft+" : Designator nije tipa int, pa ne moze biti dekrementiran.", null);  
+						else { 		
+						parser.report_error("Greska na liniji " + dleft+" : Designator nije varijabla, element niza ili polje klase, pa ne moze biti dekrementiran.", null);
+						}	
+						:}	
 						;
 						
 ActualPars ::= ActualParamList 
