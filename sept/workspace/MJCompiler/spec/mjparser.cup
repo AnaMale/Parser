@@ -7,9 +7,11 @@ import java_cup.runtime.*;
 import org.apache.log4j.*;
 
 
+// import java.io.*;
 import rs.etf.pp1.symboltable.Tab;
-
 import rs.etf.pp1.symboltable.concepts.*;
+import rs.etf.pp1.symboltable.structure.*;
+import rs.etf.pp1.mj.runtime.Code;
 
 parser code {:
 
@@ -64,11 +66,35 @@ init with {:
 
 action code {:
 
+boolean rightOp = false;
 boolean inFor = false; 
+boolean isVoid = false;
 boolean extendClass = false; 
 boolean fieldsStatic = false;
+boolean returnFound = false;
 Struct currentType = null;
 Obj currentMethod = null; 
+
+class FactorType {
+   private Obj designator;
+   private Struct type;
+   
+   public FactorType(Obj d, Struct t){
+   designator = d;
+   type = t; }
+   
+   public Obj getDesignator(){
+   return designator; }
+   
+   public void setDesignator(Obj d) {
+   designator = d; }
+   
+   public Struct getType() {
+   return type; }
+   
+   public void setType(Struct t){
+   type = t; }
+}
 
 :}
 
@@ -85,10 +111,12 @@ non terminal ProgDeclList,MethodDeclList, Program, ClassVarDeclPart, SingleClass
 non terminal ClassDeclMethod, MethodDecl, FormArgs, FormPars, FormalParamDecl, VarArgs,  VarDeclList, VarDecl, StatementList, Statement;
 non terminal VarDeclPart, SingleVarDecl, DesignatorStatement, Condition, Matched, Unmatched, ForPart, OptCondition;
 non terminal ActualPars, ConstDeclPart, SingleConstDecl, ClassVarDecl, ActualParamList, CondTerm, CondFact, ConstDecl;
-non terminal Relop, AssignOp, OptDesignatorStatement, Addop, Mulop, MulopLeft, MulopRight, AddopLeft, AddopRight;
+non terminal AssignOp, OptDesignatorStatement, Addop, MulopLeft, MulopRight, AddopLeft, AddopRight;
+non terminal Integer Relop, Mulop;
 non terminal Integer ConstValue;
 non terminal Obj ProgName, Designator, ClassIdent;
-non terminal Struct RetType, Expr, Term, ExprFactorType, Factor, ExtType, Type;
+non terminal FactorType ExprFactorType, Factor, Term;
+non terminal Struct RetType, Expr, ExtType, Type;
 non terminal Boolean OptStatic;
 
 Program ::= PROG ProgName:p ProgDeclList LBRACE MethodDeclList RBRACE
@@ -161,7 +189,8 @@ SingleClassVarDecl ::= IDENT:varName
 					   parser.report_info("Deklarisano polje klase "+ varName+" na liniji "+ varNameleft, null);
 					   Obj sym = Tab.currentScope().findSymbol(varName);
 					   if( sym == null ){ 
-					   Tab.insert( Obj.Fld, varName, currentType);
+					   Obj field = Tab.insert( Obj.Fld, varName, currentType);
+					   if ( fieldsStatic ) field.setFpPos(1);
 					   }
 					   else {
 					   parser.report_info("Greska na liniji, ime nije jedinstveno: "+ varNameleft, null);
@@ -173,7 +202,8 @@ SingleClassVarDecl ::= IDENT:varName
 					   parser.report_info("Deklarisano polje klase "+ varName+" na liniji "+ varNameleft, null);
 					   Obj sym = Tab.currentScope().findSymbol(varName);
 					   if( sym == null ){ 
-	                   Tab.insert( Obj.Fld, varName, new Struct(Struct.Array, currentType));
+	                   Obj field = Tab.insert( Obj.Fld, varName, new Struct(Struct.Array, currentType));
+					   if ( fieldsStatic ) field.setFpPos(1);
 					   }
 					   else {
 					   parser.report_info("Greska na liniji, ime nije jedinstveno: "+ varNameleft, null);
@@ -209,9 +239,16 @@ MethodDeclList ::= MethodDeclList MethodDecl
 				   /*epsilon*/
 				   ;
 				   
-RetType ::= Type 
+RetType ::= Type:t
+			{:
+			RESULT = t;
+			:}
 			|
 			VOID
+			{:
+			RESULT = Tab.noType;
+			isVoid = true;
+			:}
 			;
 				   
 MethodDecl ::= OptStatic:b RetType:retType IDENT:methName
@@ -301,6 +338,7 @@ Unmatched ::= IF LPAREN Condition RPAREN Statement
 				|
 				ForPart
 				Unmatched
+				{: inFor = false; :}
 				;
 
 Matched ::= DesignatorStatement SEMI
@@ -308,18 +346,50 @@ Matched ::= DesignatorStatement SEMI
 			IF LPAREN Condition RPAREN Matched ELSE Matched
 			|
 			ForPart Matched
+			{: inFor = false; :}
 			|
-			BREAK SEMI 
+			BREAK:b SEMI 
+			{:
+					if (!inFor) {
+						parser.report_error("Semanticka greska na liniji " + bleft + ": BREAK se moze koristiti samo unutar FOR petlje", null);
+					}
+				:}
 			|
-			CONTINUE SEMI
+			CONTINUE:b SEMI
+            {:
+					if (!inFor) {
+						parser.report_error("Semanticka greska na liniji " + bleft + ": BREAK se moze koristiti samo unutar FOR petlje", null);
+					}
+				:}			
 			| 
-			RETURN Expr SEMI
+			RETURN Expr:t SEMI
+			{:
+			returnFound = true; 
+			Struct currMethType = currentMethod.getType();
+			if( !currMethType.compatibleWith(t) || isVoid == false && currMethType != Tab.noType )  {
+				 	parser.report_error("Greska na liniji " + tleft + " : " + "tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije " + currentMethod.getName(), null);
+				 }			  	 
+			
+			:}
 			|
             RETURN SEMI
 			|
-			READ LPAREN Designator RPAREN SEMI 
+			READ LPAREN Designator:d RPAREN SEMI 
+			{:
+			if ( d.getKind() == Obj.Fld || d.getKind() == Obj.Fld || d.getKind() == Obj.Fld )
+			    if ( d.getType() == Tab.intType || d.getType() == Tab.charType || d.getType() == parser.boolType ) 
+				{
+				}
+				else { 
+				parser.report_error("Greska na liniji " + dleft + ": designator nije odgovarajuceg tipa.", null);
+				}
+			:}
 			| 
-			PRINT LPAREN Expr RBRACE SEMI 
+			PRINT LPAREN Expr:e RBRACE SEMI
+			{:
+			if (!(e.equals(Tab.intType) || e.equals(Tab.charType) || e.equals(parser.boolType)))
+			    parser.report_error("Semanticka greska na liniji " + eleft + ": Operand instrukcije PRINT mora biti char ili int tipa", null);
+			:}
 			|
 			LBRACE StatementList RBRACE 
 			; 
@@ -379,20 +449,36 @@ CondTerm ::= CondTerm AND CondFact
 			 CondFact
 			 ;
 			 
-CondFact ::= Expr Relop Expr
+CondFact ::= Expr:e1 Relop:o Expr:e2
+			{:
+			if ( !e1.assignableTo(e2) && e1.getKind() != Struct.Array && e1.getElemType().getKind() != Struct.Char) 
+			{ 
+			parser.report_error("Greska na liniji: "+e1left+": nekompatibilni tipovi", null); 
+			}
+			else if (e1.getKind() == Struct.Class || e1.getKind() == Struct.Array) {
+			if ( o != Code.ne && o != Code.eq) 
+			parser.report_error("Semanticka greska na liniji: "+e2left+" : Uz promenljive tipa klase ili niza, od relacionih operatora, mogu se koristiti samo != i ==.", null);
+			}
+			:}
 			|
 			Expr
 			;
-			
-Expr ::= ExprFactorType; 
+		
+Expr ::= ExprFactorType:e
+		 {:
+		 RESULT = e.getType();
+		 :}; 
 
 ExprFactorType ::= ExprFactorType:t1 Addop Term:t2
 				   {:
-				   if (t1.equals(t2) && t1 == Tab.intType) 
+				   if (t1.equals(t2) && t1.getType() == Tab.intType) 
+				    if ( rightOp = true && ( t1.getDesignator().getKind() == Obj.Var || t1.getDesignator().getKind() == Obj.Elem || t1.getDesignator().getKind() == Obj.Fld ))
+					{
 				      RESULT = t1;
+					  }
 				   else{
 				   parser.report_error("Greska na liniji "+ t1left+" : nekompatibilni tipovi u izrazu za sabiranje.", null);
-				   RESULT = Tab.noType;
+				   RESULT = new FactorType(null, Tab.noType);
 				   }
 				   :}
 				   |
@@ -401,10 +487,22 @@ ExprFactorType ::= ExprFactorType:t1 Addop Term:t2
 				   RESULT = t;
 				   :}
 				   |
-				   MINUS Term
+				   MINUS Term:t
+				   {:
+				   if ( t.getType() != Tab.intType ) 
+				   parser.report_error("Greska na liniji "+ tleft+" : Term nije tipa int.", null);
+				   :}
 				   ;
 
 Term ::= Term:t1 Mulop Factor:t2
+         {:
+		 if( t1.getType() == Tab.intType && t2.getType() == Tab.intType)
+		    if ( rightOp = true && ( t1.getDesignator().getKind() == Obj.Var || t1.getDesignator().getKind() == Obj.Elem || t1.getDesignator().getKind() == Obj.Fld ))
+			{
+			}
+			else
+		    { parser.report_error("Greska na liniji "+ t1left+" : nekompatibilni tipovi u izrazu za mnozenje.", null); }
+		 :}
 		 |
 		 Factor:t
 		 {:
@@ -429,9 +527,19 @@ Factor ::= Designator
 		   |
 		   BOOL
 		   |
-		   NEW Type
+		   NEW Type:t
+		   {:
+		   if ( t.getKind() != Struct.Class ) 
+		   { parser.report_error("Greska na liniji " + tleft + " nije u pitanju klasa!", null); }
+		   :}
 		   |
-		   NEW Type LSQUARE Expr RSQUARE
+		   NEW Type LSQUARE Expr:e RSQUARE 
+		   {:
+		   if ( e != Tab.intType ) 
+		   {
+		   parser.report_error("Semanticka greska na liniji " + eleft + ": Expr mora biti int tipa", null);
+		   }
+		   :}
 		   |
 		   LPAREN Expr RPAREN
 		   ;
@@ -445,9 +553,32 @@ Designator ::= IDENT:name
 					RESULT = obj;
 				:}
 			   |
-			   IDENT DOT IDENT
+			   Designator:d DOT IDENT:name
+			   {:
+			   if ( d.getType().getKind() != Struct.Class )
+				parser.report_error("Greska na liniji " + nameleft+ " : izraz nije klasnog tipa! ", null);
+				
+				Obj member = d.getType().getMembersTable().searchKey(name);
+				if ( member != null ) {
+				 RESULT = member;
+				 if ( d.getKind() == Obj.Type && member.getFpPos() == 0 ) 
+				 parser.report_error("Greska na liniji " + dleft+ " nije staticka metoda, a pristupa joj se preko imena klase ", null);
+				}
+				else {
+				parser.report_error("Greska na liniji " + nameleft+ " : ime "+name+" nije polje klase! ", null);
+				}
+			   :}
 			   |
-			   IDENT LSQUARE Expr RSQUARE
+			   Designator:d LSQUARE Expr:e RSQUARE
+			   {:
+			    if ( d.getType().getKind() != Struct.Array )
+				parser.report_error("Greska na liniji " + dleft+ " : izraz nije klasnog tipa! ", null);
+				if(e == Tab.intType){
+				}
+				else {
+				parser.report_error("Greska na liniji " + eleft+ " : ime "+ e +" nije int! ", null);
+				}
+			   :}
 			   ;
 			   
 AssignOp ::= EQUAL
@@ -472,20 +603,26 @@ Relop ::= CONDITIONALEQUAL
 		  DIFERENT
 		  ;
 		  
-Addop ::= AddopLeft | AddopRight;
+Addop ::= AddopLeft
+          |
+		  AddopRight
+		  {: rightOp = true; :}
+		  ;
 
 AddopLeft ::= PLUS
 			  |
 			  MINUS
 			  ;
 			  
-AddopRight ::= PLUSEQUAL 
+AddopRight ::= PLUSEQUAL
 			   |
-			   MINUSEQUAL ;	
+			   MINUSEQUAL
+				;	
 
 Mulop ::= MulopLeft 
 		  |
 		  MulopRight
+		  {: rightOp = true; :}
 		  ;
 		  
 MulopLeft ::= MUL
