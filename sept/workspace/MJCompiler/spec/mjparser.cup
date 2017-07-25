@@ -15,6 +15,14 @@ import rs.etf.pp1.mj.runtime.Code;
 
 parser code {:
 
+    int globProm = 0;
+    int lokProm = 0;
+    int globKonst = 0;
+    
+    int pozivFunkUMain = 0;
+    int globIStaticFunc = 0;
+    int deklFormArg = 0;
+
     Logger log = Logger.getLogger(getClass());
 	
 	Struct boolType;
@@ -75,6 +83,7 @@ boolean returnFound = false;
 Struct currentType = null;
 Obj currentMethod = null; 
 Obj currentClass = null;
+ArrayList<Struct> actualParams = new ArrayList();
 
 boolean checkMethodParams(Obj func,int line){
   HashMap<Integer, Struct> formPars = new HashMap<Integer, Struct>();
@@ -82,9 +91,31 @@ boolean checkMethodParams(Obj func,int line){
   for ( Obj locVar: func.getLocalSymbols()) {
       if(locVar.getFpPos() > 0 ) {
 	    if (locVar.getLocalSymbols().isEmpty())
-	    formPars.put(locVar.getFpPos
+	    { formPars.put(locVar.getFpPos(), locVar.getType()); } 
+	    else 
+	    varArgsType = locVar.getType().getElemType();
 	  }
+	  
+	  int varArgsLength = 0;
+	  if ( varArgsType == null && formPars.size() != actualParams.size() ) {
+	  parser.report_info("Greska: ne poklapa se broj stvarnih i formalnih argumenata ", null); 
+	  }
+	  else
+	  {
+	  if ( actualParams.size() < formPars.size() ) {
+	  parser.report_info("Greska: ne poklapa se broj stvarnih i formalnih argumenata ", null);
+	  }
+	  else if ( actualParams.size() > formPars.size() ){
+	  varArgsLength = actualParams.size() - formPars.size();
+	  if ( varArgsLength > 0 ) {
+	  Obj varArgsArray = Tab.insert( Obj.Var, "varArgsArray", new Struct(Struct.Array, varArgsType));
+	  }
+	  }
+	  }
+	  
   }
+  actualParams.clear();
+  return true;
 } 
 
 class FactorType {
@@ -181,10 +212,12 @@ SingleConstDecl ::= IDENT:varName EQUAL ConstValue
 					Obj sym = Tab.currentScope.findSymbol(varName);
 					if ( sym == null ) {
 					    Obj result = Tab.insert( Obj.Con, varName, currentType);
+					    parser.globKon++;
 					}
 					else {
 					parser.report_info("Greska na liniji, nije jedinstveno ime: "+ varNameleft, null);	
 					}
+					
 					:}
 					;
 
@@ -306,7 +339,11 @@ MethodDecl ::= OptStatic:b RetType:retType IDENT:methName
 			   Tab.openScope();
 			   if(b){
 			   currentMethod.setFpPos(1);
+			   parser.globIStaticFunc++;
 			   }
+			   if( currentClass == null) 
+			   parser.globIStaticFunc++;
+
 			   parser.report_info("Obradjuje se funkcija " + methName + " na liniji " + methNameleft, null);
 			   :}
 			   LPAREN FormArgs RPAREN VarDeclList LBRACE 
@@ -340,6 +377,7 @@ VarDeclPart ::= VarDeclPart COMMA SingleVarDecl
 				
 SingleVarDecl ::= IDENT:varName
 				 {:
+				
 				  parser.report_info("Deklarisana promenljiva "+ varName+" na liniji "+ varNameleft, null);
 				 
 				  Obj sym = Tab.currentScope().findSymbol(varName);
@@ -348,6 +386,13 @@ SingleVarDecl ::= IDENT:varName
 				  else {
 				  parser.report_info("Greska na liniji, nije jedinstveno ime "+  varNameleft, null);
 				  }
+				  
+				    if ( currentMethod == null && currentClass == null )
+				    parser.globProm++;  
+				    else if ( currentMethod != null && currentClass == null && currentMethod.getName().equals("main"));
+				    parser.lokProm++;
+				 
+				  
 			      :}
 				  |
 				  IDENT:varName LSQUARE RSQUARE
@@ -360,6 +405,12 @@ SingleVarDecl ::= IDENT:varName
 				  else {
 				  parser.report_info("Greska na liniji, nije jedinstveno ime "+  varNameleft, null);
 				  }
+				  
+				  if ( currentMethod == null && currentClass == null )
+				  parser.globProm++;  
+				  else if ( currentMethod != null && currentClass == null && currentMethod.getName().equals("main"));
+				  parser.lokProm++;
+				     
 				  :}
 				  ;
 
@@ -389,7 +440,37 @@ VarArgs ::= Type DOT DOT DOT IDENT:niz
 FormPars ::= FormPars COMMA FormalParamDecl
 					|
 					FormalParamDecl
-					;				   
+					;		
+					
+FormalParamDecl ::= Type IDENT:varName
+					{:
+					
+					Obj sym = Tab.currentScope.findSymbol(varName);
+					if ( sym == null ){
+					Obj obj = Tab.insert(Obj.Var, varName, currentType);
+					obj.setFpPos(Tab.currentScope().getnVars());
+					else {
+					parser.report_info("Greska na liniji, nije jedinstveno ime "+ varNameleft, null);
+					}
+					parser.deklFormArg++;
+					}
+					:}		
+					|
+					Type IDENTvarName LSQUARE RSQUARE 
+			        {:
+				    parser.report_info("Deklarisan niz "+ varName+" na liniji "+ varNameleft, null);
+					Obj sym = Tab.currentScope().findSymbol(varName);
+				     	if (sym == null) {
+						Obj obj = Tab.insert(Obj.Var, varName, new Struct(Struct.Array, currentType));
+						obj.setFpPos(Tab.currentScope().getnVars() + 1);
+					}
+				    else {
+						parser.report_info("Greska na liniji, nije jedinstveno ime "+ varNameleft, null);
+				    }
+				
+					parser.deklFormArg++;
+					:}
+					; 				   
 					
 StatementList ::= StatementList Statement
 				  |
@@ -448,6 +529,10 @@ Matched ::= DesignatorStatement SEMI
 			|
 			READ LPAREN Designator:d RPAREN SEMI 
 			{:
+			
+			if (currentMethod != null && currentClass == null && currentMethod.getName().equals("main"))
+			parser.pozivFunkUMain++;
+			
 			if ( d.getKind() == Obj.Fld || d.getKind() == Obj.Fld || d.getKind() == Obj.Fld )
 			    if ( d.getType() == Tab.intType || d.getType() == Tab.charType || d.getType() == parser.boolType ) 
 				{
@@ -459,6 +544,10 @@ Matched ::= DesignatorStatement SEMI
 			| 
 			PRINT LPAREN Expr:e RBRACE SEMI
 			{:
+			
+			if (currentMethod != null && currentClass == null && currentMethod.getName().equals("main"))
+			parser.pozivFunkUMain++;
+			
 			if (!(e.equals(Tab.intType) || e.equals(Tab.charType) || e.equals(parser.boolType)))
 			    parser.report_error("Semanticka greska na liniji " + eleft + ": Operand instrukcije PRINT mora biti char ili int tipa", null);
 			:}
@@ -479,6 +568,10 @@ DesignatorStatement ::= Designator:d AssignOp Expr:e
 						|
 						Designator:d LPAREN ActualPars RPAREN
 						{:
+						
+						if (currentMethod != null && currentClass == null && currentMethod.getName().equals("main"))
+					    parser.pozivFunkUMain++;
+						
 						if (d.getKind() == Obj.Meth ) {
 						 parser.report_info("Pronadjen poziv funkcije " + d.getName() + " na liniji " + dleft, null);
 						 if ( checkMethodParams(d, dleft) ){
@@ -516,9 +609,15 @@ ActualPars ::= ActualParamList
 			   /*epsilon*/
 			   ;
 			   
-ActualParamList ::= ActualParamList COMMA Expr
+ActualParamList ::= ActualParamList COMMA Expr:e
+					{:
+					actualParams.add(e);
+					:}
 					|
-					Expr
+					Expr:e
+					{:
+					actualParams.add(e);
+					:}
 					;
 					
 					
