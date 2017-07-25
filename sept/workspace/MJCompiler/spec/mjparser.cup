@@ -74,6 +74,18 @@ boolean fieldsStatic = false;
 boolean returnFound = false;
 Struct currentType = null;
 Obj currentMethod = null; 
+Obj currentClass = null;
+
+boolean checkMethodParams(Obj func,int line){
+  HashMap<Integer, Struct> formPars = new HashMap<Integer, Struct>();
+  Struct varArgsType = null;
+  for ( Obj locVar: func.getLocalSymbols()) {
+      if(locVar.getFpPos() > 0 ) {
+	    if (locVar.getLocalSymbols().isEmpty())
+	    formPars.put(locVar.getFpPos
+	  }
+  }
+} 
 
 class FactorType {
    private Obj designator;
@@ -162,7 +174,19 @@ ConstDeclPart ::= ConstDeclPart COMMA SingleConstDecl
 					SingleConstDecl
 					;
 
-SingleConstDecl ::= IDENT EQUAL ConstValue;
+SingleConstDecl ::= IDENT:varName EQUAL ConstValue
+					{:
+					parser.report_info("Deklarisana konstanta "+ varName+" na liniji "+ varNameleft, null);
+					
+					Obj sym = Tab.currentScope.findSymbol(varName);
+					if ( sym == null ) {
+					    Obj result = Tab.insert( Obj.Con, varName, currentType);
+					}
+					else {
+					parser.report_info("Greska na liniji, nije jedinstveno ime: "+ varNameleft, null);	
+					}
+					:}
+					;
 
 ConstValue ::= NUMBER 
 			   |
@@ -180,7 +204,7 @@ ClassVarDecl ::= OptStatic:b {: if (b) fieldsStatic = true; :} Type ClassVarDecl
 				  {: fieldsStatic = false ; :} 
 				  ;
 
-ClassVarDeclPart ::= ClassVarDeclPart SingleClassVarDecl
+ClassVarDeclPart ::= ClassVarDeclPart COMMA SingleClassVarDecl
 					 |
 					 SingleClassVarDecl
 					 ;
@@ -210,6 +234,19 @@ SingleClassVarDecl ::= IDENT:varName
 					   }
 					   :}
 					   ;
+					   
+ClassIdent ::= IDENT:name 
+			  {:
+			  Obj sym = Tab.currentScope().findSymbol(name);
+			  if ( sym == null ) 
+			  currentClass = RESULT = Tab.insert( Obj.Type, name, new Struct( Struct.Class) );
+			  else {
+			  parser.report_info("Greska na liniji, nije jedinstveno ime "+ nameleft, null);
+			  currentClass = RESULT = new Obj( Obj.Type, name, new Struct( Struct.Class) );
+			  }
+			  Tab.openScope();
+			  :}
+			  ;
 					 
 					 
 OptStatic ::= STATIC 
@@ -227,7 +264,13 @@ ExtType ::= EXTENDS Type:t
 			/*epsilon*/
 			;
 			  
-ClassDecl	::= CLASS IDENT ExtType LBRACE ClassVarDeclList ClassDeclMethod RBRACE;
+ClassDecl	::= CLASS ClassIdent:o ExtType LBRACE ClassVarDeclList ClassDeclMethod RBRACE
+				{:
+				Tab.chainLocalSymbols(o);
+				Tab.closeScope();
+				currentClass = null;
+				:}
+				;
 
 ClassDeclMethod ::= LBRACE MethodDeclList RBRACE
 					|
@@ -253,15 +296,36 @@ RetType ::= Type:t
 				   
 MethodDecl ::= OptStatic:b RetType:retType IDENT:methName
 			   {:
+			   Obj sym = Tab.currentScope().findSymbol(methName);
+			   if ( sym == null) 
 			   currentMethod = Tab.insert(Obj.Meth, methName, retType);
+			   else {
+			   parser.report_info("Greska na liniji, nije jedinstveno ime "+ methNameleft, null);
+			   currentMethod = new Obj(Obj.Meth, methName, retType);
+			   }
 			   Tab.openScope();
+			   if(b){
+			   currentMethod.setFpPos(1);
+			   }
 			   parser.report_info("Obradjuje se funkcija " + methName + " na liniji " + methNameleft, null);
 			   :}
-			   LPAREN FormArgs RPAREN VarDeclList LBRACE StatementList RBRACE
+			   LPAREN FormArgs RPAREN VarDeclList LBRACE 
 			   {:
+			   
+			   :}
+			   StatementList RBRACE
+			   {:
+			   if(!returnFound && retType!= Tab.noType)
+			   parser.report_error("Semanticka greska na liniji " + methNameleft + ": funcija " + methName + " nema return iskaz!", null);
+			   
 			   Tab.chainLocalSymbols(currentMethod);
 			   Tab.closeScope();
-			   :};
+			   
+			   currentMethod = null;
+			   isVoid = false;
+			   returnFound = false;
+			   :}
+			   ;
 
 VarDeclList ::= VarDeclList VarDecl 
                 |
@@ -310,7 +374,15 @@ FormArgs ::= FormPars COMMA VarArgs
 			 ;
 	
 
-VarArgs ::= Type DOT DOT DOT IDENT;	
+VarArgs ::= Type DOT DOT DOT IDENT:niz
+			{:
+			Obj obj = Tab.insert( Obj.Var, niz, new Struct( Struct.Array, currentType )) ;
+			obj.setFpPos(Tab.currentScope().getnVars());
+			HashTableDataStructure locals = new HashTableDataStructure();
+			locals.insertKey(Tab.noObj);
+			obj.setLocals(locals);
+			:}
+			;	
 			 
 			 
 
@@ -405,7 +477,18 @@ DesignatorStatement ::= Designator:d AssignOp Expr:e
 						}
 						:}
 						|
-						Designator LPAREN ActualPars RPAREN
+						Designator:d LPAREN ActualPars RPAREN
+						{:
+						if (d.getKind() == Obj.Meth ) {
+						 parser.report_info("Pronadjen poziv funkcije " + d.getName() + " na liniji " + dleft, null);
+						 if ( checkMethodParams(d, dleft) ){
+						 
+						 }
+						}
+						else {
+						 parser.report_error("Greska na liniji " + dleft+" : ime " + d.getName() + " nije funkcija!", null);
+						}
+						:}
 						|
 						Designator:d INC 
 						{:
