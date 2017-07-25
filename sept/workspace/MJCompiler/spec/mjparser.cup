@@ -17,11 +17,13 @@ parser code {:
 
     int globProm = 0;
     int lokProm = 0;
-    int globKonst = 0;
+    int globKon = 0;
     
     int pozivFunkUMain = 0;
     int globIStaticFunc = 0;
     int deklFormArg = 0;
+
+    boolean errorDetected = false;
 
     Logger log = Logger.getLogger(getClass());
 	
@@ -41,6 +43,7 @@ parser code {:
     }
 
     public void report_error(String message, Object info) {
+        errorDetected = true;
     	StringBuilder msg = new StringBuilder(message); 
     	if (info instanceof Symbol)
             msg.append (" na liniji ").append(((Symbol)info).left);
@@ -443,24 +446,25 @@ FormPars ::= FormPars COMMA FormalParamDecl
 					;		
 					
 FormalParamDecl ::= Type IDENT:varName
-					{:
-					
-					Obj sym = Tab.currentScope.findSymbol(varName);
-					if ( sym == null ){
-					Obj obj = Tab.insert(Obj.Var, varName, currentType);
-					obj.setFpPos(Tab.currentScope().getnVars());
-					else {
-					parser.report_info("Greska na liniji, nije jedinstveno ime "+ varNameleft, null);
+			{:
+				parser.report_info("Deklarisana promenljiva "+ varName+" na liniji "+ varNameleft, null);
+				   Obj sym = Tab.currentScope().findSymbol(varName);
+				     if (sym == null) {
+						Obj obj = Tab.insert(Obj.Var, varName, currentType);
+						obj.setFpPos(Tab.currentScope().getnVars());
 					}
-					parser.deklFormArg++;
-					}
-					:}		
-					|
-					Type IDENTvarName LSQUARE RSQUARE 
-			        {:
-				    parser.report_info("Deklarisan niz "+ varName+" na liniji "+ varNameleft, null);
-					Obj sym = Tab.currentScope().findSymbol(varName);
-				     	if (sym == null) {
+				    else {
+						parser.report_info("Greska na liniji, nije jedinstveno ime "+ varNameleft, null);
+				    }
+				
+				parser.deklFormArg++;
+			:}
+			|
+			Type IDENT:varName LSQUARE RSQUARE 
+			{:
+				parser.report_info("Deklarisan niz "+ varName+" na liniji "+ varNameleft, null);
+				Obj sym = Tab.currentScope().findSymbol(varName);
+				     if (sym == null) {
 						Obj obj = Tab.insert(Obj.Var, varName, new Struct(Struct.Array, currentType));
 						obj.setFpPos(Tab.currentScope().getnVars() + 1);
 					}
@@ -468,9 +472,10 @@ FormalParamDecl ::= Type IDENT:varName
 						parser.report_info("Greska na liniji, nije jedinstveno ime "+ varNameleft, null);
 				    }
 				
-					parser.deklFormArg++;
-					:}
-					; 				   
+				parser.deklFormArg++;
+			:}
+			;
+			   
 					
 StatementList ::= StatementList Statement
 				  |
