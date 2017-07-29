@@ -1,3 +1,5 @@
+
+
 package rs.ac.bg.etf.pp1;
 
 import java.util.ArrayList;
@@ -10,26 +12,28 @@ import org.apache.log4j.*;
 // import java.io.*;
 import rs.etf.pp1.symboltable.Tab;
 import rs.etf.pp1.symboltable.concepts.*;
-import rs.etf.pp1.symboltable.structure.*;
+import rs.etf.pp1.symboltable.structure.HashTableDataStructure;
 import rs.etf.pp1.mj.runtime.Code;
 
 parser code {:
 
-    int globProm = 0;
-    int lokProm = 0;
-    int globKon = 0;
-    
-    int pozivFunkUMain = 0;
-    int globIStaticFunc = 0;
-    int deklFormArg = 0;
-
-    boolean errorDetected = false;
-
-    Logger log = Logger.getLogger(getClass());
+	int globProm = 0;
+	int lokProm = 0;
+	int globKon = 0;
 	
+	int globIStaticFunc = 0;
+	int pozivFunkUMain = 0;
+	int deklFormArg = 0;
+
+	boolean errorDetected = false;
+	
+	Logger log = Logger.getLogger(getClass());
 	Struct boolType;
-    
-   public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
       done_parsing();
       report_error(message, info);
     }
@@ -43,7 +47,7 @@ parser code {:
     }
 
     public void report_error(String message, Object info) {
-        errorDetected = true;
+    	errorDetected = true;
     	StringBuilder msg = new StringBuilder(message); 
     	if (info instanceof Symbol)
             msg.append (" na liniji ").append(((Symbol)info).left);
@@ -57,14 +61,14 @@ parser code {:
             msg.append (" na liniji ").append(((Symbol)info).left);
         log.info(msg.toString());
     }
+    
 :}
 
-scan with{:
-
-Symbol s = this.getScanner().next_token();
+scan with {:
+	Symbol s = this.getScanner().next_token();
 	if (s != null && s.value != null) 
 		log.info(s.toString() + " " + s.value.toString());
-	return s; //prsretanje svakog tokena 
+	return s;
 
 
 :}
@@ -83,20 +87,22 @@ boolean isVoid = false;
 boolean extendClass = false; 
 boolean fieldsStatic = false;
 boolean returnFound = false;
-Struct currentType = null;
+
 Obj currentMethod = null; 
 Obj currentClass = null;
 ArrayList<Struct> actualParams = new ArrayList();
 
+Struct currentType = null;		   
 boolean checkMethodParams(Obj func,int line){
   HashMap<Integer, Struct> formPars = new HashMap<Integer, Struct>();
   Struct varArgsType = null;
   for ( Obj locVar: func.getLocalSymbols()) {
       if(locVar.getFpPos() > 0 ) {
 	    if (locVar.getLocalSymbols().isEmpty())
-	    { formPars.put(locVar.getFpPos(), locVar.getType()); } 
-	    else 
-	    varArgsType = locVar.getType().getElemType();
+	     formPars.put(locVar.getFpPos(), locVar.getType()); 
+	    else {
+	    varArgsType = locVar.getType().getElemType(); 
+		}
 	  }
 	  
 	  int varArgsLength = 0;
@@ -127,10 +133,12 @@ class FactorType {
    
    public FactorType(Obj d, Struct t){
    designator = d;
-   type = t; }
+   type = t;
+   }
    
    public Obj getDesignator(){
-   return designator; }
+   return designator; 
+   }
    
    public void setDesignator(Obj d) {
    designator = d; }
@@ -139,7 +147,8 @@ class FactorType {
    return type; }
    
    public void setType(Struct t){
-   type = t; }
+   type = t; 
+   }
 }
 
 :}
@@ -150,15 +159,18 @@ terminal String IDENT ;
 terminal READ, PRINT, BREAK, CONTINUE, OR, AND, IF, FOR, RETURN, INC, DEC, VOID, ELSE, DIFERENT;
 terminal PLUS, PLUSEQUAL, MINUSEQUAL, DIVEQUAL, MULEQUAL, MODEQUAL, EQUAL, MINUS;
 terminal CONDITIONALEQUAL, LESSEQUAL, MOREEQUAL, LESS, MORE, DIFFERENT;
-terminal NUMBER, CHARACTER, BOOL, NEW;
-terminal MUL, DIV, MOD;
+terminal NEW, SET;
+terminal Integer MUL, DIV, MOD;
+terminal Character CHARACTER;
+terminal Integer NUMBER;
+terminal Boolean BOOL;
 
-non terminal ProgDeclList,MethodDeclList, Program, ClassVarDeclPart, SingleClassVarDecl, ClassVarDeclList, ClassDecl;
+non terminal ProgDeclList,MethodDeclList, Program, ClassVarDeclPart, SingleClassVarDecl, ClassVarDeclList, ClassDecl, ProgDecl;
 non terminal ClassDeclMethod, MethodDecl, FormArgs, FormPars, FormalParamDecl, VarArgs,  VarDeclList, VarDecl, StatementList, Statement;
 non terminal VarDeclPart, SingleVarDecl, DesignatorStatement, Condition, Matched, Unmatched, ForPart, OptCondition;
 non terminal ActualPars, ConstDeclPart, SingleConstDecl, ClassVarDecl, ActualParamList, CondTerm, CondFact, ConstDecl;
-non terminal AssignOp, OptDesignatorStatement, Addop, MulopLeft, MulopRight, AddopLeft, AddopRight;
-non terminal Integer Relop, Mulop;
+non terminal OptDesignatorStatement;
+non terminal Integer AssignOp, Relop, Mulop, Addop, MulopLeft, MulopRight, AddopLeft, AddopRight;
 non terminal Integer ConstValue;
 non terminal Obj ProgName, Designator, ClassIdent;
 non terminal FactorType ExprFactorType, Factor, Term;
@@ -167,6 +179,8 @@ non terminal Boolean OptStatic;
 
 Program ::= PROG ProgName:p ProgDeclList LBRACE MethodDeclList RBRACE
 			{:
+			Code.dataSize = Tab.currentScope().getnVars();
+			
 			Tab.chainLocalSymbols(p);
 			Tab.closeScope();
 			:}
@@ -179,22 +193,11 @@ ProgName ::= IDENT:pName
 :}
 ; 
 
-Type ::= IDENT:typeName
-		 {:
-		 Obj typeNode = Tab.find(typeName);
-		 if( typeNode == Tab.noObj){
-		 parser.report_error("Nije pronadjen tip" + typeName + "u tabeli simbola", null);
-		 }
-		 else {
-		 if( Obj.Type == typeNode.getKind()) 
-		 currentType = RESULT = typeNode.getType();
-		 else { 
-		 parser.report_error("Greska na liniji" + typeNameleft+ ": Ime " + typeName + " ne predstavlja tip ", null);
-		 currentType = RESULT = Tab.noType;
-		 }
-		 }
-		 :}
-		 ;
+ProgDeclList ::= ProgDeclList ProgDecl
+				|
+				;
+
+ProgDecl ::= ConstDecl | VarDecl | ClassDecl ;
 
 ConstDecl ::= CONST Type:t ConstDeclPart SEMI
 			  {:
@@ -208,13 +211,14 @@ ConstDeclPart ::= ConstDeclPart COMMA SingleConstDecl
 					SingleConstDecl
 					;
 
-SingleConstDecl ::= IDENT:varName EQUAL ConstValue
+SingleConstDecl ::= IDENT:varName EQUAL ConstValue:c
 					{:
 					parser.report_info("Deklarisana konstanta "+ varName+" na liniji "+ varNameleft, null);
 					
-					Obj sym = Tab.currentScope.findSymbol(varName);
+					Obj sym = Tab.currentScope().findSymbol(varName);
 					if ( sym == null ) {
 					    Obj result = Tab.insert( Obj.Con, varName, currentType);
+						result.setAdr(c);
 					    parser.globKon++;
 					}
 					else {
@@ -224,18 +228,28 @@ SingleConstDecl ::= IDENT:varName EQUAL ConstValue
 					:}
 					;
 
-ConstValue ::= NUMBER 
-			   |
-			   CHARACTER
-			   |
-			   BOOL
-			   ;
+ConstValue ::= 	NUMBER:n
+				{:
+					RESULT = n;
+				:}
+				|
+				CHARACTER:c
+				{:
+					RESULT = (int)c.charValue();
+				:}
+				|
+				BOOL:b
+				{:
+					RESULT = b ? 1 : 0;
+				:}
+				;
 			   
 ClassVarDeclList ::= ClassVarDeclList ClassVarDecl
 					 |
 					 /*epsilon*/
 					 ;
-			   
+
+					 
 ClassVarDecl ::= OptStatic:b {: if (b) fieldsStatic = true; :} Type ClassVarDeclPart SEMI
 				  {: fieldsStatic = false ; :} 
 				  ;
@@ -273,6 +287,8 @@ SingleClassVarDecl ::= IDENT:varName
 					   
 ClassIdent ::= IDENT:name 
 			  {:
+			  parser.report_info("Deklarisana klasa "+ name+" na liniji "+ nameleft, null);
+			  
 			  Obj sym = Tab.currentScope().findSymbol(name);
 			  if ( sym == null ) 
 			  currentClass = RESULT = Tab.insert( Obj.Type, name, new Struct( Struct.Class) );
@@ -286,8 +302,34 @@ ClassIdent ::= IDENT:name
 					 
 					 
 OptStatic ::= STATIC 
+			  {:
+			  RESULT = true;
+			  :}
 			  |
+			  {:
+			  RESULT = false;
+			  :}
 			  ;
+			  
+			  
+Type ::= IDENT:typeName 
+		{:
+			Obj typeNode = Tab.find(typeName);
+			if (typeNode == Tab.noObj) {
+				parser.report_error("Nije pronadjen tip " + typeName + " u tabeli simbola", null);
+				currentType = RESULT = Tab.noType;
+			}
+			else {
+				if (Obj.Type == typeNode.getKind()) {
+					currentType = RESULT = typeNode.getType();
+				}
+				else {
+					parser.report_error("Greska na liniji" + typeNameleft+ ": Ime " + typeName + " ne predstavlja tip ", null);
+					currentType = RESULT = Tab.noType;
+				}
+			}
+		:}
+		;					  
 			  
 ExtType ::= EXTENDS Type:t
 			{:
@@ -302,6 +344,7 @@ ExtType ::= EXTENDS Type:t
 			  
 ClassDecl	::= CLASS ClassIdent:o ExtType LBRACE ClassVarDeclList ClassDeclMethod RBRACE
 				{:
+				
 				Tab.chainLocalSymbols(o);
 				Tab.closeScope();
 				currentClass = null;
@@ -318,9 +361,9 @@ MethodDeclList ::= MethodDeclList MethodDecl
 				   /*epsilon*/
 				   ;
 				   
-RetType ::= Type:t
+RetType ::= Type:type
 			{:
-			RESULT = t;
+			RESULT = type;
 			:}
 			|
 			VOID
@@ -332,32 +375,43 @@ RetType ::= Type:t
 				   
 MethodDecl ::= OptStatic:b RetType:retType IDENT:methName
 			   {:
-			   Obj sym = Tab.currentScope().findSymbol(methName);
-			   if ( sym == null) 
-			   currentMethod = Tab.insert(Obj.Meth, methName, retType);
-			   else {
-			   parser.report_info("Greska na liniji, nije jedinstveno ime "+ methNameleft, null);
-			   currentMethod = new Obj(Obj.Meth, methName, retType);
-			   }
-			   Tab.openScope();
-			   if(b){
-			   currentMethod.setFpPos(1);
-			   parser.globIStaticFunc++;
-			   }
-			   if( currentClass == null) 
-			   parser.globIStaticFunc++;
-
-			   parser.report_info("Obradjuje se funkcija " + methName + " na liniji " + methNameleft, null);
+			    Obj sym = Tab.currentScope().findSymbol(methName);
+				     if (sym == null)
+						currentMethod = Tab.insert(Obj.Meth, methName, retType);
+				    else {
+						parser.report_info("Greska na liniji, nije jedinstveno ime "+ methNameleft, null);
+						currentMethod = new Obj (Obj.Meth, methName, retType);
+				    }
+					parser.report_info("Obradjuje se funkcija " + methName + " na liniji " + methNameleft, null);
+					Tab.openScope();
+					if(b) {
+						currentMethod.setFpPos(1);
+						parser.globIStaticFunc++;
+					}
+					else if (currentClass == null)
+						parser.globIStaticFunc++;
 			   :}
-			   LPAREN FormArgs RPAREN VarDeclList LBRACE 
+			   LPAREN FormArgs  
 			   {:
-			   
+			   currentMethod.setLevel(Tab.currentScope().getnVars());
 			   :}
+				 RPAREN VarDeclList LBRACE
+			   {: 
+			   		currentMethod.setAdr(Code.pc);
+			   		if ("main".equals(methName)) {
+			   			Code.mainPc = currentMethod.getAdr();
+			   		}
+			   		Code.put(Code.enter);
+					Code.put(currentMethod.getLevel());
+			   		Code.put(Tab.currentScope().getnVars());
+			   :}   
 			   StatementList RBRACE
 			   {:
 			   if(!returnFound && retType!= Tab.noType)
 			   parser.report_error("Semanticka greska na liniji " + methNameleft + ": funcija " + methName + " nema return iskaz!", null);
 			   
+			    Code.put(Code.exit);
+				Code.put(Code.return_);		
 			   Tab.chainLocalSymbols(currentMethod);
 			   Tab.closeScope();
 			   
@@ -378,44 +432,40 @@ VarDeclPart ::= VarDeclPart COMMA SingleVarDecl
 				SingleVarDecl
 				;
 				
-SingleVarDecl ::= IDENT:varName
-				 {:
+SingleVarDecl ::=  IDENT:varName  
+			{:
+				parser.report_info("Deklarisana promenljiva "+ varName+" na liniji "+ varNameleft, null);
 				
-				  parser.report_info("Deklarisana promenljiva "+ varName+" na liniji "+ varNameleft, null);
-				 
-				  Obj sym = Tab.currentScope().findSymbol(varName);
-				  if( sym == null) 
-			      Tab.insert(Obj.Var, varName, currentType);
-				  else {
-				  parser.report_info("Greska na liniji, nije jedinstveno ime "+  varNameleft, null);
-				  }
-				  
-				    if ( currentMethod == null && currentClass == null )
-				    parser.globProm++;  
-				    else if ( currentMethod != null && currentClass == null && currentMethod.getName().equals("main"));
-				    parser.lokProm++;
-				 
-				  
-			      :}
-				  |
-				  IDENT:varName LSQUARE RSQUARE
-				  {:
-				  parser.report_info("Deklarisan niz "+ varName+" na liniji "+ varNameleft, null);
-				  
-				  Obj sym = Tab.currentScope().findSymbol(varName);
-				  if( sym == null ) 
-				  Tab.insert(Obj.Var, varName, new Struct(Struct.Array, currentType));
-				  else {
-				  parser.report_info("Greska na liniji, nije jedinstveno ime "+  varNameleft, null);
-				  }
-				  
-				  if ( currentMethod == null && currentClass == null )
-				  parser.globProm++;  
-				  else if ( currentMethod != null && currentClass == null && currentMethod.getName().equals("main"));
-				  parser.lokProm++;
-				     
-				  :}
-				  ;
+				Obj sym = Tab.currentScope().findSymbol(varName);
+				if (sym == null)
+					Tab.insert(Obj.Var, varName, currentType); 
+				else {
+				parser.report_info("Greska na liniji, nije jedinstveno ime "+  varNameleft, null);	
+				}
+				
+				if (currentMethod == null && currentClass == null)
+					parser.globProm++;
+				else if (currentMethod != null && currentClass == null && currentMethod.getName().equals("main"))
+					parser.lokProm++;
+			:}
+			|
+			IDENT:varName LSQUARE RSQUARE 
+			{:
+				parser.report_info("Deklarisan niz "+ varName+" na liniji "+ varNameleft, null);
+		
+				Obj sym = Tab.currentScope().findSymbol(varName);
+				if (sym == null)
+					Tab.insert(Obj.Var, varName, new Struct(Struct.Array, currentType));
+				else {
+					parser.report_info("Greska na liniji, nije jedinstveno ime "+  varNameleft, null);	
+				}
+				
+				if (currentMethod == null && currentClass == null)
+					parser.globProm++;  
+				else if (currentMethod != null && currentClass == null && currentMethod.getName().equals("main"))
+					parser.lokProm++;
+			:}
+			;
 
 
 FormArgs ::= FormPars COMMA VarArgs
@@ -516,7 +566,7 @@ Matched ::= DesignatorStatement SEMI
 			CONTINUE:b SEMI
             {:
 					if (!inFor) {
-						parser.report_error("Semanticka greska na liniji " + bleft + ": BREAK se moze koristiti samo unutar FOR petlje", null);
+						parser.report_error("Semanticka greska na liniji " + bleft + ": CONTINUE se moze koristiti samo unutar FOR petlje", null);
 					}
 				:}			
 			| 
@@ -524,7 +574,7 @@ Matched ::= DesignatorStatement SEMI
 			{:
 			returnFound = true; 
 			Struct currMethType = currentMethod.getType();
-			if( !currMethType.compatibleWith(t) || isVoid == false && currMethType != Tab.noType )  {
+			if( !currMethType.compatibleWith(t) || isVoid == false && t == Tab.noType )  {
 				 	parser.report_error("Greska na liniji " + tleft + " : " + "tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije " + currentMethod.getName(), null);
 				 }			  	 
 			
@@ -538,23 +588,22 @@ Matched ::= DesignatorStatement SEMI
 			if (currentMethod != null && currentClass == null && currentMethod.getName().equals("main"))
 			parser.pozivFunkUMain++;
 			
-			if ( d.getKind() == Obj.Fld || d.getKind() == Obj.Fld || d.getKind() == Obj.Fld )
-			    if ( d.getType() == Tab.intType || d.getType() == Tab.charType || d.getType() == parser.boolType ) 
+			if ( d.getKind() == Obj.Var || d.getKind() == Obj.Elem || d.getKind() == Obj.Fld ) {
+			    if ( d.getType().getKind() == Struct.Int || d.getType().getKind() == Struct.Char || d.getType().equals(parser.boolType) ) 
 				{
 				}
-				else { 
+				} else { 
 				parser.report_error("Greska na liniji " + dleft + ": designator nije odgovarajuceg tipa.", null);
 				}
 			:}
 			| 
-			PRINT LPAREN Expr:e RBRACE SEMI
+			PRINT LPAREN Expr:t RPAREN SEMI
 			{:
 			
-			if (currentMethod != null && currentClass == null && currentMethod.getName().equals("main"))
-			parser.pozivFunkUMain++;
-			
-			if (!(e.equals(Tab.intType) || e.equals(Tab.charType) || e.equals(parser.boolType)))
-			    parser.report_error("Semanticka greska na liniji " + eleft + ": Operand instrukcije PRINT mora biti char ili int tipa", null);
+			 if (currentMethod != null && currentClass == null && currentMethod.getName().equals("main"))
+					parser.pozivFunkUMain++;
+			  	 if (t != Tab.intType && t != Tab.charType && t != parser.boolType)
+			  	 	parser.report_error("Semanticka greska na liniji " + tleft + ": Operand instrukcije PRINT mora biti char ili int tipa", null);
 			:}
 			|
 			LBRACE StatementList RBRACE 
@@ -564,7 +613,7 @@ DesignatorStatement ::= Designator:d AssignOp Expr:e
 						{:
 						if (!( d.getKind() == Obj.Var || d.getKind() == Obj.Fld || d.getKind() == Obj.Elem ))
 						    parser.report_error("Greska na liniji " + dleft+" : Designator nije varijabla, element niza ili polje unutar objekta", null);
-						else if ( !( e.assignableTo(d.getType()) ) )
+						else if ( ! e.assignableTo(d.getType())  )
 							 parser.report_error("Greska na liniji " + dleft + " : " + " nekompatibilni tipovi u dodeli vrednosti ", null);
 						else {
 						
@@ -648,18 +697,26 @@ CondFact ::= Expr:e1 Relop:o Expr:e2
 			}
 			:}
 			|
-			Expr
-			;
+			Expr:t {:
+			if(t != parser.boolType) 
+			parser.report_error("Greska na liniji "+ tleft+" : uslov nije tipa bool", null);
+		 	RESULT = new Obj(Obj.Con, "", t);
+		 :}
+		;																		  
+																				  
+																				  
+																				  
 		
 Expr ::= ExprFactorType:e
 		 {:
 		 RESULT = e.getType();
-		 :}; 
+		 :}
+		 ; 
 
 ExprFactorType ::= ExprFactorType:t1 Addop Term:t2
 				   {:
-				   if (t1.equals(t2) && t1.getType() == Tab.intType) 
-				    if ( rightOp = true && ( t1.getDesignator().getKind() == Obj.Var || t1.getDesignator().getKind() == Obj.Elem || t1.getDesignator().getKind() == Obj.Fld ))
+				   if (t1.getType().equals(t2.getType()) && t1.getType().equals(Tab.intType)) 
+				    if ( rightOp == true && ( t1.getDesignator().getKind() == Obj.Var || t1.getDesignator().getKind() == Obj.Elem || t1.getDesignator().getKind() == Obj.Fld ))
 					{
 				      RESULT = t1;
 					  }
@@ -678,6 +735,7 @@ ExprFactorType ::= ExprFactorType:t1 Addop Term:t2
 				   {:
 				   if ( t.getType() != Tab.intType ) 
 				   parser.report_error("Greska na liniji "+ tleft+" : Term nije tipa int.", null);
+				   RESULT = t;
 				   :}
 				   ;
 
@@ -686,6 +744,7 @@ Term ::= Term:t1 Mulop Factor:t2
 		 if( t1.getType() == Tab.intType && t2.getType() == Tab.intType)
 		    if ( rightOp = true && ( t1.getDesignator().getKind() == Obj.Var || t1.getDesignator().getKind() == Obj.Elem || t1.getDesignator().getKind() == Obj.Fld ))
 			{
+			RESULT = t1;
 			}
 			else
 		    { parser.report_error("Greska na liniji "+ t1left+" : nekompatibilni tipovi u izrazu za mnozenje.", null); }
@@ -697,7 +756,10 @@ Term ::= Term:t1 Mulop Factor:t2
 		 :}  
 		 ;
 			
-Factor ::= Designator 
+Factor ::= Designator:d
+		   {:
+		   RESULT = new FactorType( d, d.getType());
+		   :}
 		   |
 		   Designator:func LPAREN ActualPars RPAREN
 		   {:
@@ -706,29 +768,47 @@ Factor ::= Designator
 			else{
 			parser.report_error("Greska na liniji " + funcleft+" : ime " + func.getName() + " nije funkcija!", null);
 			}
+			RESULT = new FactorType( func, func.getType());
 		   :}
 		   |
 		   NUMBER
+		   {:
+		   Obj c = new Obj( Obj.Con, "", Tab.intType); 
+           RESULT = new FactorType( c, Tab.intType);		   
+		   :}
 		   |
 		   CHARACTER
+		   {:
+		   Obj c = new Obj( Obj.Con, "", Tab.charType);
+		   RESULT = new FactorType( c, Tab.charType);
+		   :}
 		   |
 		   BOOL
+		   {:
+		   Obj c = new Obj( Obj.Con, "", parser.boolType);
+		   RESULT = new FactorType( c, parser.boolType);
+		   :}
 		   |
 		   NEW Type:t
 		   {:
 		   if ( t.getKind() != Struct.Class ) 
 		   { parser.report_error("Greska na liniji " + tleft + " nije u pitanju klasa!", null); }
+		   RESULT = new FactorType( null, t);
 		   :}
 		   |
-		   NEW Type LSQUARE Expr:e RSQUARE 
+		   NEW Type:varType LSQUARE Expr:e RSQUARE 
 		   {:
 		   if ( e != Tab.intType ) 
 		   {
 		   parser.report_error("Semanticka greska na liniji " + eleft + ": Expr mora biti int tipa", null);
 		   }
+		   RESULT = new FactorType( null, new Struct(Struct.Array,varType)); 
 		   :}
 		   |
-		   LPAREN Expr RPAREN
+		   LPAREN Expr:expr RPAREN
+		   {:
+		   RESULT = new FactorType( null, expr);
+		   :}
 		   ;
 		   
 Designator ::= IDENT:name
@@ -745,7 +825,7 @@ Designator ::= IDENT:name
 			   if ( d.getType().getKind() != Struct.Class )
 				parser.report_error("Greska na liniji " + nameleft+ " : izraz nije klasnog tipa! ", null);
 				
-				Obj member = d.getType().getMembersTable().searchKey(name);
+				Obj member = d.getType().getMembers().searchKey(name);
 				if ( member != null ) {
 				 RESULT = member;
 				 if ( d.getKind() == Obj.Type && member.getFpPos() == 0 ) 
@@ -761,6 +841,7 @@ Designator ::= IDENT:name
 			    if ( d.getType().getKind() != Struct.Array )
 				parser.report_error("Greska na liniji " + dleft+ " : izraz nije klasnog tipa! ", null);
 				if(e == Tab.intType){
+					RESULT = new Obj(Obj.Elem, "", d.getType().getElemType());										 
 				}
 				else {
 				parser.report_error("Greska na liniji " + eleft+ " : ime "+ e +" nije int! ", null);
@@ -768,62 +849,120 @@ Designator ::= IDENT:name
 			   :}
 			   ;
 			   
-AssignOp ::= EQUAL
-			 |
-			 AddopRight
-			 |
-			 MulopRight
-			 ;
+AssignOp ::= 	EQUAL
+				{:
+					RESULT = 0;
+				:}
+				|
+				AddopRight
+				|
+				MulopRight
+				;
+			  
 			
 Relop ::= CONDITIONALEQUAL
-		  |
-		  DIFFERENT 
-		  |
-		  LESS
-		  |
-		  MOREEQUAL
-		  |
-		  MORE
-		  |
-		  LESSEQUAL
-		  |
-		  DIFERENT
-		  ;
+		{: 
+		RESULT = Code.eq; 
+		:}
+		|
+		DIFERENT
+		{: 
+		RESULT = Code.ne;
+		:}
+		|
+		MORE
+		{:
+		RESULT = Code.gt;
+		:}
+		|
+		MOREEQUAL
+		{:
+		RESULT = Code.ge;
+		:}
+		|
+		LESS
+		{:
+		RESULT = Code.lt; 
+		:}
+		|
+		LESSEQUAL
+		{: 
+		RESULT = Code.le;
+		:}
+		;	
 		  
-Addop ::= AddopLeft
-          |
-		  AddopRight
-		  {: rightOp = true; :}
-		  ;
+Addop ::= 	AddopLeft:addopCode
+			{:
+				RESULT = addopCode;
+			:}
+			|
+			AddopRight:addopCode
+			{:
+				rightOp = true;
+				RESULT = addopCode;
+			:}
+			;
 
 AddopLeft ::= PLUS
+              {: RESULT = Code.add; :}
 			  |
 			  MINUS
+			  {: RESULT = Code.sub; :}
 			  ;
 			  
 AddopRight ::= PLUSEQUAL
+			   {:
+			   RESULT = Code.add;
+			   :}
 			   |
 			   MINUSEQUAL
+			   {:
+			   RESULT = Code.sub;
+			   :}
 				;	
 
-Mulop ::= MulopLeft 
-		  |
-		  MulopRight
-		  {: rightOp = true; :}
-		  ;
+Mulop ::= 	MulopLeft:mulopCode
+			{:
+				RESULT = mulopCode;
+			:}
+			|
+			MulopRight:mulopCode
+			{:
+				rightOp = true;
+				RESULT = mulopCode;
+			:}
+			;
 		  
-MulopLeft ::= MUL
+MulopLeft ::= MUL 
+			  {:
+			   RESULT = Code.mul;
+			  :}
 			  |
 			  DIV
+			  {:
+			   RESULT = Code.div;
+			  :}
 			  |
 			  MOD
+			  {:
+			  RESULT = Code.rem;
+			  :}
 			  ;
 			  
 MulopRight ::= MULEQUAL
+			   {:
+			   RESULT = Code.mul;
+			   :}
 			   |
 			   DIVEQUAL
+			   {:
+			   RESULT = Code.div;
+			   :}
 			   |
 			   MODEQUAL
+			   {:
+			   RESULT = Code.rem;
+			   :}
 			   ;
 			   
 			   
