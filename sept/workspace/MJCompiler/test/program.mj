@@ -8,6 +8,8 @@ program test301
 	
 	char nizch[];
 	
+	
+	int sest;
 {
 	void main()	int bodovi;
 	{

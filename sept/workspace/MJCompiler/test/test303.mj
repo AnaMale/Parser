@@ -6,7 +6,7 @@ program test301
 
 	int niz[];
 	
-	char nizch[];
+	int nizch[];
 	
 {
 	void main()	int bodovi;
@@ -14,7 +14,7 @@ program test301
 	
 		bodovi = 0;
 		bodovi++;
-		bodovi = bodovi + jedan;
+		bodovi = bodovi + 1;
 		bodovi+= bodovi *= pet;
 		bodovi--;
 		print(bodovi); 
@@ -29,9 +29,9 @@ program test301
 		
 		
 		nizch = new char[3];
-		nizch[0] = 'a';
-		nizch[jedan] = 'b';
-		nizch[pet - 3] = 'c';
+		nizch[0] = 7;
+		nizch[jedan] = 8;
+		nizch[pet - 3] = 9;
 		print( nizch[2 - 1]);
 		print( nizch[jedan * 2]);
 			

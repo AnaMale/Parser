@@ -425,9 +425,20 @@ VarDeclList ::= VarDeclList VarDecl
                 |
 				;
 				
-VarDecl ::= Type VarDeclPart SEMI;
+VarDecl ::= Type VarDeclPart SEMI
+			|
+			Type error SEMI:l
+			{:
+			parser.log.debug("Uspesan oporavak od greske pri definiciji globalnih promenljivih do ; u liniji " +lleft);
+			:}
+			;
 
 VarDeclPart ::= VarDeclPart COMMA SingleVarDecl 
+				|
+				error COMMA:e SingleClassVarDecl
+				{:
+				parser.log.debug("Uspesan oporavak od greske pri definiciji globalnih promenljivih do sledeceg , u liniji " +eleft);
+				:}
 				|
 				SingleVarDecl
 				;
@@ -474,6 +485,11 @@ FormArgs ::= FormPars COMMA VarArgs
 			 |
 			 VarArgs
 			 |
+			 error:e
+				{:
+				parser.log.debug("Uspesan oporavak od greske pri deklaraciji formalnog parametra funkcije do ) u liniji " +eleft);
+				:}
+			 |
 			 /*epsilon*/
 			 ;
 	
@@ -491,6 +507,11 @@ VarArgs ::= Type DOT DOT DOT IDENT:niz
 			 
 
 FormPars ::= FormPars COMMA FormalParamDecl
+					|
+					error:e COMMA FormalParamDecl
+					{:
+					parser.log.debug("Uspesan oporavak od greske pri deklaraciji formalnog parametra funkcije do , u liniji " +eleft);
+					:}
 					|
 					FormalParamDecl
 					;		
@@ -533,7 +554,14 @@ StatementList ::= StatementList Statement
 				  
 Statement ::= Matched | Unmatched; 
 
-OptDesignatorStatement ::= DesignatorStatement | ;
+OptDesignatorStatement ::= DesignatorStatement
+						    |
+						   error:e
+							{:
+							parser.log.debug("Uspesan oporavak od greske unutar for petlje do prvog znaka ; ili ) u liniji " +eleft);
+							:}
+							|
+							;
 
 ForPart ::= FOR LPAREN OptDesignatorStatement SEMI OptCondition SEMI OptDesignatorStatement RPAREN
 			{: inFor = true; :} ; 
@@ -607,6 +635,11 @@ Matched ::= DesignatorStatement SEMI
 			:}
 			|
 			LBRACE StatementList RBRACE 
+			|
+			 Designator:d EQUAL error SEMI:l
+				{: 
+				   parser.log.debug("Uspesan oporavak od greske pri konstrukciji iskaza dodele vrednosti do ; u liniji "+lleft); 
+				:}
 			; 
 			
 DesignatorStatement ::= Designator:d AssignOp Expr:e
