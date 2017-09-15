@@ -1,0 +1,33 @@
+
+program test3
+
+class B {
+int b, d;
+}
+
+int nizi[];
+
+{
+
+int sum ( int niz[], int a, int b )
+int s;
+{
+s = niz[a] + niz[b];
+return s;
+}
+
+void main()
+int g, d, m;
+{
+nizi = new int[10];
+g = 2;
+d = 3;
+nizi[0] = 1;
+nizi[2] = 2;
+nizi[3] = 2;
+m = sum(nizi,g,d);
+m = m - nizi[0];
+print ( nizi[0] + nizi[g] + nizi[d -= 3] );
+print (m);
+}
+}

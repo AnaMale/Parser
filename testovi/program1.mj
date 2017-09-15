@@ -1,0 +1,39 @@
+// Test301
+
+program test301
+	const int jedan = 1;
+	const int pet = 5;
+	
+	int a,b;
+	int c = +l; //Uspesan oporavak od greske pri definiciji globalnih promenljivih do ; u liniji 8
+    
+    int +4, r; //Uspesan oporavak od greske pri definiciji globalnih promenljivih do sledeceg , u liniji 10
+	class A {
+	int c, d;
+	}
+	
+	int niz[];
+	
+	char nizch[];
+	
+{
+	int sum(+9p, int d, int c, int ... a) int r; //Uspesan oporavak od greske pri deklaraciji formalnog parametra funkcije do , u liniji 20
+	{
+		r = a[a[0]*=2] *= d + c;
+		print(a[1]);
+		print(a[0]);
+		return r;
+	}
+	
+	void main(greska!)	//Uspesan oporavak od greske pri deklaraciji formalnog parametra funkcije do ) u liniji 28
+	int bodovi; 
+	{	
+	    for ( +6;a<1; ) { bodovi = 0;} //Uspesan oporavak od greske unutar for petlje do prvog znaka ; ili ) u liniji 31
+		bodovi = 1;
+		print(bodovi);
+		bodovi = sum(3, 4, 1, 0, 9);
+		print(bodovi);
+		bodovi = +ll; // Uspesan oporavak od greske pri konstrukciji iskaza dodele vrednosti do ; u liniji 32
+		
+	}
+}

@@ -1,0 +1,203 @@
+INFO  17:43:51,522 - Compiling source file: C:\Users\males\Desktop\PP1Domaci\workspace\MJCompiler\test\program3.mj
+INFO  17:43:51,554 - #2 program
+INFO  17:43:51,554 - #40 test3
+INFO  17:43:51,554 - #50 class
+INFO  17:43:51,554 - #40 B
+INFO  17:43:51,554 - #3 {
+INFO  17:43:51,554 - #40 int
+INFO  17:43:51,554 - #40 b
+INFO  17:43:51,554 - #8 ,
+INFO  17:43:51,554 - Deklarisano polje klase b na liniji 5
+INFO  17:43:51,569 - #40 d
+INFO  17:43:51,569 - #5 ;
+INFO  17:43:51,569 - Deklarisano polje klase d na liniji 5
+INFO  17:43:51,569 - #4 }
+INFO  17:43:51,569 - #40 int
+INFO  17:43:51,569 - #40 nizi
+INFO  17:43:51,569 - #16 [
+INFO  17:43:51,569 - #17 ]
+INFO  17:43:51,569 - #5 ;
+INFO  17:43:51,569 - Deklarisan niz nizi na liniji 8
+INFO  17:43:51,569 - #3 {
+INFO  17:43:51,569 - #40 int
+INFO  17:43:51,569 - #40 sum
+INFO  17:43:51,569 - #6 (
+INFO  17:43:51,569 - Obradjuje se funkcija sum na liniji 12
+INFO  17:43:51,569 - #40 int
+INFO  17:43:51,569 - #40 niz
+INFO  17:43:51,569 - #16 [
+INFO  17:43:51,569 - #17 ]
+INFO  17:43:51,569 - #8 ,
+INFO  17:43:51,569 - Deklarisan niz niz na liniji 12
+INFO  17:43:51,569 - #40 int
+INFO  17:43:51,569 - #40 a
+INFO  17:43:51,569 - #8 ,
+INFO  17:43:51,569 - Deklarisana promenljiva a na liniji 12
+INFO  17:43:51,569 - #40 int
+INFO  17:43:51,569 - #40 b
+INFO  17:43:51,569 - #7 )
+INFO  17:43:51,569 - Deklarisana promenljiva b na liniji 12
+INFO  17:43:51,569 - #40 int
+INFO  17:43:51,569 - #40 s
+INFO  17:43:51,569 - #5 ;
+INFO  17:43:51,569 - Deklarisana promenljiva s na liniji 13
+INFO  17:43:51,569 - #3 {
+INFO  17:43:51,569 - #40 s
+INFO  17:43:51,569 - #13 =
+INFO  17:43:51,569 - #40 niz
+INFO  17:43:51,585 - #16 [
+INFO  17:43:51,585 - #40 a
+INFO  17:43:51,585 - #17 ]
+INFO  17:43:51,585 - #24 +
+INFO  17:43:51,585 - #40 niz
+INFO  17:43:51,585 - #16 [
+INFO  17:43:51,585 - #40 b
+INFO  17:43:51,585 - #17 ]
+INFO  17:43:51,585 - #5 ;
+INFO  17:43:51,585 - #10 return
+INFO  17:43:51,585 - #40 s
+INFO  17:43:51,585 - #5 ;
+INFO  17:43:51,585 - #4 }
+INFO  17:43:51,585 - #14 void
+INFO  17:43:51,585 - #40 main
+INFO  17:43:51,585 - #6 (
+INFO  17:43:51,585 - Obradjuje se funkcija main na liniji 19
+INFO  17:43:51,585 - #7 )
+INFO  17:43:51,585 - #40 int
+INFO  17:43:51,585 - #40 g
+INFO  17:43:51,585 - #8 ,
+INFO  17:43:51,585 - Deklarisana promenljiva g na liniji 20
+INFO  17:43:51,585 - #40 d
+INFO  17:43:51,585 - #8 ,
+INFO  17:43:51,585 - Deklarisana promenljiva d na liniji 20
+INFO  17:43:51,585 - #40 m
+INFO  17:43:51,585 - #5 ;
+INFO  17:43:51,585 - Deklarisana promenljiva m na liniji 20
+INFO  17:43:51,585 - #3 {
+INFO  17:43:51,585 - #40 nizi
+INFO  17:43:51,585 - #13 =
+INFO  17:43:51,585 - #18 new
+INFO  17:43:51,585 - #40 int
+INFO  17:43:51,585 - #16 [
+INFO  17:43:51,585 - #38 10
+INFO  17:43:51,585 - #17 ]
+INFO  17:43:51,585 - #5 ;
+INFO  17:43:51,585 - #40 g
+INFO  17:43:51,585 - #13 =
+INFO  17:43:51,585 - #38 2
+INFO  17:43:51,585 - #5 ;
+INFO  17:43:51,585 - #40 d
+INFO  17:43:51,601 - #13 =
+INFO  17:43:51,601 - #38 3
+INFO  17:43:51,601 - #5 ;
+INFO  17:43:51,601 - #40 nizi
+INFO  17:43:51,601 - #16 [
+INFO  17:43:51,601 - #38 0
+INFO  17:43:51,601 - #17 ]
+INFO  17:43:51,601 - #13 =
+INFO  17:43:51,601 - #38 1
+INFO  17:43:51,601 - #5 ;
+INFO  17:43:51,601 - #40 nizi
+INFO  17:43:51,601 - #16 [
+INFO  17:43:51,601 - #38 2
+INFO  17:43:51,601 - #17 ]
+INFO  17:43:51,601 - #13 =
+INFO  17:43:51,601 - #38 2
+INFO  17:43:51,601 - #5 ;
+INFO  17:43:51,601 - #40 nizi
+INFO  17:43:51,601 - #16 [
+INFO  17:43:51,601 - #38 3
+INFO  17:43:51,601 - #17 ]
+INFO  17:43:51,601 - #13 =
+INFO  17:43:51,601 - #38 2
+INFO  17:43:51,601 - #5 ;
+INFO  17:43:51,601 - #40 m
+INFO  17:43:51,601 - #13 =
+INFO  17:43:51,601 - #40 sum
+INFO  17:43:51,601 - #6 (
+INFO  17:43:51,601 - #40 nizi
+INFO  17:43:51,601 - #8 ,
+INFO  17:43:51,601 - #40 g
+INFO  17:43:51,601 - #8 ,
+INFO  17:43:51,601 - #40 d
+INFO  17:43:51,601 - #7 )
+INFO  17:43:51,616 - #5 ;
+INFO  17:43:51,616 - Pronadjen poziv funkcije sum na liniji 28
+INFO  17:43:51,616 - Greska: ne poklapa se broj stvarnih i formalnih argumenata 
+INFO  17:43:51,616 - #40 m
+INFO  17:43:51,616 - #13 =
+INFO  17:43:51,616 - #40 m
+INFO  17:43:51,616 - #25 -
+INFO  17:43:51,616 - #40 nizi
+INFO  17:43:51,616 - #16 [
+INFO  17:43:51,616 - #38 0
+INFO  17:43:51,616 - #17 ]
+INFO  17:43:51,616 - #5 ;
+INFO  17:43:51,616 - #9 print
+INFO  17:43:51,616 - #6 (
+INFO  17:43:51,616 - #40 nizi
+INFO  17:43:51,616 - #16 [
+INFO  17:43:51,616 - #38 0
+INFO  17:43:51,616 - #17 ]
+INFO  17:43:51,616 - #24 +
+INFO  17:43:51,616 - #40 nizi
+INFO  17:43:51,616 - #16 [
+INFO  17:43:51,616 - #40 g
+INFO  17:43:51,616 - #17 ]
+INFO  17:43:51,616 - #24 +
+INFO  17:43:51,616 - #40 nizi
+INFO  17:43:51,616 - #16 [
+INFO  17:43:51,616 - #40 d
+INFO  17:43:51,616 - #28 -=
+INFO  17:43:51,616 - #38 3
+INFO  17:43:51,616 - #17 ]
+INFO  17:43:51,616 - #7 )
+INFO  17:43:51,632 - #5 ;
+INFO  17:43:51,632 - #9 print
+INFO  17:43:51,632 - #6 (
+INFO  17:43:51,632 - #40 m
+INFO  17:43:51,632 - #7 )
+INFO  17:43:51,632 - #5 ;
+INFO  17:43:51,632 - #4 }
+INFO  17:43:51,632 - #4 }
+INFO  17:43:51,632 - Definicije globalnih promenljivih = 1
+INFO  17:43:51,632 - Definicije lokalnih promenjivih = 3
+INFO  17:43:51,632 - Definicije globalnih konstanti = 0
+INFO  17:43:51,632 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 2
+INFO  17:43:51,632 - Pozivi funkcija u telu metode main = 3
+INFO  17:43:51,632 - Deklaracije formalnih argumenata funkcija = 3
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: notype, -1, -1 
+Prog test3: notype, 0, 1 
+   Var lastArrayIndex: int, 0, 0 
+   Var lastArrayStoreIndex: int, 1, 0 
+   Var temp: int, 2, 0 
+   Type B: Class [Fld b: int, 0, 1 Fld d: int, 1, 1 ], 0, 0 
+   Var nizi: Arr of int, 3, 0 
+   Meth sum: int, 0, 3 
+      Var niz: Arr of int, 0, 1 
+      Var a: int, 1, 1 
+      Var b: int, 2, 1 
+      Var s: int, 3, 1 
+
+   Meth main: notype, 26, 0 
+      Var g: int, 0, 1 
+      Var d: int, 1, 1 
+      Var m: int, 2, 1 
+
+
+
+INFO  17:43:51,647 - Parsiranje uspesno zavrseno!

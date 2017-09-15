@@ -1,0 +1,19 @@
+// nivo A
+
+program MaxCifra
+	const int x = 4;                  
+							   
+	int a, c, maxcif;
+	char e = '2', b;              //sintaksna greska oporavak do ,
+	int c;                     //semanticka, c je vec definisano
+{
+	void main() int z; { 
+		read(a);
+		maxcif = ;				 //oporavk od greske u instrukciji iskaza dodele
+	    for ( ; a<5; +w)          //oporavak od greske u for petlji 
+			a = a/10;             
+		}
+		x++;       //semanticka greska, ne moze x++
+		
+	}
+}

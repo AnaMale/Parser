@@ -1,0 +1,22 @@
+// nivo A
+// ispravan test
+
+program ispisiA
+
+	int a, b; 
+    bool X;
+{
+	void main() {
+
+		read(a);
+		read(b);
+        if ( a<b) { X = true; }
+        else { X = false; }
+        
+        if ( X == true ) print ( a+3 );
+        
+        else print(a);
+     
+          	
+	}
+}

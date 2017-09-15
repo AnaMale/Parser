@@ -1,0 +1,183 @@
+INFO  15:35:10,362 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test03.mj
+INFO  15:35:10,414 - #2 program
+INFO  15:35:10,414 - #40 test03
+INFO  15:35:10,414 - #19 const
+INFO  15:35:10,414 - #40 int
+INFO  15:35:10,414 - #40 jedan
+INFO  15:35:10,414 - #13 =
+INFO  15:35:10,414 - #38 1
+INFO  15:35:10,414 - #5 ;
+INFO  15:35:10,414 - Deklarisana konstanta jedan na liniji 4
+INFO  15:35:10,414 - #19 const
+INFO  15:35:10,414 - #40 int
+INFO  15:35:10,414 - #40 pet
+INFO  15:35:10,414 - #13 =
+INFO  15:35:10,414 - #38 5
+INFO  15:35:10,430 - #5 ;
+INFO  15:35:10,430 - Deklarisana konstanta pet na liniji 5
+INFO  15:35:10,430 - #40 int
+INFO  15:35:10,430 - #40 a
+INFO  15:35:10,430 - #8 ,
+INFO  15:35:10,430 - Deklarisana promenljiva a na liniji 6
+INFO  15:35:10,430 - #40 b
+INFO  15:35:10,430 - #5 ;
+INFO  15:35:10,430 - Deklarisana promenljiva b na liniji 6
+INFO  15:35:10,430 - #40 int
+INFO  15:35:10,430 - #40 niz
+INFO  15:35:10,430 - #16 [
+INFO  15:35:10,430 - #17 ]
+INFO  15:35:10,430 - #5 ;
+INFO  15:35:10,430 - Deklarisan niz niz na liniji 8
+INFO  15:35:10,430 - #40 char
+INFO  15:35:10,430 - #40 nizch
+INFO  15:35:10,430 - #16 [
+INFO  15:35:10,430 - #17 ]
+INFO  15:35:10,430 - #5 ;
+INFO  15:35:10,430 - Deklarisan niz nizch na liniji 10
+INFO  15:35:10,430 - #3 {
+INFO  15:35:10,430 - #40 int
+INFO  15:35:10,430 - #40 sum
+INFO  15:35:10,430 - #6 (
+INFO  15:35:10,430 - Obradjuje se funkcija sum na liniji 13
+INFO  15:35:10,430 - #40 int
+INFO  15:35:10,430 - #40 d
+INFO  15:35:10,430 - #8 ,
+INFO  15:35:10,430 - Deklarisana promenljiva d na liniji 13
+INFO  15:35:10,430 - #40 int
+INFO  15:35:10,430 - #40 c
+INFO  15:35:10,430 - #8 ,
+INFO  15:35:10,430 - Deklarisana promenljiva c na liniji 13
+INFO  15:35:10,430 - #40 int
+INFO  15:35:10,430 - #21 .
+INFO  15:35:10,430 - #21 .
+INFO  15:35:10,430 - #21 .
+INFO  15:35:10,430 - #40 a
+INFO  15:35:10,430 - #7 )
+INFO  15:35:10,430 - #40 int
+INFO  15:35:10,430 - #40 r
+INFO  15:35:10,430 - #5 ;
+INFO  15:35:10,430 - Deklarisana promenljiva r na liniji 13
+INFO  15:35:10,430 - #3 {
+INFO  15:35:10,430 - #40 r
+INFO  15:35:10,430 - #13 =
+INFO  15:35:10,430 - #40 a
+INFO  15:35:10,430 - #16 [
+INFO  15:35:10,430 - #40 a
+INFO  15:35:10,430 - #16 [
+INFO  15:35:10,430 - #38 0
+INFO  15:35:10,430 - #17 ]
+INFO  15:35:10,446 - #29 *=
+INFO  15:35:10,446 - #38 2
+INFO  15:35:10,446 - #17 ]
+INFO  15:35:10,446 - #29 *=
+INFO  15:35:10,446 - #40 d
+INFO  15:35:10,446 - #24 +
+INFO  15:35:10,446 - #40 c
+INFO  15:35:10,446 - #5 ;
+INFO  15:35:10,446 - #9 print
+INFO  15:35:10,446 - #6 (
+INFO  15:35:10,446 - #40 a
+INFO  15:35:10,446 - #16 [
+INFO  15:35:10,446 - #38 1
+INFO  15:35:10,446 - #17 ]
+INFO  15:35:10,446 - #7 )
+INFO  15:35:10,446 - #5 ;
+INFO  15:35:10,446 - #9 print
+INFO  15:35:10,446 - #6 (
+INFO  15:35:10,446 - #40 a
+INFO  15:35:10,446 - #16 [
+INFO  15:35:10,446 - #38 0
+INFO  15:35:10,446 - #17 ]
+INFO  15:35:10,446 - #7 )
+INFO  15:35:10,446 - #5 ;
+INFO  15:35:10,446 - #10 return
+INFO  15:35:10,446 - #40 r
+INFO  15:35:10,446 - #5 ;
+INFO  15:35:10,446 - #4 }
+INFO  15:35:10,446 - #14 void
+INFO  15:35:10,446 - #40 main
+INFO  15:35:10,446 - #6 (
+INFO  15:35:10,446 - Obradjuje se funkcija main na liniji 21
+INFO  15:35:10,446 - #7 )
+INFO  15:35:10,446 - #40 int
+INFO  15:35:10,446 - #40 bodovi
+INFO  15:35:10,446 - #5 ;
+INFO  15:35:10,446 - Deklarisana promenljiva bodovi na liniji 21
+INFO  15:35:10,446 - #3 {
+INFO  15:35:10,446 - #40 bodovi
+INFO  15:35:10,446 - #13 =
+INFO  15:35:10,446 - #38 1
+INFO  15:35:10,446 - #5 ;
+INFO  15:35:10,446 - #9 print
+INFO  15:35:10,446 - #6 (
+INFO  15:35:10,446 - #40 bodovi
+INFO  15:35:10,446 - #7 )
+INFO  15:35:10,446 - #5 ;
+INFO  15:35:10,446 - #40 bodovi
+INFO  15:35:10,446 - #13 =
+INFO  15:35:10,446 - #40 sum
+INFO  15:35:10,446 - #6 (
+INFO  15:35:10,446 - #38 3
+INFO  15:35:10,446 - #8 ,
+INFO  15:35:10,446 - #38 4
+INFO  15:35:10,446 - #8 ,
+INFO  15:35:10,446 - #38 1
+INFO  15:35:10,446 - #8 ,
+INFO  15:35:10,446 - #38 0
+INFO  15:35:10,446 - #8 ,
+INFO  15:35:10,462 - #38 9
+INFO  15:35:10,462 - #7 )
+INFO  15:35:10,462 - #5 ;
+INFO  15:35:10,462 - Pronadjen poziv funkcije sum na liniji 25
+INFO  15:35:10,464 - #9 print
+INFO  15:35:10,464 - #6 (
+INFO  15:35:10,464 - #40 bodovi
+INFO  15:35:10,464 - #7 )
+INFO  15:35:10,464 - #5 ;
+INFO  15:35:10,465 - #4 }
+INFO  15:35:10,465 - #4 }
+INFO  15:35:10,465 - Definicije globalnih promenljivih = 4
+INFO  15:35:10,466 - Definicije lokalnih promenjivih = 1
+INFO  15:35:10,466 - Definicije globalnih konstanti = 2
+INFO  15:35:10,466 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 2
+INFO  15:35:10,466 - Pozivi funkcija u telu metode main = 3
+INFO  15:35:10,466 - Deklaracije formalnih argumenata funkcija = 2
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: notype, -1, -1 
+Prog test301: notype, 0, 1 
+   Var lastArrayIndex: int, 0, 0 
+   Var lastArrayStoreIndex: int, 1, 0 
+   Var temp: int, 2, 0 
+   Con jedan: int, 1, 0 
+   Con pet: int, 5, 0 
+   Var a: int, 3, 0 
+   Var b: int, 4, 0 
+   Var niz: Arr of int, 5, 0 
+   Var nizch: Arr of char, 6, 0 
+   Meth sum: int, 0, 3 
+      Var d: int, 0, 1 
+      Var c: int, 1, 1 
+      Var a: Arr of int, 2, 1       Var noObj: notype, -1, -1 
+
+      Var r: int, 3, 1 
+
+   Meth main: notype, 96, 0 
+      Var bodovi: int, 0, 1 
+      Var varArgsArray: Arr of int, 1, 1 
+
+
+
+INFO  15:35:10,468 - Parsiranje uspesno zavrseno!

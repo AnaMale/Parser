@@ -1,0 +1,104 @@
+INFO  14:27:36,073 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test01.mj
+INFO  14:27:36,127 - #2 program
+INFO  14:27:36,127 - #40 ispisiA
+INFO  14:27:36,127 - #40 int
+INFO  14:27:36,127 - #40 a
+INFO  14:27:36,127 - #8 ,
+INFO  14:27:36,127 - Deklarisana promenljiva a na liniji 6
+INFO  14:27:36,127 - #40 b
+INFO  14:27:36,127 - #5 ;
+INFO  14:27:36,127 - Deklarisana promenljiva b na liniji 6
+INFO  14:27:36,127 - #40 bool
+INFO  14:27:36,127 - #40 X
+INFO  14:27:36,127 - #5 ;
+INFO  14:27:36,127 - Deklarisana promenljiva X na liniji 7
+INFO  14:27:36,127 - #3 {
+INFO  14:27:36,127 - #14 void
+INFO  14:27:36,127 - #40 main
+INFO  14:27:36,127 - #6 (
+INFO  14:27:36,127 - Obradjuje se funkcija main na liniji 9
+INFO  14:27:36,127 - #7 )
+INFO  14:27:36,127 - #3 {
+INFO  14:27:36,127 - #15 read
+INFO  14:27:36,127 - #6 (
+INFO  14:27:36,127 - #40 a
+INFO  14:27:36,127 - #7 )
+INFO  14:27:36,127 - #5 ;
+INFO  14:27:36,127 - #15 read
+INFO  14:27:36,127 - #6 (
+INFO  14:27:36,127 - #40 b
+INFO  14:27:36,127 - #7 )
+INFO  14:27:36,127 - #5 ;
+INFO  14:27:36,127 - #45 if
+INFO  14:27:36,142 - #6 (
+INFO  14:27:36,142 - #40 a
+INFO  14:27:36,142 - #36 <
+INFO  14:27:36,142 - #40 b
+INFO  14:27:36,142 - #7 )
+INFO  14:27:36,142 - #3 {
+INFO  14:27:36,142 - #40 X
+INFO  14:27:36,142 - #13 =
+INFO  14:27:36,142 - #42 true
+INFO  14:27:36,142 - #5 ;
+INFO  14:27:36,142 - #4 }
+INFO  14:27:36,142 - #46 else
+INFO  14:27:36,142 - #3 {
+INFO  14:27:36,142 - #40 X
+INFO  14:27:36,142 - #13 =
+INFO  14:27:36,142 - #42 false
+INFO  14:27:36,142 - #5 ;
+INFO  14:27:36,142 - #4 }
+INFO  14:27:36,142 - #45 if
+INFO  14:27:36,142 - #6 (
+INFO  14:27:36,142 - #40 X
+INFO  14:27:36,142 - #32 ==
+INFO  14:27:36,142 - #42 true
+INFO  14:27:36,142 - #7 )
+INFO  14:27:36,142 - #9 print
+INFO  14:27:36,142 - #6 (
+INFO  14:27:36,142 - #40 a
+INFO  14:27:36,142 - #24 +
+INFO  14:27:36,142 - #38 3
+INFO  14:27:36,142 - #7 )
+INFO  14:27:36,142 - #5 ;
+INFO  14:27:36,142 - #46 else
+INFO  14:27:36,142 - #9 print
+INFO  14:27:36,142 - #6 (
+INFO  14:27:36,142 - #40 a
+INFO  14:27:36,142 - #7 )
+INFO  14:27:36,142 - #5 ;
+INFO  14:27:36,142 - #4 }
+INFO  14:27:36,142 - #4 }
+INFO  14:27:36,142 - Definicije globalnih promenljivih = 3
+INFO  14:27:36,142 - Definicije lokalnih promenjivih = 0
+INFO  14:27:36,142 - Definicije globalnih konstanti = 0
+INFO  14:27:36,142 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 1
+INFO  14:27:36,142 - Pozivi funkcija u telu metode main = 4
+INFO  14:27:36,142 - Deklaracije formalnih argumenata funkcija = 0
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: notype, -1, -1 
+Prog ispisiA: notype, 0, 1 
+   Var lastArrayIndex: int, 0, 0 
+   Var lastArrayStoreIndex: int, 1, 0 
+   Var temp: int, 2, 0 
+   Var a: int, 3, 0 
+   Var b: int, 4, 0 
+   Var X: notype, 5, 0 
+   Meth main: notype, 0, 0 
+
+
+
+INFO  14:27:36,158 - Parsiranje uspesno zavrseno!

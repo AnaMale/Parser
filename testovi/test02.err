@@ -1,0 +1,119 @@
+INFO  15:26:57,091 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test02.mj
+INFO  15:26:57,126 - #2 program
+INFO  15:26:57,126 - #40 MaxCifra
+INFO  15:26:57,126 - #19 const
+INFO  15:26:57,126 - #40 int
+INFO  15:26:57,126 - #40 x
+INFO  15:26:57,126 - #13 =
+INFO  15:26:57,126 - #38 4
+INFO  15:26:57,126 - #5 ;
+INFO  15:26:57,126 - Deklarisana konstanta x na liniji 4
+INFO  15:26:57,126 - #40 int
+INFO  15:26:57,126 - #40 a
+INFO  15:26:57,126 - #8 ,
+INFO  15:26:57,126 - Deklarisana promenljiva a na liniji 6
+INFO  15:26:57,126 - #40 c
+INFO  15:26:57,142 - #8 ,
+INFO  15:26:57,142 - Deklarisana promenljiva c na liniji 6
+INFO  15:26:57,142 - #40 maxcif
+INFO  15:26:57,142 - #5 ;
+INFO  15:26:57,142 - Deklarisana promenljiva maxcif na liniji 6
+INFO  15:26:57,142 - #40 char
+INFO  15:26:57,142 - #40 e
+INFO  15:26:57,142 - #13 =
+
+Sintaksna greska na liniji 7INFO  15:26:57,142 - #39 2
+
+INFO  15:26:57,142 - #8 ,
+INFO  15:26:57,142 - #40 b
+INFO  15:26:57,142 - #5 ;
+INFO  15:26:57,142 - #40 int
+INFO  15:26:57,142 - Deklarisana promenljiva b na liniji 7
+DEBUG 15:26:57,142 - Uspesan oporavak od greske pri definiciji globalnih promenljivih do sledeceg , u liniji 7
+INFO  15:26:57,142 - #40 c
+INFO  15:26:57,142 - #5 ;
+INFO  15:26:57,142 - Deklarisana promenljiva c na liniji 8
+INFO  15:26:57,142 - Greska na liniji, nije jedinstveno ime 8
+INFO  15:26:57,142 - #3 {
+INFO  15:26:57,142 - #14 void
+INFO  15:26:57,142 - #40 main
+INFO  15:26:57,142 - #6 (
+INFO  15:26:57,142 - Obradjuje se funkcija main na liniji 10
+INFO  15:26:57,142 - #7 )
+INFO  15:26:57,142 - #40 int
+INFO  15:26:57,142 - #40 z
+INFO  15:26:57,142 - #5 ;
+INFO  15:26:57,142 - Deklarisana promenljiva z na liniji 10
+INFO  15:26:57,142 - #3 {
+INFO  15:26:57,142 - #15 read
+INFO  15:26:57,142 - #6 (
+INFO  15:26:57,142 - #40 a
+INFO  15:26:57,142 - #7 )
+INFO  15:26:57,142 - #5 ;
+INFO  15:26:57,142 - #40 maxcif
+INFO  15:26:57,142 - #13 =
+INFO  15:26:57,142 - #5 ;
+
+Sintaksna greska na liniji 12
+INFO  15:26:57,142 - #47 for
+INFO  15:26:57,142 - #6 (
+INFO  15:26:57,142 - #5 ;
+DEBUG 15:26:57,142 - Uspesan oporavak od greske pri konstrukciji iskaza dodele vrednosti do ; u liniji 12
+INFO  15:26:57,142 - #40 a
+INFO  15:26:57,142 - #36 <
+INFO  15:26:57,142 - #38 5
+INFO  15:26:57,157 - #5 ;
+INFO  15:26:57,157 - #24 +
+
+Sintaksna greska na liniji 13
+INFO  15:26:57,157 - #40 w
+INFO  15:26:57,157 - #7 )
+INFO  15:26:57,157 - #40 a
+INFO  15:26:57,157 - #13 =
+INFO  15:26:57,157 - #40 a
+DEBUG 15:26:57,157 - Uspesan oporavak od greske unutar for petlje do prvog znaka ; ili ) 13
+INFO  15:26:57,157 - #23 /
+INFO  15:26:57,157 - #38 10
+INFO  15:26:57,157 - #5 ;
+INFO  15:26:57,157 - #4 }
+INFO  15:26:57,157 - #40 x
+INFO  15:26:57,157 - #11 ++
+
+Sintaksna greska na liniji 16
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 16
+INFO  15:26:57,157 - Definicije globalnih promenljivih = 5
+INFO  15:26:57,157 - Definicije lokalnih promenjivih = 1
+INFO  15:26:57,157 - Definicije globalnih konstanti = 1
+INFO  15:26:57,157 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 1
+INFO  15:26:57,157 - Pozivi funkcija u telu metode main = 1
+INFO  15:26:57,157 - Deklaracije formalnih argumenata funkcija = 0
+=====================SYMBOL TABLE DUMP=========================
+Var lastArrayIndex: int, 0, 0 
+Var lastArrayStoreIndex: int, 1, 0 
+Var temp: int, 2, 0 
+Con x: int, 4, 0 
+Var a: int, 3, 0 
+Var c: int, 4, 0 
+Var maxcif: int, 5, 0 
+Var b: char, 6, 0 
+Meth main: notype, 0, 0 
+   Var z: int, 0, 1 
+
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: notype, -1, -1 
+Prog MaxCifra: notype, 0, 1 
+
+
+ERROR 15:26:57,157 - Parsiranje NIJE uspesno zavrseno!
