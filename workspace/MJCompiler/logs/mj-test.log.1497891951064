@@ -1,0 +1,110 @@
+INFO  19:04:51,554 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test02.mj
+INFO  19:04:51,601 - #2 program
+INFO  19:04:51,601 - #40 MaxCifra
+INFO  19:04:51,601 - #19 const
+INFO  19:04:51,601 - #40 int
+INFO  19:04:51,601 - #40 x
+INFO  19:04:51,601 - #13 =
+INFO  19:04:51,601 - #38 4
+INFO  19:04:51,601 - #5 ;
+INFO  19:04:51,601 - Deklarisana konstanta x na liniji 4
+INFO  19:04:51,601 - #40 int
+INFO  19:04:51,601 - #40 a
+INFO  19:04:51,601 - #8 ,
+INFO  19:04:51,601 - Deklarisana promenljiva a na liniji 6
+INFO  19:04:51,601 - #40 c
+INFO  19:04:51,601 - #8 ,
+INFO  19:04:51,601 - Deklarisana promenljiva c na liniji 6
+INFO  19:04:51,601 - #40 maxcif
+INFO  19:04:51,601 - #5 ;
+INFO  19:04:51,601 - Deklarisana promenljiva maxcif na liniji 6
+INFO  19:04:51,601 - #40 char
+INFO  19:04:51,601 - #40 e
+INFO  19:04:51,601 - #13 =
+INFO  19:04:51,601 - #39 2
+INFO  19:04:51,601 - #5 ;
+INFO  19:04:51,601 - #40 int
+INFO  19:04:51,616 - #40 c
+INFO  19:04:51,616 - #5 ;
+DEBUG 19:04:51,616 - Uspesan oporavak od greske pri definiciji globalnih promenljivih do ; u liniji 7
+INFO  19:04:51,616 - Deklarisana promenljiva c na liniji 8
+INFO  19:04:51,616 - Greska na liniji, nije jedinstveno ime 8
+INFO  19:04:51,616 - #3 {
+INFO  19:04:51,616 - #14 void
+INFO  19:04:51,616 - #40 main
+INFO  19:04:51,616 - #6 (
+INFO  19:04:51,616 - Obradjuje se funkcija main na liniji 10
+INFO  19:04:51,616 - #7 )
+INFO  19:04:51,616 - #40 char
+INFO  19:04:51,616 - #40 a
+INFO  19:04:51,616 - #5 ;
+INFO  19:04:51,616 - Deklarisana promenljiva a na liniji 10
+INFO  19:04:51,616 - #40 int
+INFO  19:04:51,616 - #40 z
+INFO  19:04:51,616 - #13 =
+INFO  19:04:51,616 - #38 0
+INFO  19:04:51,616 - #3 {
+INFO  19:04:51,616 - #15 read
+INFO  19:04:51,616 - #6 (
+INFO  19:04:51,616 - #40 a
+INFO  19:04:51,616 - #7 )
+INFO  19:04:51,616 - #5 ;
+INFO  19:04:51,616 - #40 maxcif
+INFO  19:04:51,616 - #13 =
+INFO  19:04:51,616 - #38 0
+INFO  19:04:51,616 - #5 ;
+INFO  19:04:51,616 - #47 for
+INFO  19:04:51,616 - #6 (
+INFO  19:04:51,616 - #5 ;
+INFO  19:04:51,616 - #40 a
+INFO  19:04:51,616 - #33 !=
+INFO  19:04:51,616 - #38 0
+INFO  19:04:51,616 - #5 ;
+INFO  19:04:51,616 - #7 )
+INFO  19:04:51,616 - #3 {
+INFO  19:04:51,616 - #40 c
+INFO  19:04:51,616 - #13 =
+INFO  19:04:51,616 - #40 a
+INFO  19:04:51,616 - #26 %
+INFO  19:04:51,616 - #38 10
+INFO  19:04:51,616 - #5 ;
+INFO  19:04:51,616 - #45 if
+INFO  19:04:51,616 - #6 (
+INFO  19:04:51,616 - #40 maxcif
+INFO  19:04:51,616 - #36 <
+INFO  19:04:51,616 - #34 >
+INFO  19:04:51,616 - #40 c
+INFO  19:04:51,632 - #7 )
+INFO  19:04:51,632 - #40 maxcif
+INFO  19:04:51,632 - #13 =
+INFO  19:04:51,632 - #40 c
+INFO  19:04:51,632 - #5 ;
+INFO  19:04:51,632 - #40 a
+INFO  19:04:51,632 - #13 =
+INFO  19:04:51,632 - #40 a
+INFO  19:04:51,632 - #23 /
+INFO  19:04:51,632 - #38 10
+INFO  19:04:51,632 - #5 ;
+INFO  19:04:51,632 - #4 }
+INFO  19:04:51,632 - #15 read
+INFO  19:04:51,632 - #6 (
+INFO  19:04:51,648 - #40 x
+INFO  19:04:51,648 - #7 )
+INFO  19:04:51,648 - #5 ;
+INFO  19:04:51,649 - #40 x
+INFO  19:04:51,649 - #11 ++
+INFO  19:04:51,649 - #5 ;
+INFO  19:04:51,650 - #9 print
+INFO  19:04:51,650 - #6 (
+INFO  19:04:51,650 - #40 max
+INFO  19:04:51,651 - #7 )
+INFO  19:04:51,651 - #5 ;
+INFO  19:04:51,654 - #4 }
+INFO  19:04:51,654 - #4 }
+INFO  19:04:51,654 - Definicije globalnih promenljivih = 4
+INFO  19:04:51,654 - Definicije lokalnih promenjivih = 1
+INFO  19:04:51,654 - Definicije globalnih konstanti = 1
+INFO  19:04:51,654 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 1
+INFO  19:04:51,654 - Pozivi funkcija u telu metode main = 0
+INFO  19:04:51,654 - Deklaracije formalnih argumenata funkcija = 0
+ERROR 19:04:51,654 - Parsiranje NIJE uspesno zavrseno!

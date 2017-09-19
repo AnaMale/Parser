@@ -1,0 +1,36 @@
+INFO  17:23:57,085 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  17:23:57,230 - #2 program
+INFO  17:23:57,232 - #32 test302
+INFO  17:23:57,232 - #19 const
+INFO  17:23:57,233 - #32 int
+INFO  17:23:57,234 - #32 jedan
+INFO  17:23:57,244 - #13 =
+INFO  17:23:57,249 - #30 1
+INFO  17:23:57,249 - #5 ;
+INFO  17:23:57,249 - #19 const
+INFO  17:23:57,249 - Deklarisana konstanta jedan na liniji 5
+INFO  17:23:57,249 - #32 int
+INFO  17:23:57,249 - #32 pet
+INFO  17:23:57,249 - #13 =
+INFO  17:23:57,249 - #30 5
+INFO  17:23:57,249 - #5 ;
+INFO  17:23:57,249 - #32 int
+INFO  17:23:57,249 - Deklarisana konstanta pet na liniji 6
+INFO  17:23:57,249 - #32 niz
+INFO  17:23:57,249 - #16 [
+INFO  17:23:57,254 - #17 ]
+INFO  17:23:57,254 - #5 ;
+INFO  17:23:57,254 - #32 char
+INFO  17:23:57,254 - Deklarisan niz niz na liniji 8
+INFO  17:23:57,254 - #32 nizch
+INFO  17:23:57,254 - #16 [
+INFO  17:23:57,254 - #17 ]
+INFO  17:23:57,254 - #5 ;
+INFO  17:23:57,254 - #32 for
+INFO  17:23:57,254 - Deklarisan niz nizch na liniji 10
+INFO  17:23:57,254 - #6 (
+ERROR 17:23:57,254 - 
+Sintaksna greska na liniji 12
+ERROR 17:23:57,254 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 12
+INFO  17:23:57,254 - Print calls = 0
+ERROR 17:23:57,264 - Parsiranje NIJE uspesno zavrseno!

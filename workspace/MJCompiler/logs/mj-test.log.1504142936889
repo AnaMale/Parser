@@ -1,0 +1,47 @@
+INFO  03:24:12,934 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\program2.mj
+INFO  03:24:12,984 - #2 program
+INFO  03:24:12,984 - #16 test2
+INFO  03:24:12,984 - #10 const
+INFO  03:24:12,984 - #16 int
+INFO  03:24:12,999 - #16 c
+INFO  03:24:13,004 - #37 =
+INFO  03:24:13,004 - #51 2
+INFO  03:24:13,004 - #9 ;
+INFO  03:24:13,004 - Deklarisana konstanta c na liniji 3
+INFO  03:24:13,004 - #14 class
+INFO  03:24:13,004 - #16 B
+INFO  03:24:13,004 - #3 {
+INFO  03:24:13,004 - Deklarisana klasa B na liniji 5
+INFO  03:24:13,004 - #16 int
+INFO  03:24:13,004 - #16 b
+INFO  03:24:13,004 - #12 ,
+INFO  03:24:13,004 - Deklarisano polje klase b na liniji 7
+INFO  03:24:13,004 - #16 d
+INFO  03:24:13,004 - #9 ;
+INFO  03:24:13,004 - Deklarisano polje klase d na liniji 7
+INFO  03:24:13,009 - #4 }
+INFO  03:24:13,009 - #3 {
+INFO  03:24:13,009 - #28 void
+INFO  03:24:13,009 - #16 main
+INFO  03:24:13,009 - #5 (
+INFO  03:24:13,009 - Obradjuje se funkcija main na liniji 11
+INFO  03:24:13,009 - #6 )
+INFO  03:24:13,009 - #16 B
+INFO  03:24:13,009 - #16 b
+INFO  03:24:13,009 - #9 ;
+INFO  03:24:13,014 - Deklarisana promenljiva b na liniji 12
+INFO  03:24:13,014 - #16 int
+INFO  03:24:13,014 - #16 c
+INFO  03:24:13,014 - #9 ;
+INFO  03:24:13,014 - Deklarisana promenljiva c na liniji 13
+INFO  03:24:13,014 - #3 {
+INFO  03:24:13,014 - #16 c
+INFO  03:24:13,014 - #37 =
+INFO  03:24:13,014 - #51 0
+INFO  03:24:13,019 - #9 ;
+INFO  03:24:13,059 - #16 b
+INFO  03:24:13,059 - #15 .
+INFO  03:24:13,059 - #16 d
+INFO  03:24:13,059 - #37 =
+INFO  03:24:13,059 - #51 8
+INFO  03:24:13,059 - #9 ;

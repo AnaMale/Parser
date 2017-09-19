@@ -1,0 +1,79 @@
+INFO  21:35:37,842 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\program2.mj
+INFO  21:35:37,882 - #2 program
+INFO  21:35:37,882 - #42 test2
+INFO  21:35:37,882 - #19 const
+INFO  21:35:37,882 - #42 int
+INFO  21:35:37,882 - #42 c
+INFO  21:35:37,882 - #13 =
+INFO  21:35:37,882 - #40 2
+INFO  21:35:37,882 - #5 ;
+INFO  21:35:37,882 - Deklarisana konstanta c na liniji 3
+INFO  21:35:37,887 - #52 class
+INFO  21:35:37,887 - #42 B
+INFO  21:35:37,887 - #3 {
+INFO  21:35:37,887 - #42 int
+INFO  21:35:37,887 - #42 b
+INFO  21:35:37,887 - #8 ,
+INFO  21:35:37,887 - Deklarisano polje klase b na liniji 6
+INFO  21:35:37,887 - #42 d
+INFO  21:35:37,887 - #5 ;
+INFO  21:35:37,887 - Deklarisano polje klase d na liniji 6
+INFO  21:35:37,887 - #4 }
+INFO  21:35:37,887 - #3 {
+INFO  21:35:37,887 - #14 void
+INFO  21:35:37,887 - #42 main
+INFO  21:35:37,887 - #6 (
+INFO  21:35:37,887 - Obradjuje se funkcija main na liniji 10
+INFO  21:35:37,887 - #7 )
+INFO  21:35:37,887 - #42 int
+INFO  21:35:37,887 - #42 a
+INFO  21:35:37,887 - #8 ,
+INFO  21:35:37,887 - Deklarisana promenljiva a na liniji 11
+INFO  21:35:37,887 - #42 b
+INFO  21:35:37,887 - #5 ;
+INFO  21:35:37,887 - Deklarisana promenljiva b na liniji 11
+INFO  21:35:37,887 - #42 set
+INFO  21:35:37,887 - #42 s
+INFO  21:35:37,892 - #5 ;
+INFO  21:35:37,892 - Deklarisana promenljiva s na liniji 12
+INFO  21:35:37,892 - #3 {
+INFO  21:35:37,892 - #42 a
+INFO  21:35:37,892 - #13 =
+INFO  21:35:37,892 - #40 3
+INFO  21:35:37,892 - #5 ;
+INFO  21:35:37,897 - #42 b
+INFO  21:35:37,897 - #13 =
+INFO  21:35:37,897 - #40 4
+INFO  21:35:37,897 - #5 ;
+INFO  21:35:37,897 - #42 s
+INFO  21:35:37,897 - #13 =
+INFO  21:35:37,897 - #18 new
+INFO  21:35:37,897 - #42 Set
+INFO  21:35:37,897 - #5 ;
+INFO  21:35:37,897 - #42 s
+INFO  21:35:37,897 - #29 +=
+INFO  21:35:37,897 - #40 5
+INFO  21:35:37,897 - #5 ;
+INFO  21:35:37,897 - #9 print
+INFO  21:35:37,897 - #6 (
+INFO  21:35:37,897 - #42 s
+INFO  21:35:37,897 - #23 ??
+INFO  21:35:37,897 - #40 5
+INFO  21:35:37,897 - #7 )
+INFO  21:35:37,897 - #5 ;
+INFO  21:35:37,897 - #9 print
+INFO  21:35:37,897 - #6 (
+INFO  21:35:37,897 - #42 s
+INFO  21:35:37,897 - #23 ??
+INFO  21:35:37,902 - #40 7
+INFO  21:35:37,902 - #7 )
+INFO  21:35:37,902 - #5 ;
+INFO  21:35:37,902 - #4 }
+INFO  21:35:37,902 - #4 }
+INFO  21:35:37,902 - Definicije globalnih promenljivih = 0
+INFO  21:35:37,902 - Definicije lokalnih promenjivih = 3
+INFO  21:35:37,902 - Definicije globalnih konstanti = 1
+INFO  21:35:37,902 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 1
+INFO  21:35:37,902 - Pozivi funkcija u telu metode main = 2
+INFO  21:35:37,902 - Deklaracije formalnih argumenata funkcija = 0
+ERROR 21:35:37,902 - Parsiranje NIJE uspesno zavrseno!

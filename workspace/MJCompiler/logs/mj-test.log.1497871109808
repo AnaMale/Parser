@@ -1,0 +1,13 @@
+INFO  13:18:17,534 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test02.mj
+INFO  13:18:17,634 - #2 program
+INFO  13:18:17,634 - #40 MaxCifra
+INFO  13:18:17,634 - #19 const
+INFO  13:18:17,634 - #40 x
+INFO  13:18:17,634 - #5 ;
+INFO  13:18:17,634 - Definicije globalnih promenljivih = 0
+INFO  13:18:17,634 - Definicije lokalnih promenjivih = 0
+INFO  13:18:17,634 - Definicije globalnih konstanti = 0
+INFO  13:18:17,634 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 0
+INFO  13:18:17,634 - Pozivi funkcija u telu metode main = 0
+INFO  13:18:17,634 - Deklaracije formalnih argumenata funkcija = 0
+ERROR 13:18:17,634 - Parsiranje NIJE uspesno zavrseno!

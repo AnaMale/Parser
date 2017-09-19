@@ -1,0 +1,124 @@
+INFO  19:53:20,018 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test04.mj
+INFO  19:53:20,072 - #2 program
+INFO  19:53:20,072 - #40 test04
+INFO  19:53:20,072 - #40 int
+INFO  19:53:20,072 - #40 x
+INFO  19:53:20,072 - #8 ,
+INFO  19:53:20,072 - Deklarisana promenljiva x na liniji 5
+INFO  19:53:20,072 - #40 y
+INFO  19:53:20,072 - #5 ;
+INFO  19:53:20,072 - Deklarisana promenljiva y na liniji 5
+INFO  19:53:20,072 - #40 int
+INFO  19:53:20,072 - #40 a
+INFO  19:53:20,072 - #16 [
+INFO  19:53:20,072 - #17 ]
+INFO  19:53:20,072 - #5 ;
+INFO  19:53:20,072 - Deklarisan niz a na liniji 6
+INFO  19:53:20,072 - #40 bool
+INFO  19:53:20,072 - #40 log
+INFO  19:53:20,072 - #5 ;
+INFO  19:53:20,072 - Deklarisana promenljiva log na liniji 7
+INFO  19:53:20,072 - #3 {
+INFO  19:53:20,072 - #40 int
+INFO  19:53:20,072 - #40 sum
+INFO  19:53:20,072 - #6 (
+INFO  19:53:20,072 - Obradjuje se funkcija sum na liniji 10
+INFO  19:53:20,072 - #40 int
+INFO  19:53:20,072 - #40 z
+INFO  19:53:20,072 - #8 ,
+INFO  19:53:20,072 - Deklarisana promenljiva z na liniji 10
+INFO  19:53:20,072 - #40 int
+INFO  19:53:20,072 - #40 d
+INFO  19:53:20,072 - #7 )
+INFO  19:53:20,072 - Deklarisana promenljiva d na liniji 10
+INFO  19:53:20,072 - #3 {
+INFO  19:53:20,072 - #10 return
+INFO  19:53:20,087 - #40 z
+INFO  19:53:20,087 - #24 +
+INFO  19:53:20,087 - #40 d
+INFO  19:53:20,087 - #5 ;
+INFO  19:53:20,087 - #4 }
+INFO  19:53:20,087 - #14 void
+INFO  19:53:20,087 - #40 main
+INFO  19:53:20,087 - #6 (
+INFO  19:53:20,087 - Obradjuje se funkcija main na liniji 14
+INFO  19:53:20,087 - #7 )
+INFO  19:53:20,087 - #3 {
+INFO  19:53:20,087 - #40 a
+INFO  19:53:20,087 - #13 =
+INFO  19:53:20,087 - #18 new
+INFO  19:53:20,087 - #40 int
+INFO  19:53:20,087 - #16 [
+INFO  19:53:20,087 - #38 5
+INFO  19:53:20,087 - #17 ]
+INFO  19:53:20,087 - #5 ;
+INFO  19:53:20,087 - #40 log
+INFO  19:53:20,087 - #13 =
+INFO  19:53:20,087 - #42 true
+INFO  19:53:20,087 - #5 ;
+INFO  19:53:20,087 - #40 x
+INFO  19:53:20,087 - #13 =
+INFO  19:53:20,087 - #38 0
+INFO  19:53:20,087 - #5 ;
+INFO  19:53:20,087 - #40 y
+INFO  19:53:20,087 - #13 =
+INFO  19:53:20,087 - #38 3
+INFO  19:53:20,087 - #5 ;
+INFO  19:53:20,087 - #47 for
+INFO  19:53:20,087 - #6 (
+INFO  19:53:20,087 - #5 ;
+INFO  19:53:20,087 - #40 log
+INFO  19:53:20,087 - #5 ;
+INFO  19:53:20,087 - #7 )
+INFO  19:53:20,087 - #3 {
+INFO  19:53:20,087 - #40 a
+INFO  19:53:20,087 - #16 [
+INFO  19:53:20,087 - #40 x
+INFO  19:53:20,087 - #17 ]
+INFO  19:53:20,087 - #13 =
+INFO  19:53:20,087 - #40 sum
+INFO  19:53:20,087 - #6 (
+INFO  19:53:20,087 - #40 y
+INFO  19:53:20,087 - #8 ,
+INFO  19:53:20,087 - #40 x
+INFO  19:53:20,087 - #7 )
+INFO  19:53:20,087 - #24 +
+INFO  19:53:20,087 - Pronadjen poziv funkcije sum na liniji 19
+INFO  19:53:20,087 - #38 1
+INFO  19:53:20,087 - #5 ;
+INFO  19:53:20,087 - #40 x
+INFO  19:53:20,087 - #13 =
+INFO  19:53:20,087 - #40 sum
+INFO  19:53:20,087 - #6 (
+INFO  19:53:20,087 - #40 x
+INFO  19:53:20,087 - #8 ,
+INFO  19:53:20,087 - #38 1
+INFO  19:53:20,103 - #7 )
+INFO  19:53:20,103 - #5 ;
+INFO  19:53:20,103 - Pronadjen poziv funkcije sum na liniji 20
+INFO  19:53:20,103 - #45 if
+INFO  19:53:20,103 - #6 (
+INFO  19:53:20,103 - #40 x
+INFO  19:53:20,103 - #32 ==
+INFO  19:53:20,103 - #38 5
+INFO  19:53:20,103 - #7 )
+INFO  19:53:20,103 - #48 break
+INFO  19:53:20,103 - #5 ;
+INFO  19:53:20,103 - #4 }
+INFO  19:53:20,103 - #9 print
+INFO  19:53:20,103 - #6 (
+INFO  19:53:20,103 - #40 a
+INFO  19:53:20,103 - #16 [
+INFO  19:53:20,103 - #38 3
+INFO  19:53:20,103 - #17 ]
+INFO  19:53:20,103 - #7 )
+INFO  19:53:20,103 - #5 ;
+INFO  19:53:20,103 - #4 }
+INFO  19:53:20,103 - #4 }
+INFO  19:53:20,103 - Definicije globalnih promenljivih = 4
+INFO  19:53:20,103 - Definicije lokalnih promenjivih = 0
+INFO  19:53:20,103 - Definicije globalnih konstanti = 0
+INFO  19:53:20,103 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 2
+INFO  19:53:20,103 - Pozivi funkcija u telu metode main = 3
+INFO  19:53:20,103 - Deklaracije formalnih argumenata funkcija = 2
+INFO  19:53:20,118 - Parsiranje uspesno zavrseno!

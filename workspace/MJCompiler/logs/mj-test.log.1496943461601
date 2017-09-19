@@ -1,0 +1,60 @@
+INFO  19:34:07,678 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test302.mj
+INFO  19:34:07,725 - #2 program
+INFO  19:34:07,725 - #40 test302
+INFO  19:34:07,725 - #40 int
+INFO  19:34:07,725 - #40 i
+INFO  19:34:07,725 - #5 ;
+INFO  19:34:07,725 - Deklarisana promenljiva i na liniji 6
+INFO  19:34:07,725 - #40 bool
+INFO  19:34:07,725 - #40 ijedva
+INFO  19:34:07,725 - #5 ;
+INFO  19:34:07,725 - Deklarisana promenljiva ijedva na liniji 7
+INFO  19:34:07,725 - #40 int
+INFO  19:34:07,725 - #40 niz
+INFO  19:34:07,725 - #16 [
+INFO  19:34:07,725 - #17 ]
+INFO  19:34:07,725 - #5 ;
+INFO  19:34:07,725 - Deklarisan niz niz na liniji 9
+INFO  19:34:07,725 - #3 {
+INFO  19:34:07,725 - #40 int
+INFO  19:34:07,725 - #40 sum
+INFO  19:34:07,725 - #6 (
+INFO  19:34:07,725 - Obradjuje se funkcija sum na liniji 12
+INFO  19:34:07,725 - #40 int
+INFO  19:34:07,725 - #40 z
+INFO  19:34:07,725 - #8 ,
+INFO  19:34:07,725 - Deklarisana promenljiva z na liniji 12
+INFO  19:34:07,725 - #40 int
+INFO  19:34:07,725 - #40 d
+INFO  19:34:07,725 - #7 )
+INFO  19:34:07,725 - Deklarisana promenljiva d na liniji 12
+INFO  19:34:07,725 - #3 {
+INFO  19:34:07,725 - #10 return
+INFO  19:34:07,725 - #40 z
+INFO  19:34:07,725 - #24 +
+INFO  19:34:07,725 - #40 d
+INFO  19:34:07,741 - #5 ;
+INFO  19:34:07,741 - #4 }
+INFO  19:34:07,741 - #40 int
+INFO  19:34:07,741 - #40 inkrement
+INFO  19:34:07,741 - #6 (
+INFO  19:34:07,741 - Obradjuje se funkcija inkrement na liniji 17
+INFO  19:34:07,741 - #40 int
+INFO  19:34:07,741 - #40 a
+INFO  19:34:07,741 - #7 )
+INFO  19:34:07,741 - Deklarisana promenljiva a na liniji 17
+INFO  19:34:07,741 - #40 int
+INFO  19:34:07,741 - #40 pom
+INFO  19:34:07,741 - #5 ;
+INFO  19:34:07,741 - Deklarisana promenljiva pom na liniji 17
+INFO  19:34:07,741 - #3 {
+INFO  19:34:07,741 - #40 pom
+INFO  19:34:07,741 - #13 =
+INFO  19:34:07,741 - #5 ;
+INFO  19:34:07,741 - Definicije globalnih promenljivih = 3
+INFO  19:34:07,741 - Definicije lokalnih promenjivih = 0
+INFO  19:34:07,741 - Definicije globalnih konstanti = 0
+INFO  19:34:07,741 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 2
+INFO  19:34:07,741 - Pozivi funkcija u telu metode main = 0
+INFO  19:34:07,741 - Deklaracije formalnih argumenata funkcija = 3
+ERROR 19:34:07,741 - Parsiranje NIJE uspesno zavrseno!

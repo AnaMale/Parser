@@ -1,0 +1,127 @@
+INFO  19:31:40,534 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test01.mj
+INFO  19:31:40,568 - #2 program
+INFO  19:31:40,568 - #40 Prilepi
+INFO  19:31:40,568 - #40 int
+INFO  19:31:40,584 - #40 a
+INFO  19:31:40,584 - #8 ,
+INFO  19:31:40,584 - Deklarisana promenljiva a na liniji 6
+INFO  19:31:40,584 - #40 b
+INFO  19:31:40,584 - #5 ;
+INFO  19:31:40,584 - Deklarisana promenljiva b na liniji 6
+INFO  19:31:40,584 - #40 int
+INFO  19:31:40,584 - #40 manji
+INFO  19:31:40,584 - #8 ,
+INFO  19:31:40,584 - Deklarisana promenljiva manji na liniji 7
+INFO  19:31:40,584 - #40 veci
+INFO  19:31:40,584 - #8 ,
+INFO  19:31:40,584 - Deklarisana promenljiva veci na liniji 7
+INFO  19:31:40,584 - #40 step
+INFO  19:31:40,584 - #8 ,
+INFO  19:31:40,584 - Deklarisana promenljiva step na liniji 7
+INFO  19:31:40,584 - #40 pom
+INFO  19:31:40,584 - #8 ,
+INFO  19:31:40,584 - Deklarisana promenljiva pom na liniji 7
+INFO  19:31:40,584 - #40 novi
+INFO  19:31:40,584 - #5 ;
+INFO  19:31:40,584 - Deklarisana promenljiva novi na liniji 7
+INFO  19:31:40,584 - #19 const
+INFO  19:31:40,584 - #40 int
+INFO  19:31:40,584 - #40 x
+INFO  19:31:40,584 - #13 =
+INFO  19:31:40,584 - #38 10
+INFO  19:31:40,584 - #5 ;
+INFO  19:31:40,584 - Deklarisana konstanta x na liniji 8
+INFO  19:31:40,584 - #3 {
+INFO  19:31:40,584 - #14 void
+INFO  19:31:40,584 - #40 main
+INFO  19:31:40,584 - #6 (
+INFO  19:31:40,584 - Obradjuje se funkcija main na liniji 11
+INFO  19:31:40,584 - #7 )
+INFO  19:31:40,584 - #3 {
+INFO  19:31:40,584 - #15 read
+INFO  19:31:40,584 - #6 (
+INFO  19:31:40,584 - #40 a
+INFO  19:31:40,584 - #7 )
+INFO  19:31:40,584 - #5 ;
+INFO  19:31:40,584 - #15 read
+INFO  19:31:40,584 - #6 (
+INFO  19:31:40,584 - #40 b
+INFO  19:31:40,584 - #7 )
+INFO  19:31:40,584 - #5 ;
+INFO  19:31:40,584 - #40 novi
+INFO  19:31:40,584 - #13 =
+INFO  19:31:40,584 - #38 0
+INFO  19:31:40,584 - #5 ;
+INFO  19:31:40,599 - #45 if
+INFO  19:31:40,599 - #6 (
+INFO  19:31:40,599 - #40 a
+INFO  19:31:40,599 - #36 <
+INFO  19:31:40,599 - #40 b
+INFO  19:31:40,599 - #7 )
+INFO  19:31:40,599 - #3 {
+INFO  19:31:40,599 - #40 manji
+INFO  19:31:40,599 - #13 =
+INFO  19:31:40,599 - #40 a
+INFO  19:31:40,599 - #5 ;
+INFO  19:31:40,599 - #40 veci
+INFO  19:31:40,599 - #13 =
+INFO  19:31:40,599 - #40 b
+INFO  19:31:40,599 - #5 ;
+INFO  19:31:40,599 - #4 }
+INFO  19:31:40,599 - #46 else
+INFO  19:31:40,599 - #3 {
+INFO  19:31:40,599 - #40 manji
+INFO  19:31:40,599 - #13 =
+INFO  19:31:40,599 - #40 b
+INFO  19:31:40,599 - #5 ;
+INFO  19:31:40,599 - #40 veci
+INFO  19:31:40,599 - #13 =
+INFO  19:31:40,599 - #40 a
+INFO  19:31:40,599 - #5 ;
+INFO  19:31:40,599 - #4 }
+INFO  19:31:40,599 - #40 pom
+INFO  19:31:40,599 - #13 =
+INFO  19:31:40,599 - #40 manji
+INFO  19:31:40,599 - #5 ;
+INFO  19:31:40,599 - #47 for
+INFO  19:31:40,599 - #6 (
+INFO  19:31:40,599 - #5 ;
+INFO  19:31:40,599 - #40 pom
+INFO  19:31:40,599 - #34 >
+INFO  19:31:40,599 - #38 0
+INFO  19:31:40,599 - #5 ;
+INFO  19:31:40,599 - #7 )
+INFO  19:31:40,599 - #3 {
+INFO  19:31:40,599 - #40 pom
+INFO  19:31:40,599 - #13 =
+INFO  19:31:40,599 - #40 pom
+INFO  19:31:40,599 - #23 /
+INFO  19:31:40,599 - #40 x
+INFO  19:31:40,599 - #5 ;
+INFO  19:31:40,599 - #40 step
+INFO  19:31:40,599 - #13 =
+INFO  19:31:40,599 - #40 step
+INFO  19:31:40,599 - #22 *
+INFO  19:31:40,599 - #40 x
+INFO  19:31:40,599 - #5 ;
+INFO  19:31:40,599 - #4 }
+INFO  19:31:40,599 - #40 novi
+INFO  19:31:40,599 - #13 =
+INFO  19:31:40,599 - #40 veci
+INFO  19:31:40,599 - #22 *
+INFO  19:31:40,615 - #40 step
+INFO  19:31:40,615 - #24 +
+INFO  19:31:40,615 - #40 manji
+INFO  19:31:40,615 - #5 ;
+INFO  19:31:40,615 - #40 novi
+INFO  19:31:40,615 - #13 =
+INFO  19:31:40,615 - #5 ;
+INFO  19:31:40,615 - #4 }
+INFO  19:31:40,615 - #4 }
+INFO  19:31:40,615 - Definicije globalnih promenljivih = 7
+INFO  19:31:40,615 - Definicije lokalnih promenjivih = 0
+INFO  19:31:40,615 - Definicije globalnih konstanti = 1
+INFO  19:31:40,615 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 1
+INFO  19:31:40,615 - Pozivi funkcija u telu metode main = 2
+INFO  19:31:40,615 - Deklaracije formalnih argumenata funkcija = 0
+ERROR 19:31:40,615 - Parsiranje NIJE uspesno zavrseno!

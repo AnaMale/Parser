@@ -1,0 +1,38 @@
+INFO  11:41:23,159 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\program.mj
+INFO  11:41:23,190 - #2 program
+INFO  11:41:23,190 - #16 test301
+INFO  11:41:23,190 - #10 const
+INFO  11:41:23,190 - #16 int
+INFO  11:41:23,190 - #16 jedan
+INFO  11:41:23,190 - #37 =
+INFO  11:41:23,190 - #50 1
+INFO  11:41:23,190 - #9 ;
+INFO  11:41:23,190 - Deklarisana konstanta jedan na liniji 4
+INFO  11:41:23,190 - #10 const
+INFO  11:41:23,190 - #16 int
+INFO  11:41:23,190 - #16 pet
+INFO  11:41:23,190 - #37 =
+INFO  11:41:23,190 - #50 5
+INFO  11:41:23,190 - #9 ;
+INFO  11:41:23,190 - Deklarisana konstanta pet na liniji 5
+INFO  11:41:23,190 - #16 int
+INFO  11:41:23,190 - #16 niz
+INFO  11:41:23,190 - #7 [
+INFO  11:41:23,190 - #8 ]
+INFO  11:41:23,190 - #9 ;
+INFO  11:41:23,190 - Deklarisan niz niz na liniji 7
+INFO  11:41:23,190 - #16 char
+INFO  11:41:23,190 - #16 nizch
+INFO  11:41:23,190 - #7 [
+INFO  11:41:23,190 - #8 ]
+INFO  11:41:23,190 - #9 ;
+INFO  11:41:23,190 - Deklarisan niz nizch na liniji 9
+INFO  11:41:23,190 - #16 pet
+INFO  11:41:23,190 - #26 ++
+INFO  11:41:23,206 - Definicije globalnih promenljivih = 2
+INFO  11:41:23,206 - Definicije lokalnih promenjivih = 2
+INFO  11:41:23,206 - Definicije globalnih konstanti = 2
+INFO  11:41:23,206 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 0
+INFO  11:41:23,206 - Pozivi funkcija u telu metode main = 0
+INFO  11:41:23,206 - Deklaracije formalnih argumenata funkcija = 0
+ERROR 11:41:23,206 - Parsiranje NIJE uspesno zavrseno!

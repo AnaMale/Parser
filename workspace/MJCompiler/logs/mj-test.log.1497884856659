@@ -1,0 +1,56 @@
+INFO  13:22:43,127 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test03.mj
+INFO  13:22:43,174 - #2 program
+INFO  13:22:43,174 - #40 test03
+INFO  13:22:43,174 - #19 const
+INFO  13:22:43,174 - #40 int
+INFO  13:22:43,174 - #40 a
+INFO  13:22:43,174 - #13 =
+INFO  13:22:43,174 - #38 3
+INFO  13:22:43,174 - #5 ;
+INFO  13:22:43,174 - Deklarisana konstanta a na liniji 5
+INFO  13:22:43,174 - #40 int
+INFO  13:22:43,174 - #40 x
+INFO  13:22:43,174 - #8 ,
+INFO  13:22:43,174 - Deklarisana promenljiva x na liniji 6
+INFO  13:22:43,174 - #40 y
+INFO  13:22:43,174 - #5 ;
+INFO  13:22:43,174 - Deklarisana promenljiva y na liniji 6
+INFO  13:22:43,174 - #40 char
+INFO  13:22:43,174 - #40 z
+INFO  13:22:43,174 - #5 ;
+INFO  13:22:43,174 - Deklarisana promenljiva z na liniji 7
+INFO  13:22:43,174 - #3 {
+INFO  13:22:43,174 - #14 void
+INFO  13:22:43,174 - #40 main
+INFO  13:22:43,174 - #6 (
+INFO  13:22:43,174 - Obradjuje se funkcija main na liniji 9
+INFO  13:22:43,174 - #7 )
+INFO  13:22:43,174 - #3 {
+INFO  13:22:43,174 - #15 read
+INFO  13:22:43,189 - #6 (
+INFO  13:22:43,189 - #40 a
+INFO  13:22:43,189 - #7 )
+INFO  13:22:43,189 - #5 ;
+INFO  13:22:43,189 - #40 a
+INFO  13:22:43,189 - #13 =
+INFO  13:22:43,189 - #38 5
+INFO  13:22:43,189 - #5 ;
+INFO  13:22:43,205 - #40 x
+INFO  13:22:43,205 - #13 =
+INFO  13:22:43,205 - #38 1
+INFO  13:22:43,205 - #5 ;
+INFO  13:22:43,205 - #40 y
+INFO  13:22:43,205 - #13 =
+INFO  13:22:43,205 - #38 3
+INFO  13:22:43,205 - #5 ;
+INFO  13:22:43,205 - #40 z
+INFO  13:22:43,205 - #13 =
+INFO  13:22:43,205 - #39 b
+INFO  13:22:43,205 - #5 ;
+INFO  13:22:43,205 - #47 for
+INFO  13:22:43,205 - #6 (
+INFO  13:22:43,205 - #5 ;
+INFO  13:22:43,205 - #40 z
+INFO  13:22:43,205 - #36 <
+INFO  13:22:43,205 - #40 a
+INFO  13:22:43,205 - #5 ;

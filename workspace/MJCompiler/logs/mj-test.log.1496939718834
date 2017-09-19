@@ -1,0 +1,22 @@
+INFO  18:34:59,871 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test301.mj
+INFO  18:34:59,953 - #2 program
+INFO  18:34:59,953 - #40 test301
+INFO  18:34:59,972 - #19 const
+INFO  18:34:59,973 - #40 int
+INFO  18:34:59,973 - #40 jedan
+INFO  18:34:59,974 - #13 =
+INFO  18:34:59,974 - #38 1
+INFO  18:34:59,974 - #5 ;
+INFO  18:34:59,975 - Deklarisana konstanta jedan na liniji 4
+INFO  18:34:59,975 - Greska na liniji: 4
+INFO  18:34:59,975 - #19 const
+ERROR 18:34:59,975 - 
+Sintaksna greska na liniji 5
+ERROR 18:34:59,976 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 5
+INFO  18:34:59,976 - Definicije globalnih promenljivih = 0
+INFO  18:34:59,976 - Definicije lokalnih promenjivih = 0
+INFO  18:34:59,977 - Definicije globalnih konstanti = 0
+INFO  18:34:59,978 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 0
+INFO  18:34:59,978 - Pozivi funkcija u telu metode main = 0
+INFO  18:34:59,978 - Deklaracije formalnih argumenata funkcija = 0
+ERROR 18:34:59,981 - Parsiranje NIJE uspesno zavrseno!

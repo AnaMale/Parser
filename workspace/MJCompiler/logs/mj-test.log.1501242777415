@@ -1,0 +1,41 @@
+INFO  13:05:00,137 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\test301.mj
+INFO  13:05:00,171 - #2 program
+INFO  13:05:00,171 - #16 test301
+INFO  13:05:00,171 - #10 const
+INFO  13:05:00,171 - #16 int
+INFO  13:05:00,171 - #16 jedan
+INFO  13:05:00,171 - #37 =
+INFO  13:05:00,171 - #50 1
+INFO  13:05:00,171 - #9 ;
+INFO  13:05:00,171 - Deklarisana konstanta jedan na liniji 4
+INFO  13:05:00,171 - #10 const
+INFO  13:05:00,171 - #16 int
+INFO  13:05:00,171 - #16 pet
+INFO  13:05:00,171 - #37 =
+INFO  13:05:00,171 - #50 5
+INFO  13:05:00,171 - #9 ;
+INFO  13:05:00,171 - Deklarisana konstanta pet na liniji 5
+INFO  13:05:00,171 - #16 int
+INFO  13:05:00,171 - #16 a
+INFO  13:05:00,171 - #12 ,
+INFO  13:05:00,171 - Deklarisana promenljiva a na liniji 6
+INFO  13:05:00,171 - #16 b
+INFO  13:05:00,171 - #9 ;
+INFO  13:05:00,171 - Deklarisana promenljiva b na liniji 6
+INFO  13:05:00,171 - #16 int
+INFO  13:05:00,171 - #16 niz
+INFO  13:05:00,171 - #7 [
+INFO  13:05:00,171 - #8 ]
+INFO  13:05:00,171 - #9 ;
+INFO  13:05:00,171 - Deklarisan niz niz na liniji 8
+INFO  13:05:00,171 - #16 char
+INFO  13:05:00,171 - #16 nizch
+INFO  13:05:00,171 - #7 [
+INFO  13:05:00,171 - #8 ]
+INFO  13:05:00,171 - #9 ;
+INFO  13:05:00,171 - Deklarisan niz nizch na liniji 10
+INFO  13:05:00,171 - #3 {
+INFO  13:05:00,171 - #16 int
+INFO  13:05:00,171 - #16 sum
+INFO  13:05:00,171 - #5 (
+INFO  13:05:00,171 - Obradjuje se funkcija sum na liniji 13

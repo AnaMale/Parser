@@ -1,0 +1,41 @@
+INFO  17:29:29,415 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  17:29:29,480 - #2 program
+INFO  17:29:29,480 - #32 test302
+INFO  17:29:29,485 - #19 const
+INFO  17:29:29,485 - #32 int
+INFO  17:29:29,485 - #32 jedan
+INFO  17:29:29,485 - #13 =
+INFO  17:29:29,485 - #30 1
+INFO  17:29:29,485 - #5 ;
+INFO  17:29:29,485 - #19 const
+INFO  17:29:29,485 - Deklarisana konstanta jedan na liniji 5
+INFO  17:29:29,485 - #32 int
+INFO  17:29:29,485 - #32 pet
+INFO  17:29:29,485 - #13 =
+INFO  17:29:29,485 - #30 5
+INFO  17:29:29,485 - #5 ;
+INFO  17:29:29,485 - #32 int
+INFO  17:29:29,485 - Deklarisana konstanta pet na liniji 6
+INFO  17:29:29,485 - #32 int
+INFO  17:29:29,485 - #5 ;
+INFO  17:29:29,490 - #32 int
+INFO  17:29:29,490 - Deklarisana promenljiva int na liniji 8
+INFO  17:29:29,490 - #32 niz
+ERROR 17:29:29,490 - Greska na liniji10: Ime int ne predstavlja tip 
+INFO  17:29:29,490 - #16 [
+INFO  17:29:29,490 - #17 ]
+INFO  17:29:29,490 - #5 ;
+INFO  17:29:29,490 - #32 char
+INFO  17:29:29,490 - Deklarisan niz niz na liniji 10
+INFO  17:29:29,490 - #32 nizch
+INFO  17:29:29,490 - #16 [
+INFO  17:29:29,490 - #17 ]
+INFO  17:29:29,490 - #5 ;
+INFO  17:29:29,490 - #32 for
+INFO  17:29:29,490 - Deklarisan niz nizch na liniji 12
+INFO  17:29:29,495 - #6 (
+ERROR 17:29:29,495 - 
+Sintaksna greska na liniji 14
+ERROR 17:29:29,495 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 14
+INFO  17:29:29,495 - Print calls = 0
+ERROR 17:29:29,495 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,10 @@
+INFO  12:10:22,464 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  12:10:22,554 - #2 program
+INFO  12:10:22,554 - #32 test301
+INFO  12:10:22,554 - #32 anchy
+INFO  12:10:22,554 - #30 5
+ERROR 12:10:22,554 - 
+Sintaksna greska na liniji 4
+ERROR 12:10:22,554 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 4
+INFO  12:10:22,554 - Print calls = 0
+ERROR 12:10:22,559 - Parsiranje NIJE uspesno zavrseno!

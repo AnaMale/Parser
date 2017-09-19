@@ -1,0 +1,79 @@
+INFO  14:14:37,578 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test01.mj
+INFO  14:14:37,625 - #2 program
+INFO  14:14:37,625 - #40 ispisiA
+INFO  14:14:37,625 - #40 int
+INFO  14:14:37,625 - #40 a
+INFO  14:14:37,625 - #8 ,
+INFO  14:14:37,625 - Deklarisana promenljiva a na liniji 6
+INFO  14:14:37,625 - #40 b
+INFO  14:14:37,625 - #5 ;
+INFO  14:14:37,625 - Deklarisana promenljiva b na liniji 6
+INFO  14:14:37,625 - #40 bool
+INFO  14:14:37,625 - #40 b
+INFO  14:14:37,625 - #5 ;
+INFO  14:14:37,625 - Deklarisana promenljiva b na liniji 7
+INFO  14:14:37,625 - Greska na liniji, nije jedinstveno ime 7
+INFO  14:14:37,625 - #3 {
+INFO  14:14:37,625 - #14 void
+INFO  14:14:37,625 - #40 main
+INFO  14:14:37,625 - #6 (
+INFO  14:14:37,625 - Obradjuje se funkcija main na liniji 9
+INFO  14:14:37,625 - #7 )
+INFO  14:14:37,625 - #3 {
+INFO  14:14:37,625 - #15 read
+INFO  14:14:37,625 - #6 (
+INFO  14:14:37,625 - #40 a
+INFO  14:14:37,625 - #7 )
+INFO  14:14:37,625 - #5 ;
+INFO  14:14:37,625 - #15 read
+INFO  14:14:37,625 - #6 (
+INFO  14:14:37,625 - #40 b
+INFO  14:14:37,625 - #7 )
+INFO  14:14:37,625 - #5 ;
+INFO  14:14:37,625 - #45 if
+INFO  14:14:37,625 - #6 (
+INFO  14:14:37,625 - #40 a
+INFO  14:14:37,625 - #36 <
+INFO  14:14:37,640 - #40 b
+INFO  14:14:37,640 - #7 )
+INFO  14:14:37,640 - #3 {
+INFO  14:14:37,640 - #40 b
+INFO  14:14:37,640 - #13 =
+INFO  14:14:37,640 - #38 1
+INFO  14:14:37,640 - #5 ;
+INFO  14:14:37,640 - #4 }
+INFO  14:14:37,640 - #46 else
+INFO  14:14:37,640 - #3 {
+INFO  14:14:37,640 - #40 b
+INFO  14:14:37,640 - #13 =
+INFO  14:14:37,640 - #38 0
+INFO  14:14:37,640 - #5 ;
+INFO  14:14:37,640 - #4 }
+INFO  14:14:37,640 - #45 if
+INFO  14:14:37,640 - #6 (
+INFO  14:14:37,640 - #40 b
+INFO  14:14:37,640 - #32 ==
+INFO  14:14:37,640 - #38 1
+INFO  14:14:37,640 - #7 )
+INFO  14:14:37,640 - #9 print
+INFO  14:14:37,640 - #6 (
+INFO  14:14:37,640 - #40 a
+INFO  14:14:37,640 - #24 +
+INFO  14:14:37,640 - #38 3
+INFO  14:14:37,640 - #7 )
+INFO  14:14:37,640 - #5 ;
+INFO  14:14:37,640 - #46 else
+INFO  14:14:37,640 - #9 print
+INFO  14:14:37,640 - #6 (
+INFO  14:14:37,640 - #40 a
+INFO  14:14:37,640 - #7 )
+INFO  14:14:37,640 - #5 ;
+INFO  14:14:37,640 - #4 }
+INFO  14:14:37,640 - #4 }
+INFO  14:14:37,640 - Definicije globalnih promenljivih = 3
+INFO  14:14:37,640 - Definicije lokalnih promenjivih = 0
+INFO  14:14:37,640 - Definicije globalnih konstanti = 0
+INFO  14:14:37,640 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 1
+INFO  14:14:37,640 - Pozivi funkcija u telu metode main = 4
+INFO  14:14:37,640 - Deklaracije formalnih argumenata funkcija = 0
+INFO  14:14:37,673 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,58 @@
+INFO  14:13:10,233 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test01.mj
+INFO  14:13:10,296 - #2 program
+INFO  14:13:10,296 - #40 ispisiA
+INFO  14:13:10,296 - #40 int
+INFO  14:13:10,296 - #40 a
+INFO  14:13:10,296 - #8 ,
+INFO  14:13:10,296 - Deklarisana promenljiva a na liniji 6
+INFO  14:13:10,296 - #40 b
+INFO  14:13:10,296 - #5 ;
+INFO  14:13:10,296 - Deklarisana promenljiva b na liniji 6
+INFO  14:13:10,296 - #40 bool
+INFO  14:13:10,296 - #40 b
+INFO  14:13:10,296 - #13 =
+INFO  14:13:10,296 - #38 0
+INFO  14:13:10,296 - #5 ;
+INFO  14:13:10,296 - #3 {
+INFO  14:13:10,296 - #14 void
+INFO  14:13:10,296 - #40 main
+DEBUG 14:13:10,296 - Uspesan oporavak od greske pri definiciji globalnih promenljivih do ; u liniji 7
+INFO  14:13:10,296 - #6 (
+INFO  14:13:10,296 - Obradjuje se funkcija main na liniji 10
+INFO  14:13:10,296 - #7 )
+INFO  14:13:10,296 - #3 {
+INFO  14:13:10,296 - #15 read
+INFO  14:13:10,296 - #6 (
+INFO  14:13:10,296 - #40 a
+INFO  14:13:10,296 - #7 )
+INFO  14:13:10,296 - #5 ;
+INFO  14:13:10,296 - #15 read
+INFO  14:13:10,296 - #6 (
+INFO  14:13:10,296 - #40 b
+INFO  14:13:10,296 - #7 )
+INFO  14:13:10,296 - #5 ;
+INFO  14:13:10,296 - #45 if
+INFO  14:13:10,296 - #6 (
+INFO  14:13:10,312 - #40 a
+INFO  14:13:10,312 - #36 <
+INFO  14:13:10,312 - #40 b
+INFO  14:13:10,312 - #7 )
+INFO  14:13:10,312 - #3 {
+INFO  14:13:10,312 - #40 b
+INFO  14:13:10,312 - #13 =
+INFO  14:13:10,312 - #38 1
+INFO  14:13:10,312 - #5 ;
+INFO  14:13:10,312 - #4 }
+INFO  14:13:10,312 - #46 else
+INFO  14:13:10,312 - #3 {
+INFO  14:13:10,312 - #40 b
+INFO  14:13:10,312 - #13 =
+INFO  14:13:10,312 - #38 0
+INFO  14:13:10,312 - #5 ;
+INFO  14:13:10,312 - #4 }
+INFO  14:13:10,312 - #45 if
+INFO  14:13:10,312 - #6 (
+INFO  14:13:10,312 - #40 b
+INFO  14:13:10,312 - #32 ==
+INFO  14:13:10,312 - #42 true
+INFO  14:13:10,312 - #7 )

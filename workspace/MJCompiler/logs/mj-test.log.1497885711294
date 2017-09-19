@@ -1,0 +1,64 @@
+INFO  17:11:20,729 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test06.mj
+INFO  17:11:20,767 - #2 program
+INFO  17:11:20,767 - #40 test06
+INFO  17:11:20,767 - #40 int
+INFO  17:11:20,767 - #40 a
+INFO  17:11:20,767 - #16 [
+INFO  17:11:20,767 - #17 ]
+INFO  17:11:20,767 - #8 ,
+INFO  17:11:20,767 - Deklarisan niz a na liniji 4
+INFO  17:11:20,767 - #40 b
+INFO  17:11:20,767 - #16 [
+INFO  17:11:20,767 - #17 ]
+INFO  17:11:20,767 - #8 ,
+INFO  17:11:20,767 - Deklarisan niz b na liniji 4
+INFO  17:11:20,767 - #40 x
+INFO  17:11:20,767 - #8 ,
+INFO  17:11:20,767 - Deklarisana promenljiva x na liniji 4
+INFO  17:11:20,767 - #40 y
+INFO  17:11:20,782 - #5 ;
+INFO  17:11:20,782 - Deklarisana promenljiva y na liniji 4
+INFO  17:11:20,782 - #40 char
+INFO  17:11:20,782 - #40 c
+INFO  17:11:20,782 - #16 [
+INFO  17:11:20,782 - #17 ]
+INFO  17:11:20,782 - #8 ,
+INFO  17:11:20,782 - Deklarisan niz c na liniji 5
+INFO  17:11:20,782 - #40 d
+INFO  17:11:20,782 - #16 [
+INFO  17:11:20,782 - #17 ]
+INFO  17:11:20,782 - #8 ,
+INFO  17:11:20,782 - Deklarisan niz d na liniji 5
+INFO  17:11:20,782 - #40 j
+INFO  17:11:20,782 - #5 ;
+INFO  17:11:20,782 - Deklarisana promenljiva j na liniji 5
+INFO  17:11:20,782 - #3 {
+INFO  17:11:20,782 - #14 void
+INFO  17:11:20,782 - #40 main
+INFO  17:11:20,782 - #6 (
+INFO  17:11:20,782 - Obradjuje se funkcija main na liniji 8
+INFO  17:11:20,782 - #7 )
+INFO  17:11:20,782 - #3 {
+INFO  17:11:20,782 - #40 x
+INFO  17:11:20,782 - #13 =
+INFO  17:11:20,782 - #38 3
+INFO  17:11:20,798 - #5 ;
+INFO  17:11:20,798 - #40 a
+INFO  17:11:20,798 - #13 =
+INFO  17:11:20,798 - #18 new
+INFO  17:11:20,798 - #40 char
+INFO  17:11:20,798 - #16 [
+INFO  17:11:20,798 - #38 5
+INFO  17:11:20,798 - #17 ]
+INFO  17:11:20,798 - #5 ;
+INFO  17:11:20,814 - #40 a
+INFO  17:11:20,814 - #16 [
+INFO  17:11:20,814 - #40 x
+INFO  17:11:20,814 - #11 ++
+INFO  17:11:20,814 - Definicije globalnih promenljivih = 7
+INFO  17:11:20,814 - Definicije lokalnih promenjivih = 0
+INFO  17:11:20,814 - Definicije globalnih konstanti = 0
+INFO  17:11:20,814 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 1
+INFO  17:11:20,814 - Pozivi funkcija u telu metode main = 0
+INFO  17:11:20,814 - Deklaracije formalnih argumenata funkcija = 0
+ERROR 17:11:20,814 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,64 @@
+INFO  07:03:00,917 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\program2.mj
+INFO  07:03:00,957 - #2 program
+INFO  07:03:00,957 - #40 test2
+INFO  07:03:00,957 - #19 const
+INFO  07:03:00,957 - #40 int
+INFO  07:03:00,957 - #40 c
+INFO  07:03:00,957 - #13 =
+INFO  07:03:00,957 - #38 2
+INFO  07:03:00,957 - #5 ;
+INFO  07:03:00,957 - Deklarisana konstanta c na liniji 3
+INFO  07:03:00,957 - #50 class
+INFO  07:03:00,957 - #40 B
+INFO  07:03:00,962 - #3 {
+INFO  07:03:00,962 - #40 int
+INFO  07:03:00,962 - #40 b
+INFO  07:03:00,962 - #8 ,
+INFO  07:03:00,962 - Deklarisano polje klase b na liniji 6
+INFO  07:03:00,962 - #40 d
+INFO  07:03:00,962 - #5 ;
+INFO  07:03:00,962 - Deklarisano polje klase d na liniji 6
+INFO  07:03:00,962 - #4 }
+INFO  07:03:00,962 - #3 {
+INFO  07:03:00,962 - #14 void
+INFO  07:03:00,962 - #40 main
+INFO  07:03:00,962 - #6 (
+INFO  07:03:00,962 - Obradjuje se funkcija main na liniji 10
+INFO  07:03:00,962 - #7 )
+INFO  07:03:00,962 - #40 B
+INFO  07:03:00,962 - #40 b
+INFO  07:03:00,962 - #5 ;
+INFO  07:03:00,962 - Deklarisana promenljiva b na liniji 11
+INFO  07:03:00,962 - #40 int
+INFO  07:03:00,962 - #40 c
+INFO  07:03:00,962 - #5 ;
+INFO  07:03:00,962 - Deklarisana promenljiva c na liniji 12
+INFO  07:03:00,962 - #51 set
+INFO  07:03:00,967 - #40 S
+INFO  07:03:00,967 - #5 ;
+INFO  07:03:00,967 - Deklarisan set S na liniji 13
+INFO  07:03:00,967 - #3 {
+INFO  07:03:00,967 - #40 c
+INFO  07:03:00,967 - #13 =
+INFO  07:03:00,967 - #24 +
+INFO  07:03:00,967 - #40 pok
+INFO  07:03:00,967 - #5 ;
+INFO  07:03:00,967 - #40 c
+INFO  07:03:00,972 - #29 *=
+INFO  07:03:00,972 - #40 b
+INFO  07:03:00,972 - #21 .
+INFO  07:03:00,972 - #40 d
+INFO  07:03:00,972 - #24 +
+INFO  07:03:00,972 - #40 b
+INFO  07:03:00,972 - #21 .
+INFO  07:03:00,972 - #40 d
+INFO  07:03:00,972 - #5 ;
+INFO  07:03:00,972 - #4 }
+INFO  07:03:00,972 - #4 }
+INFO  07:03:00,972 - Definicije globalnih promenljivih = 0
+INFO  07:03:00,972 - Definicije lokalnih promenjivih = 2
+INFO  07:03:00,972 - Definicije globalnih konstanti = 1
+INFO  07:03:00,972 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 1
+INFO  07:03:00,972 - Pozivi funkcija u telu metode main = 0
+INFO  07:03:00,972 - Deklaracije formalnih argumenata funkcija = 0
+ERROR 07:03:00,977 - Parsiranje NIJE uspesno zavrseno!

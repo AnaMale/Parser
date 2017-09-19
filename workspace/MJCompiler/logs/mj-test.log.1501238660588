@@ -1,0 +1,38 @@
+INFO  11:42:47,910 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\program.mj
+INFO  11:42:47,948 - #2 program
+INFO  11:42:47,948 - #16 test301
+INFO  11:42:47,948 - #10 const
+INFO  11:42:47,948 - #16 int
+INFO  11:42:47,948 - #16 jedan
+INFO  11:42:47,948 - #37 =
+INFO  11:42:47,948 - #50 1
+INFO  11:42:47,948 - #9 ;
+INFO  11:42:47,948 - Deklarisana konstanta jedan na liniji 4
+INFO  11:42:47,948 - #10 const
+INFO  11:42:47,948 - #16 int
+INFO  11:42:47,948 - #16 pet
+INFO  11:42:47,948 - #37 =
+INFO  11:42:47,948 - #50 5
+INFO  11:42:47,948 - #9 ;
+INFO  11:42:47,948 - Deklarisana konstanta pet na liniji 5
+INFO  11:42:47,948 - #16 int
+INFO  11:42:47,948 - #16 niz
+INFO  11:42:47,948 - #7 [
+INFO  11:42:47,948 - #8 ]
+INFO  11:42:47,948 - #9 ;
+INFO  11:42:47,948 - Deklarisan niz niz na liniji 7
+INFO  11:42:47,948 - #16 char
+INFO  11:42:47,948 - #16 nizch
+INFO  11:42:47,948 - #7 [
+INFO  11:42:47,948 - #8 ]
+INFO  11:42:47,948 - #9 ;
+INFO  11:42:47,948 - Deklarisan niz nizch na liniji 9
+INFO  11:42:47,948 - #16 pet
+INFO  11:42:47,948 - #35 *=
+INFO  11:42:47,964 - Definicije globalnih promenljivih = 2
+INFO  11:42:47,964 - Definicije lokalnih promenjivih = 2
+INFO  11:42:47,964 - Definicije globalnih konstanti = 2
+INFO  11:42:47,964 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 0
+INFO  11:42:47,964 - Pozivi funkcija u telu metode main = 0
+INFO  11:42:47,964 - Deklaracije formalnih argumenata funkcija = 0
+ERROR 11:42:47,964 - Parsiranje NIJE uspesno zavrseno!

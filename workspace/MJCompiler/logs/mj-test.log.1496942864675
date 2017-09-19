@@ -1,0 +1,81 @@
+INFO  19:20:06,117 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test302.mj
+INFO  19:20:06,148 - #2 program
+INFO  19:20:06,148 - #40 test302
+INFO  19:20:06,148 - #40 int
+INFO  19:20:06,148 - #40 i
+INFO  19:20:06,148 - #5 ;
+INFO  19:20:06,148 - Deklarisana promenljiva i na liniji 6
+INFO  19:20:06,148 - #40 bool
+INFO  19:20:06,148 - #40 ijedva
+INFO  19:20:06,148 - #5 ;
+INFO  19:20:06,163 - Deklarisana promenljiva ijedva na liniji 7
+INFO  19:20:06,163 - #40 int
+INFO  19:20:06,163 - #40 niz
+INFO  19:20:06,163 - #16 [
+INFO  19:20:06,163 - #17 ]
+INFO  19:20:06,163 - #5 ;
+INFO  19:20:06,163 - Deklarisan niz niz na liniji 9
+INFO  19:20:06,163 - #3 {
+INFO  19:20:06,163 - #40 int
+INFO  19:20:06,163 - #40 sum
+INFO  19:20:06,163 - #6 (
+INFO  19:20:06,163 - Obradjuje se funkcija sum na liniji 12
+INFO  19:20:06,163 - #40 int
+INFO  19:20:06,163 - #40 z
+INFO  19:20:06,163 - #8 ,
+INFO  19:20:06,163 - Deklarisana promenljiva z na liniji 12
+INFO  19:20:06,163 - #40 int
+INFO  19:20:06,163 - #40 d
+INFO  19:20:06,163 - #7 )
+INFO  19:20:06,163 - Deklarisana promenljiva d na liniji 12
+INFO  19:20:06,163 - #3 {
+INFO  19:20:06,163 - #10 return
+INFO  19:20:06,163 - #40 z
+INFO  19:20:06,163 - #24 +
+INFO  19:20:06,163 - #40 d
+INFO  19:20:06,163 - #5 ;
+INFO  19:20:06,163 - #4 }
+INFO  19:20:06,163 - #40 int
+INFO  19:20:06,163 - #40 inkrement
+INFO  19:20:06,163 - #6 (
+INFO  19:20:06,163 - Obradjuje se funkcija inkrement na liniji 17
+INFO  19:20:06,163 - #40 int
+INFO  19:20:06,163 - #40 a
+INFO  19:20:06,163 - #7 )
+INFO  19:20:06,163 - Deklarisana promenljiva a na liniji 17
+INFO  19:20:06,163 - #40 int
+INFO  19:20:06,163 - #40 pom
+INFO  19:20:06,163 - #5 ;
+INFO  19:20:06,163 - Deklarisana promenljiva pom na liniji 17
+INFO  19:20:06,163 - #3 {
+INFO  19:20:06,163 - #40 pom
+INFO  19:20:06,179 - #13 =
+INFO  19:20:06,179 - #38 1
+INFO  19:20:06,179 - #5 ;
+INFO  19:20:06,179 - #10 return
+INFO  19:20:06,179 - #40 sum
+INFO  19:20:06,179 - #6 (
+INFO  19:20:06,179 - #40 a
+INFO  19:20:06,179 - #8 ,
+INFO  19:20:06,179 - #40 pom
+INFO  19:20:06,179 - #7 )
+INFO  19:20:06,179 - #5 ;
+INFO  19:20:06,179 - Pronadjen poziv funkcije sum na liniji 20
+INFO  19:20:06,179 - #4 }
+INFO  19:20:06,179 - #14 void
+INFO  19:20:06,179 - #40 main
+INFO  19:20:06,179 - #6 (
+INFO  19:20:06,179 - Obradjuje se funkcija main na liniji 23
+INFO  19:20:06,179 - #7 )
+INFO  19:20:06,179 - #3 {
+INFO  19:20:06,179 - #40 if
+INFO  19:20:06,179 - #6 (
+INFO  19:20:06,179 - #38 1
+INFO  19:20:06,179 - #13 =
+INFO  19:20:06,179 - Definicije globalnih promenljivih = 3
+INFO  19:20:06,179 - Definicije lokalnih promenjivih = 0
+INFO  19:20:06,179 - Definicije globalnih konstanti = 0
+INFO  19:20:06,179 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 3
+INFO  19:20:06,179 - Pozivi funkcija u telu metode main = 0
+INFO  19:20:06,179 - Deklaracije formalnih argumenata funkcija = 3
+ERROR 19:20:06,179 - Parsiranje NIJE uspesno zavrseno!

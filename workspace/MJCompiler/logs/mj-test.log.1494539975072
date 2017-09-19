@@ -1,0 +1,8 @@
+INFO  23:57:02,816 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  23:57:02,857 - #2 program
+INFO  23:57:02,857 - #32 test301
+ERROR 23:57:02,857 - 
+Sintaksna greska na liniji 3
+ERROR 23:57:02,857 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 3
+INFO  23:57:02,857 - Print calls = 0
+ERROR 23:57:02,857 - Parsiranje NIJE uspesno zavrseno!

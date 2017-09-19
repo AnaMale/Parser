@@ -1,0 +1,312 @@
+INFO  16:38:32,410 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test05.mj
+INFO  16:38:32,456 - #2 program
+INFO  16:38:32,456 - #40 Rastojanje
+INFO  16:38:32,456 - #40 int
+INFO  16:38:32,456 - #40 xa
+INFO  16:38:32,456 - #8 ,
+INFO  16:38:32,456 - Deklarisana promenljiva xa na liniji 4
+INFO  16:38:32,456 - #40 ya
+INFO  16:38:32,456 - #8 ,
+INFO  16:38:32,456 - Deklarisana promenljiva ya na liniji 4
+INFO  16:38:32,456 - #40 xb
+INFO  16:38:32,456 - #8 ,
+INFO  16:38:32,456 - Deklarisana promenljiva xb na liniji 4
+INFO  16:38:32,456 - #40 yb
+INFO  16:38:32,456 - #8 ,
+INFO  16:38:32,456 - Deklarisana promenljiva yb na liniji 4
+INFO  16:38:32,456 - #40 xc
+INFO  16:38:32,456 - #8 ,
+INFO  16:38:32,456 - Deklarisana promenljiva xc na liniji 4
+INFO  16:38:32,456 - #40 xc
+INFO  16:38:32,456 - #5 ;
+INFO  16:38:32,456 - Deklarisana promenljiva xc na liniji 4
+INFO  16:38:32,456 - Greska na liniji, nije jedinstveno ime 4
+INFO  16:38:32,456 - #40 char
+INFO  16:38:32,456 - #40 cccc
+INFO  16:38:32,456 - #5 ;
+INFO  16:38:32,456 - Deklarisana promenljiva cccc na liniji 5
+INFO  16:38:32,456 - #40 int
+INFO  16:38:32,456 - #40 a
+INFO  16:38:32,456 - #8 ,
+INFO  16:38:32,456 - Deklarisana promenljiva a na liniji 6
+INFO  16:38:32,456 - #40 b
+INFO  16:38:32,456 - #40 c
+INFO  16:38:32,472 - #5 ;
+INFO  16:38:32,472 - #40 int
+INFO  16:38:32,472 - #40 u
+INFO  16:38:32,472 - #8 ,
+DEBUG 16:38:32,472 - Uspesan oporavak od greske pri definiciji globalnih promenljivih do ; u liniji 6
+INFO  16:38:32,472 - Deklarisana promenljiva u na liniji 7
+INFO  16:38:32,472 - #40 v
+INFO  16:38:32,472 - #5 ;
+INFO  16:38:32,472 - Deklarisana promenljiva v na liniji 7
+INFO  16:38:32,472 - #3 {
+INFO  16:38:32,472 - #40 int
+INFO  16:38:32,472 - #40 distance
+INFO  16:38:32,472 - #6 (
+INFO  16:38:32,472 - Obradjuje se funkcija distance na liniji 9
+INFO  16:38:32,472 - #40 int
+INFO  16:38:32,472 - #40 x1
+INFO  16:38:32,472 - #8 ,
+INFO  16:38:32,472 - Deklarisana promenljiva x1 na liniji 9
+INFO  16:38:32,472 - #40 int
+INFO  16:38:32,472 - #40 y1
+INFO  16:38:32,472 - #8 ,
+INFO  16:38:32,472 - Deklarisana promenljiva y1 na liniji 9
+INFO  16:38:32,472 - #40 int
+INFO  16:38:32,472 - #40 x2
+INFO  16:38:32,472 - #8 ,
+INFO  16:38:32,472 - Deklarisana promenljiva x2 na liniji 9
+INFO  16:38:32,472 - #40 int
+INFO  16:38:32,472 - #40 y2
+INFO  16:38:32,472 - #7 )
+INFO  16:38:32,472 - Deklarisana promenljiva y2 na liniji 9
+INFO  16:38:32,472 - #3 {
+INFO  16:38:32,472 - #40 sqrt
+INFO  16:38:32,472 - #6 (
+INFO  16:38:32,472 - #40 sqr
+INFO  16:38:32,472 - #6 (
+INFO  16:38:32,472 - #40 x1
+INFO  16:38:32,472 - #25 -
+INFO  16:38:32,472 - #40 x2
+INFO  16:38:32,489 - #7 )
+INFO  16:38:32,490 - #24 +
+INFO  16:38:32,491 - #40 sqr
+INFO  16:38:32,491 - #6 (
+INFO  16:38:32,492 - #40 y1
+INFO  16:38:32,492 - #25 -
+INFO  16:38:32,492 - #40 y2
+INFO  16:38:32,492 - #7 )
+INFO  16:38:32,493 - #7 )
+INFO  16:38:32,493 - #5 ;
+INFO  16:38:32,493 - #4 }
+INFO  16:38:32,494 - #40 int
+INFO  16:38:32,494 - #40 obim
+INFO  16:38:32,494 - #6 (
+INFO  16:38:32,494 - Obradjuje se funkcija obim na liniji 13
+INFO  16:38:32,494 - #40 int
+INFO  16:38:32,494 - #40 a
+INFO  16:38:32,494 - #8 ,
+INFO  16:38:32,494 - Deklarisana promenljiva a na liniji 13
+INFO  16:38:32,494 - #40 int
+INFO  16:38:32,494 - #40 b
+INFO  16:38:32,494 - #8 ,
+INFO  16:38:32,494 - Deklarisana promenljiva b na liniji 13
+INFO  16:38:32,494 - #40 int
+INFO  16:38:32,494 - #40 c
+INFO  16:38:32,494 - #7 )
+INFO  16:38:32,494 - Deklarisana promenljiva c na liniji 13
+INFO  16:38:32,494 - #40 char
+INFO  16:38:32,494 - #40 o
+INFO  16:38:32,494 - #5 ;
+INFO  16:38:32,494 - Deklarisana promenljiva o na liniji 13
+INFO  16:38:32,494 - #3 {
+INFO  16:38:32,494 - #40 o
+INFO  16:38:32,494 - #13 =
+INFO  16:38:32,494 - #40 a
+INFO  16:38:32,494 - #24 +
+INFO  16:38:32,494 - #40 b
+INFO  16:38:32,494 - #24 +
+INFO  16:38:32,494 - #40 c
+INFO  16:38:32,494 - #5 ;
+INFO  16:38:32,494 - #10 return
+INFO  16:38:32,494 - #40 o
+INFO  16:38:32,494 - #5 ;
+INFO  16:38:32,494 - #4 }
+INFO  16:38:32,494 - #14 void
+INFO  16:38:32,494 - #40 povrsina
+INFO  16:38:32,494 - #6 (
+INFO  16:38:32,494 - Obradjuje se funkcija povrsina na liniji 18
+INFO  16:38:32,494 - #40 int
+INFO  16:38:32,494 - #40 a
+INFO  16:38:32,494 - #8 ,
+INFO  16:38:32,494 - Deklarisana promenljiva a na liniji 18
+INFO  16:38:32,494 - #40 int
+INFO  16:38:32,494 - #40 b
+INFO  16:38:32,494 - #8 ,
+INFO  16:38:32,494 - Deklarisana promenljiva b na liniji 18
+INFO  16:38:32,494 - #40 int
+INFO  16:38:32,494 - #40 c
+INFO  16:38:32,494 - #7 )
+INFO  16:38:32,494 - Deklarisana promenljiva c na liniji 18
+INFO  16:38:32,494 - #3 {
+INFO  16:38:32,494 - #40 s
+INFO  16:38:32,494 - #13 =
+INFO  16:38:32,494 - #6 (
+INFO  16:38:32,494 - #40 a
+INFO  16:38:32,494 - #24 +
+INFO  16:38:32,494 - #40 b
+INFO  16:38:32,494 - #24 +
+INFO  16:38:32,494 - #40 c
+INFO  16:38:32,494 - #7 )
+INFO  16:38:32,494 - #23 /
+INFO  16:38:32,494 - #38 2
+INFO  16:38:32,494 - #5 ;
+INFO  16:38:32,494 - #10 return
+INFO  16:38:32,494 - #40 s
+INFO  16:38:32,494 - #5 ;
+INFO  16:38:32,494 - #4 }
+INFO  16:38:32,494 - #40 int
+INFO  16:38:32,494 - #40 pogresna
+INFO  16:38:32,494 - #6 (
+INFO  16:38:32,494 - Obradjuje se funkcija pogresna na liniji 23
+INFO  16:38:32,494 - #40 int
+INFO  16:38:32,494 - #40 x
+INFO  16:38:32,494 - #8 ,
+INFO  16:38:32,494 - Deklarisana promenljiva x na liniji 23
+INFO  16:38:32,494 - #40 z
+INFO  16:38:32,494 - #8 ,
+INFO  16:38:32,494 - #40 int
+INFO  16:38:32,494 - #7 )
+INFO  16:38:32,494 - #3 {
+INFO  16:38:32,494 - #10 return
+INFO  16:38:32,494 - #38 1
+DEBUG 16:38:32,494 - Uspesan oporavak od greske pri deklaraciji formalnog parametra funkcije do ) u liniji 23
+INFO  16:38:32,494 - #5 ;
+INFO  16:38:32,510 - #4 }
+INFO  16:38:32,510 - #40 int
+INFO  16:38:32,510 - #40 main
+INFO  16:38:32,510 - #6 (
+INFO  16:38:32,510 - Obradjuje se funkcija main na liniji 27
+INFO  16:38:32,510 - #7 )
+INFO  16:38:32,510 - #40 bool
+INFO  16:38:32,510 - #40 b
+INFO  16:38:32,510 - #5 ;
+INFO  16:38:32,510 - Deklarisana promenljiva b na liniji 27
+INFO  16:38:32,510 - #3 {
+INFO  16:38:32,510 - #15 read
+INFO  16:38:32,510 - #6 (
+INFO  16:38:32,510 - #40 xc
+INFO  16:38:32,510 - #7 )
+INFO  16:38:32,510 - #5 ;
+INFO  16:38:32,510 - #15 read
+INFO  16:38:32,510 - #6 (
+INFO  16:38:32,510 - #40 yc
+INFO  16:38:32,510 - #7 )
+INFO  16:38:32,510 - #5 ;
+INFO  16:38:32,510 - #40 a
+INFO  16:38:32,510 - #13 =
+INFO  16:38:32,510 - #40 distance
+INFO  16:38:32,510 - #6 (
+INFO  16:38:32,510 - #40 cccc
+INFO  16:38:32,510 - #8 ,
+INFO  16:38:32,510 - #40 ya
+INFO  16:38:32,510 - #8 ,
+INFO  16:38:32,510 - #40 xb
+INFO  16:38:32,510 - #8 ,
+INFO  16:38:32,510 - #40 yb
+INFO  16:38:32,510 - #7 )
+INFO  16:38:32,510 - #5 ;
+INFO  16:38:32,510 - Pronadjen poziv funkcije distance na liniji 32
+INFO  16:38:32,510 - Greska: ne poklapa se broj stvarnih i formalnih argumenata 
+INFO  16:38:32,510 - #40 b
+INFO  16:38:32,510 - #13 =
+INFO  16:38:32,510 - #40 distance
+INFO  16:38:32,510 - #6 (
+INFO  16:38:32,510 - #40 xb
+INFO  16:38:32,510 - #8 ,
+INFO  16:38:32,510 - #40 yb
+INFO  16:38:32,510 - #8 ,
+INFO  16:38:32,510 - #40 xc
+INFO  16:38:32,510 - #8 ,
+INFO  16:38:32,510 - #40 yc
+INFO  16:38:32,510 - #7 )
+INFO  16:38:32,510 - #5 ;
+INFO  16:38:32,510 - Pronadjen poziv funkcije distance na liniji 34
+INFO  16:38:32,510 - Greska: stvarni i formalni argument se ne poklapaju po tipu 
+INFO  16:38:32,510 - #40 c
+INFO  16:38:32,510 - #13 =
+INFO  16:38:32,510 - #40 distance
+INFO  16:38:32,510 - #6 (
+INFO  16:38:32,510 - #40 ya
+INFO  16:38:32,510 - #8 ,
+INFO  16:38:32,510 - #40 xc
+INFO  16:38:32,510 - #8 ,
+INFO  16:38:32,510 - #40 yc
+INFO  16:38:32,510 - #7 )
+INFO  16:38:32,510 - #5 ;
+INFO  16:38:32,510 - Pronadjen poziv funkcije distance na liniji 37
+INFO  16:38:32,510 - Greska: ne poklapa se broj stvarnih i formalnih argumenata 
+INFO  16:38:32,510 - #45 if
+INFO  16:38:32,510 - #6 (
+INFO  16:38:32,510 - #40 a
+INFO  16:38:32,510 - #24 +
+INFO  16:38:32,510 - #40 u
+INFO  16:38:32,510 - #34 >
+INFO  16:38:32,510 - #40 v
+INFO  16:38:32,526 - #44 &&
+INFO  16:38:32,526 - #40 a
+INFO  16:38:32,526 - #24 +
+INFO  16:38:32,526 - #40 v
+INFO  16:38:32,526 - #34 >
+INFO  16:38:32,526 - #40 u
+INFO  16:38:32,526 - #44 &&
+INFO  16:38:32,526 - #40 u
+INFO  16:38:32,526 - #24 +
+INFO  16:38:32,526 - #40 v
+INFO  16:38:32,526 - #34 >
+INFO  16:38:32,526 - #40 a
+INFO  16:38:32,526 - #7 )
+INFO  16:38:32,526 - #3 {
+INFO  16:38:32,526 - #40 obim
+INFO  16:38:32,526 - #6 (
+INFO  16:38:32,526 - #40 a
+INFO  16:38:32,526 - #8 ,
+INFO  16:38:32,526 - #40 b
+INFO  16:38:32,526 - #8 ,
+INFO  16:38:32,526 - #40 u
+INFO  16:38:32,526 - #8 ,
+INFO  16:38:32,526 - #40 v
+INFO  16:38:32,526 - #7 )
+INFO  16:38:32,526 - #5 ;
+INFO  16:38:32,526 - Pronadjen poziv funkcije obim na liniji 40
+INFO  16:38:32,526 - Greska: ne poklapa se broj stvarnih i formalnih argumenata 
+INFO  16:38:32,526 - #40 povrsina
+INFO  16:38:32,526 - #6 (
+INFO  16:38:32,526 - #38 5
+INFO  16:38:32,526 - #24 +
+INFO  16:38:32,526 - #38 2
+INFO  16:38:32,526 - #8 ,
+INFO  16:38:32,526 - #39 w
+INFO  16:38:32,526 - #8 ,
+INFO  16:38:32,526 - #40 c
+INFO  16:38:32,526 - #7 )
+INFO  16:38:32,526 - #5 ;
+INFO  16:38:32,526 - Pronadjen poziv funkcije povrsina na liniji 41
+INFO  16:38:32,526 - Greska: stvarni i formalni argument se ne poklapaju po tipu 
+INFO  16:38:32,526 - Greska: stvarni i formalni argument se ne poklapaju po tipu 
+INFO  16:38:32,526 - #9 print
+INFO  16:38:32,526 - #6 (
+INFO  16:38:32,526 - #40 Povrsina
+INFO  16:38:32,526 - #24 +
+INFO  16:38:32,526 - #40 trougla
+INFO  16:38:32,526 - #24 +
+INFO  16:38:32,526 - #40 je
+INFO  16:38:32,526 - #7 )
+INFO  16:38:32,526 - #5 ;
+INFO  16:38:32,526 - #4 }
+INFO  16:38:32,526 - #46 else
+INFO  16:38:32,526 - #3 {
+INFO  16:38:32,526 - #9 print
+INFO  16:38:32,526 - #6 (
+INFO  16:38:32,526 - #40 Tacke
+INFO  16:38:32,526 - #40 ne
+INFO  16:38:32,526 - #40 formiraju
+INFO  16:38:32,526 - #40 trougao
+INFO  16:38:32,526 - #7 )
+INFO  16:38:32,526 - #5 ;
+INFO  16:38:32,526 - #9 print
+INFO  16:38:32,526 - #6 (
+INFO  16:38:32,541 - #40 eol
+INFO  16:38:32,541 - #7 )
+INFO  16:38:32,541 - #5 ;
+INFO  16:38:32,541 - #4 }
+INFO  16:38:32,541 - #4 }
+INFO  16:38:32,541 - #4 }
+INFO  16:38:32,541 - Definicije globalnih promenljivih = 10
+INFO  16:38:32,541 - Definicije lokalnih promenjivih = 1
+INFO  16:38:32,541 - Definicije globalnih konstanti = 0
+INFO  16:38:32,541 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 5
+INFO  16:38:32,541 - Pozivi funkcija u telu metode main = 8
+INFO  16:38:32,541 - Deklaracije formalnih argumenata funkcija = 11
+ERROR 16:38:32,541 - Parsiranje NIJE uspesno zavrseno!

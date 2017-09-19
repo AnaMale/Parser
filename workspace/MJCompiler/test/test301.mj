@@ -1,0 +1,32 @@
+// Test301
+
+program test301
+	const int jedan = 1;
+	const int pet = 5;
+	int a,b;
+
+	int niz[];
+	
+	char nizch[];
+	
+{
+	int sum(int d, int c, int ... a) int r;
+	{
+		r = a[a[0]*=2] *= d + c;
+		print(a[1]);
+		print(a[0]);
+		return r;
+	}
+	
+	void main()	int bodovi;
+	{	
+		bodovi = 1;
+		print(bodovi);
+		bodovi = sum(3, 4, 1, 0, 9);
+		print(bodovi);
+		
+		
+	}
+}
+
+

@@ -1,0 +1,65 @@
+INFO  14:38:49,341 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test02.mj
+INFO  14:38:49,378 - #2 program
+INFO  14:38:49,378 - #40 MaxCifra
+INFO  14:38:49,378 - #19 const
+INFO  14:38:49,378 - #40 int
+INFO  14:38:49,378 - #40 x
+INFO  14:38:49,378 - #13 =
+INFO  14:38:49,378 - #38 4
+INFO  14:38:49,378 - #5 ;
+INFO  14:38:49,378 - Deklarisana konstanta x na liniji 4
+INFO  14:38:49,378 - #40 int
+INFO  14:38:49,378 - #40 a
+INFO  14:38:49,378 - #8 ,
+INFO  14:38:49,378 - Deklarisana promenljiva a na liniji 6
+INFO  14:38:49,378 - #40 c
+INFO  14:38:49,378 - #8 ,
+INFO  14:38:49,378 - Deklarisana promenljiva c na liniji 6
+INFO  14:38:49,378 - #40 maxcif
+INFO  14:38:49,378 - #5 ;
+INFO  14:38:49,378 - Deklarisana promenljiva maxcif na liniji 6
+INFO  14:38:49,378 - #40 char
+INFO  14:38:49,378 - #40 e
+INFO  14:38:49,378 - #13 =
+INFO  14:38:49,378 - #39 2
+INFO  14:38:49,378 - #8 ,
+INFO  14:38:49,378 - #40 b
+INFO  14:38:49,378 - #5 ;
+INFO  14:38:49,378 - #40 int
+INFO  14:38:49,378 - Deklarisana promenljiva b na liniji 7
+DEBUG 14:38:49,378 - Uspesan oporavak od greske pri definiciji globalnih promenljivih do sledeceg , u liniji 7
+INFO  14:38:49,378 - #40 c
+INFO  14:38:49,378 - #5 ;
+INFO  14:38:49,378 - Deklarisana promenljiva c na liniji 8
+INFO  14:38:49,378 - Greska na liniji, nije jedinstveno ime 8
+INFO  14:38:49,378 - #3 {
+INFO  14:38:49,378 - #14 void
+INFO  14:38:49,394 - #40 main
+INFO  14:38:49,394 - #6 (
+INFO  14:38:49,394 - Obradjuje se funkcija main na liniji 10
+INFO  14:38:49,394 - #7 )
+INFO  14:38:49,394 - #40 char
+INFO  14:38:49,394 - #40 a
+INFO  14:38:49,394 - #5 ;
+INFO  14:38:49,394 - Deklarisana promenljiva a na liniji 10
+INFO  14:38:49,394 - #40 int
+INFO  14:38:49,394 - #40 z
+INFO  14:38:49,394 - #5 ;
+INFO  14:38:49,394 - Deklarisana promenljiva z na liniji 10
+INFO  14:38:49,394 - #3 {
+INFO  14:38:49,394 - #15 read
+INFO  14:38:49,394 - #6 (
+INFO  14:38:49,394 - #40 a
+INFO  14:38:49,394 - #7 )
+INFO  14:38:49,394 - #5 ;
+INFO  14:38:49,394 - #40 maxcif
+INFO  14:38:49,394 - #13 =
+INFO  14:38:49,394 - #5 ;
+INFO  14:38:49,394 - #47 for
+INFO  14:38:49,394 - #6 (
+INFO  14:38:49,394 - #5 ;
+DEBUG 14:38:49,394 - Uspesan oporavak od greske pri konstrukciji iskaza dodele vrednosti do ; u liniji 12
+INFO  14:38:49,394 - #40 a
+INFO  14:38:49,394 - #33 !=
+INFO  14:38:49,394 - #38 0
+INFO  14:38:49,394 - #5 ;

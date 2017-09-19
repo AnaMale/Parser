@@ -1,0 +1,144 @@
+INFO  16:05:51,009 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test04.mj
+INFO  16:05:51,048 - #2 program
+INFO  16:05:51,048 - #40 test04
+INFO  16:05:51,048 - #40 int
+INFO  16:05:51,048 - #40 x
+INFO  16:05:51,048 - #8 ,
+INFO  16:05:51,048 - Deklarisana promenljiva x na liniji 3
+INFO  16:05:51,048 - #40 y
+INFO  16:05:51,048 - #5 ;
+INFO  16:05:51,048 - Deklarisana promenljiva y na liniji 3
+INFO  16:05:51,048 - #40 int
+INFO  16:05:51,048 - #40 a
+INFO  16:05:51,048 - #16 [
+INFO  16:05:51,048 - #17 ]
+INFO  16:05:51,048 - #5 ;
+INFO  16:05:51,048 - Deklarisan niz a na liniji 4
+INFO  16:05:51,064 - #40 bool
+INFO  16:05:51,064 - #40 log
+INFO  16:05:51,064 - #5 ;
+INFO  16:05:51,064 - Deklarisana promenljiva log na liniji 5
+INFO  16:05:51,064 - #3 {
+INFO  16:05:51,064 - #14 void
+INFO  16:05:51,064 - #40 sum
+INFO  16:05:51,064 - #6 (
+INFO  16:05:51,064 - Obradjuje se funkcija sum na liniji 8
+INFO  16:05:51,064 - #40 int
+INFO  16:05:51,064 - #40 a
+INFO  16:05:51,064 - #8 ,
+INFO  16:05:51,064 - Deklarisana promenljiva a na liniji 8
+INFO  16:05:51,064 - #40 int
+INFO  16:05:51,064 - #40 b
+INFO  16:05:51,064 - #8 ,
+INFO  16:05:51,064 - Deklarisana promenljiva b na liniji 8
+INFO  16:05:51,064 - #40 int
+INFO  16:05:51,064 - #40 c
+INFO  16:05:51,064 - #8 ,
+INFO  16:05:51,064 - Deklarisana promenljiva c na liniji 8
+INFO  16:05:51,064 - #40 int
+INFO  16:05:51,064 - #21 .
+INFO  16:05:51,064 - #21 .
+INFO  16:05:51,064 - #21 .
+INFO  16:05:51,064 - #40 d
+INFO  16:05:51,064 - #7 )
+INFO  16:05:51,064 - #40 int
+INFO  16:05:51,064 - #40 i
+INFO  16:05:51,064 - #5 ;
+INFO  16:05:51,064 - Deklarisana promenljiva i na liniji 9
+INFO  16:05:51,064 - #3 {
+INFO  16:05:51,064 - #9 print
+INFO  16:05:51,064 - #6 (
+INFO  16:05:51,064 - #40 a
+INFO  16:05:51,064 - #7 )
+INFO  16:05:51,064 - #5 ;
+INFO  16:05:51,064 - #9 print
+INFO  16:05:51,064 - #6 (
+INFO  16:05:51,064 - #40 b
+INFO  16:05:51,064 - #7 )
+INFO  16:05:51,064 - #5 ;
+INFO  16:05:51,064 - #9 print
+INFO  16:05:51,064 - #6 (
+INFO  16:05:51,064 - #40 c
+INFO  16:05:51,064 - #7 )
+INFO  16:05:51,064 - #5 ;
+INFO  16:05:51,064 - #47 for
+INFO  16:05:51,064 - #6 (
+INFO  16:05:51,064 - #40 i
+INFO  16:05:51,079 - #13 =
+INFO  16:05:51,079 - #38 0
+INFO  16:05:51,079 - #5 ;
+INFO  16:05:51,079 - #40 i
+INFO  16:05:51,079 - #36 <
+INFO  16:05:51,079 - #38 18
+INFO  16:05:51,079 - #5 ;
+INFO  16:05:51,079 - #40 i
+INFO  16:05:51,079 - #11 ++
+INFO  16:05:51,079 - #7 )
+INFO  16:05:51,079 - #3 {
+INFO  16:05:51,079 - #9 print
+INFO  16:05:51,079 - #6 (
+INFO  16:05:51,079 - #40 d
+INFO  16:05:51,079 - #16 [
+INFO  16:05:51,079 - #40 i
+INFO  16:05:51,079 - #17 ]
+INFO  16:05:51,079 - #7 )
+INFO  16:05:51,079 - #5 ;
+INFO  16:05:51,079 - #4 }
+INFO  16:05:51,079 - #4 }
+INFO  16:05:51,079 - #14 void
+INFO  16:05:51,079 - #40 main
+INFO  16:05:51,079 - #6 (
+INFO  16:05:51,079 - Obradjuje se funkcija main na liniji 18
+INFO  16:05:51,079 - #7 )
+INFO  16:05:51,079 - #3 {
+INFO  16:05:51,079 - #40 sum
+INFO  16:05:51,079 - #6 (
+INFO  16:05:51,079 - #38 1
+INFO  16:05:51,079 - #8 ,
+INFO  16:05:51,079 - #38 2
+INFO  16:05:51,079 - #8 ,
+INFO  16:05:51,079 - #38 3
+INFO  16:05:51,079 - #8 ,
+INFO  16:05:51,079 - #38 4
+INFO  16:05:51,079 - #8 ,
+INFO  16:05:51,079 - #38 5
+INFO  16:05:51,079 - #8 ,
+INFO  16:05:51,079 - #38 6
+INFO  16:05:51,079 - #8 ,
+INFO  16:05:51,079 - #38 7
+INFO  16:05:51,079 - #8 ,
+INFO  16:05:51,079 - #38 8
+INFO  16:05:51,079 - #8 ,
+INFO  16:05:51,079 - #38 9
+INFO  16:05:51,079 - #8 ,
+INFO  16:05:51,079 - #38 1
+INFO  16:05:51,079 - #8 ,
+INFO  16:05:51,079 - #38 2
+INFO  16:05:51,079 - #8 ,
+INFO  16:05:51,079 - #38 3
+INFO  16:05:51,079 - #8 ,
+INFO  16:05:51,079 - #38 4
+INFO  16:05:51,079 - #8 ,
+INFO  16:05:51,079 - #38 5
+INFO  16:05:51,079 - #8 ,
+INFO  16:05:51,079 - #38 6
+INFO  16:05:51,079 - #8 ,
+INFO  16:05:51,079 - #38 7
+INFO  16:05:51,079 - #8 ,
+INFO  16:05:51,079 - #38 8
+INFO  16:05:51,079 - #8 ,
+INFO  16:05:51,079 - #38 9
+INFO  16:05:51,079 - #8 ,
+INFO  16:05:51,079 - #38 1
+INFO  16:05:51,079 - #7 )
+INFO  16:05:51,079 - #5 ;
+INFO  16:05:51,079 - Pronadjen poziv funkcije sum na liniji 20
+INFO  16:05:51,079 - #4 }
+INFO  16:05:51,079 - #4 }
+INFO  16:05:51,079 - Definicije globalnih promenljivih = 4
+INFO  16:05:51,079 - Definicije lokalnih promenjivih = 0
+INFO  16:05:51,079 - Definicije globalnih konstanti = 0
+INFO  16:05:51,079 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 2
+INFO  16:05:51,079 - Pozivi funkcija u telu metode main = 1
+INFO  16:05:51,079 - Deklaracije formalnih argumenata funkcija = 3
+INFO  16:05:51,099 - Parsiranje uspesno zavrseno!

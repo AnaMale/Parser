@@ -1,0 +1,71 @@
+INFO  12:08:29,307 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\test301.mj
+INFO  12:08:29,338 - #2 program
+INFO  12:08:29,338 - #16 test301
+INFO  12:08:29,338 - #10 const
+INFO  12:08:29,338 - #16 int
+INFO  12:08:29,338 - #16 jedan
+INFO  12:08:29,338 - #37 =
+INFO  12:08:29,338 - #50 1
+INFO  12:08:29,338 - #9 ;
+INFO  12:08:29,338 - Deklarisana konstanta jedan na liniji 4
+INFO  12:08:29,338 - #10 const
+INFO  12:08:29,338 - #16 int
+INFO  12:08:29,338 - #16 pet
+INFO  12:08:29,338 - #37 =
+INFO  12:08:29,338 - #50 5
+INFO  12:08:29,338 - #9 ;
+INFO  12:08:29,338 - Deklarisana konstanta pet na liniji 5
+INFO  12:08:29,338 - #16 int
+INFO  12:08:29,338 - #16 a
+INFO  12:08:29,338 - #12 ,
+INFO  12:08:29,338 - Deklarisana promenljiva a na liniji 6
+INFO  12:08:29,338 - #16 b
+INFO  12:08:29,338 - #9 ;
+INFO  12:08:29,338 - Deklarisana promenljiva b na liniji 6
+INFO  12:08:29,338 - #16 int
+INFO  12:08:29,338 - #16 niz
+INFO  12:08:29,338 - #7 [
+INFO  12:08:29,338 - #8 ]
+INFO  12:08:29,338 - #9 ;
+INFO  12:08:29,338 - Deklarisan niz niz na liniji 8
+INFO  12:08:29,338 - #16 char
+INFO  12:08:29,338 - #16 nizch
+INFO  12:08:29,338 - #7 [
+INFO  12:08:29,338 - #8 ]
+INFO  12:08:29,338 - #9 ;
+INFO  12:08:29,338 - Deklarisan niz nizch na liniji 10
+INFO  12:08:29,338 - #3 {
+INFO  12:08:29,338 - #16 int
+INFO  12:08:29,338 - #16 sum
+INFO  12:08:29,338 - #5 (
+INFO  12:08:29,338 - Obradjuje se funkcija sum na liniji 13
+INFO  12:08:29,354 - #16 int
+INFO  12:08:29,354 - #16 d
+INFO  12:08:29,354 - #12 ,
+INFO  12:08:29,354 - Deklarisana promenljiva d na liniji 13
+INFO  12:08:29,354 - #16 int
+INFO  12:08:29,354 - #16 c
+INFO  12:08:29,354 - #12 ,
+INFO  12:08:29,354 - Deklarisana promenljiva c na liniji 13
+INFO  12:08:29,354 - #16 int
+INFO  12:08:29,354 - #15 .
+INFO  12:08:29,354 - #15 .
+INFO  12:08:29,354 - #15 .
+INFO  12:08:29,354 - #16 a
+INFO  12:08:29,354 - #6 )
+INFO  12:08:29,354 - #16 int
+INFO  12:08:29,354 - #16 r
+INFO  12:08:29,354 - #9 ;
+INFO  12:08:29,354 - Deklarisana promenljiva r na liniji 13
+INFO  12:08:29,354 - #3 {
+INFO  12:08:29,354 - #16 r
+INFO  12:08:29,354 - #37 =
+INFO  12:08:29,354 - #16 a
+INFO  12:08:29,354 - #7 [
+INFO  12:08:29,354 - #16 a
+INFO  12:08:29,354 - #7 [
+INFO  12:08:29,354 - #50 0
+INFO  12:08:29,354 - #8 ]
+INFO  12:08:29,354 - #35 *=
+INFO  12:08:29,354 - #50 2
+INFO  12:08:29,354 - #8 ]

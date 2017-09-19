@@ -1,0 +1,21 @@
+program test2
+
+
+{
+
+void main() 
+int a, b, c;
+set s;
+{
+a = 17;
+b = 1;
+c = 1;
+print ( a#b:c);
+s = new set;
+s+=5;
+print (s ?? 5);
+print (s ?? 7);
+
+}
+
+}

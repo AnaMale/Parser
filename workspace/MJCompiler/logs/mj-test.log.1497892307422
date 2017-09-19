@@ -1,0 +1,76 @@
+INFO  19:08:41,438 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test02.mj
+INFO  19:08:41,491 - #2 program
+INFO  19:08:41,491 - #40 MaxCifra
+INFO  19:08:41,491 - #19 const
+INFO  19:08:41,491 - #40 int
+INFO  19:08:41,491 - #40 x
+INFO  19:08:41,507 - #13 =
+INFO  19:08:41,507 - #38 4
+INFO  19:08:41,507 - #5 ;
+INFO  19:08:41,507 - Deklarisana konstanta x na liniji 4
+INFO  19:08:41,507 - #40 int
+INFO  19:08:41,507 - #40 a
+INFO  19:08:41,507 - #8 ,
+INFO  19:08:41,507 - Deklarisana promenljiva a na liniji 6
+INFO  19:08:41,507 - #40 c
+INFO  19:08:41,507 - #8 ,
+INFO  19:08:41,507 - Deklarisana promenljiva c na liniji 6
+INFO  19:08:41,507 - #40 maxcif
+INFO  19:08:41,507 - #5 ;
+INFO  19:08:41,507 - Deklarisana promenljiva maxcif na liniji 6
+INFO  19:08:41,507 - #40 char
+INFO  19:08:41,507 - #40 e
+INFO  19:08:41,507 - #13 =
+INFO  19:08:41,507 - #39 2
+INFO  19:08:41,507 - #8 ,
+INFO  19:08:41,507 - #40 b
+INFO  19:08:41,507 - #5 ;
+INFO  19:08:41,507 - #40 int
+INFO  19:08:41,507 - Deklarisana promenljiva b na liniji 7
+DEBUG 19:08:41,507 - Uspesan oporavak od greske pri definiciji globalnih promenljivih do sledeceg , u liniji 7
+INFO  19:08:41,507 - #40 c
+INFO  19:08:41,522 - #5 ;
+INFO  19:08:41,522 - Deklarisana promenljiva c na liniji 8
+INFO  19:08:41,522 - Greska na liniji, nije jedinstveno ime 8
+INFO  19:08:41,522 - #3 {
+INFO  19:08:41,522 - #14 void
+INFO  19:08:41,522 - #40 main
+INFO  19:08:41,522 - #6 (
+INFO  19:08:41,522 - Obradjuje se funkcija main na liniji 10
+INFO  19:08:41,522 - #7 )
+INFO  19:08:41,522 - #40 char
+INFO  19:08:41,522 - #40 a
+INFO  19:08:41,522 - #5 ;
+INFO  19:08:41,522 - Deklarisana promenljiva a na liniji 10
+INFO  19:08:41,522 - #40 int
+INFO  19:08:41,522 - #40 z
+INFO  19:08:41,522 - #5 ;
+INFO  19:08:41,522 - Deklarisana promenljiva z na liniji 10
+INFO  19:08:41,522 - #3 {
+INFO  19:08:41,522 - #15 read
+INFO  19:08:41,522 - #6 (
+INFO  19:08:41,522 - #40 a
+INFO  19:08:41,522 - #7 )
+INFO  19:08:41,522 - #5 ;
+INFO  19:08:41,522 - #40 maxcif
+INFO  19:08:41,522 - #13 =
+INFO  19:08:41,522 - #11 ++
+INFO  19:08:41,522 - #40 rt
+INFO  19:08:41,522 - #13 =
+INFO  19:08:41,522 - #5 ;
+INFO  19:08:41,522 - #47 for
+INFO  19:08:41,522 - #6 (
+INFO  19:08:41,522 - #5 ;
+INFO  19:08:41,522 - #40 a
+INFO  19:08:41,522 - #33 !=
+INFO  19:08:41,522 - #38 0
+INFO  19:08:41,522 - #5 ;
+INFO  19:08:41,522 - #7 )
+INFO  19:08:41,522 - #3 {
+INFO  19:08:41,522 - #40 c
+INFO  19:08:41,538 - #13 =
+DEBUG 19:08:41,538 - Uspesan oporavak od greske pri deklaraciji formalnog parametra funkcije do , ili ) u liniji 10
+INFO  19:08:41,538 - #40 a
+INFO  19:08:41,538 - #26 %
+INFO  19:08:41,538 - #38 10
+INFO  19:08:41,538 - #5 ;

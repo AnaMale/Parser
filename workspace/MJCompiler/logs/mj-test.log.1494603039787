@@ -1,0 +1,25 @@
+INFO  17:30:28,766 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  17:30:28,816 - #2 program
+INFO  17:30:28,816 - #32 test302
+INFO  17:30:28,816 - #19 const
+INFO  17:30:28,816 - #32 int
+INFO  17:30:28,816 - #32 jedan
+INFO  17:30:28,821 - #13 =
+INFO  17:30:28,821 - #30 1
+INFO  17:30:28,821 - #5 ;
+INFO  17:30:28,821 - #19 const
+INFO  17:30:28,821 - Deklarisana konstanta jedan na liniji 5
+INFO  17:30:28,821 - #32 int
+INFO  17:30:28,821 - #32 pet
+INFO  17:30:28,821 - #13 =
+INFO  17:30:28,821 - #30 5
+INFO  17:30:28,821 - #5 ;
+INFO  17:30:28,821 - #32 int
+INFO  17:30:28,821 - Deklarisana konstanta pet na liniji 6
+INFO  17:30:28,821 - #32 int
+INFO  17:30:28,821 - #23 -
+ERROR 17:30:28,821 - 
+Sintaksna greska na liniji 8
+ERROR 17:30:28,826 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 8
+INFO  17:30:28,826 - Print calls = 0
+ERROR 17:30:28,826 - Parsiranje NIJE uspesno zavrseno!

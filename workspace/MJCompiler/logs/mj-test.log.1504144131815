@@ -1,0 +1,59 @@
+INFO  03:38:04,062 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\program2.mj
+INFO  03:38:04,107 - #2 program
+INFO  03:38:04,107 - #40 test2
+INFO  03:38:04,107 - #19 const
+INFO  03:38:04,107 - #40 int
+INFO  03:38:04,107 - #40 c
+INFO  03:38:04,107 - #13 =
+INFO  03:38:04,107 - #38 2
+INFO  03:38:04,107 - #5 ;
+INFO  03:38:04,107 - Deklarisana konstanta c na liniji 3
+INFO  03:38:04,107 - #50 class
+INFO  03:38:04,107 - #40 B
+INFO  03:38:04,107 - #3 {
+INFO  03:38:04,112 - #40 int
+INFO  03:38:04,112 - #40 b
+INFO  03:38:04,112 - #8 ,
+INFO  03:38:04,112 - Deklarisano polje klase b na liniji 7
+INFO  03:38:04,112 - #40 d
+INFO  03:38:04,112 - #5 ;
+INFO  03:38:04,112 - Deklarisano polje klase d na liniji 7
+INFO  03:38:04,131 - #4 }
+INFO  03:38:04,131 - #3 {
+INFO  03:38:04,132 - #14 void
+INFO  03:38:04,132 - #40 main
+INFO  03:38:04,133 - #6 (
+INFO  03:38:04,133 - Obradjuje se funkcija main na liniji 11
+INFO  03:38:04,133 - #7 )
+INFO  03:38:04,133 - #40 B
+INFO  03:38:04,133 - #40 b
+INFO  03:38:04,133 - #5 ;
+INFO  03:38:04,133 - Deklarisana promenljiva b na liniji 12
+INFO  03:38:04,133 - #40 int
+INFO  03:38:04,133 - #40 c
+INFO  03:38:04,133 - #5 ;
+INFO  03:38:04,133 - Deklarisana promenljiva c na liniji 13
+INFO  03:38:04,133 - #3 {
+INFO  03:38:04,133 - #40 c
+INFO  03:38:04,138 - #13 =
+INFO  03:38:04,138 - #38 0
+INFO  03:38:04,138 - #5 ;
+INFO  03:38:04,153 - #40 c
+INFO  03:38:04,153 - #29 *=
+INFO  03:38:04,153 - #40 b
+INFO  03:38:04,153 - #21 .
+INFO  03:38:04,153 - #40 d
+INFO  03:38:04,153 - #24 +
+INFO  03:38:04,153 - #40 b
+INFO  03:38:04,158 - #21 .
+INFO  03:38:04,158 - #40 d
+INFO  03:38:04,158 - #5 ;
+INFO  03:38:04,158 - #4 }
+INFO  03:38:04,158 - #4 }
+INFO  03:38:04,158 - Definicije globalnih promenljivih = 0
+INFO  03:38:04,158 - Definicije lokalnih promenjivih = 2
+INFO  03:38:04,158 - Definicije globalnih konstanti = 1
+INFO  03:38:04,158 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 1
+INFO  03:38:04,158 - Pozivi funkcija u telu metode main = 0
+INFO  03:38:04,158 - Deklaracije formalnih argumenata funkcija = 0
+INFO  03:38:04,208 - Parsiranje uspesno zavrseno!

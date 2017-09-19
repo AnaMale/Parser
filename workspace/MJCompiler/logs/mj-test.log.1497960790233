@@ -1,0 +1,64 @@
+INFO  14:12:43,298 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test01.mj
+INFO  14:12:43,352 - #2 program
+INFO  14:12:43,352 - #40 ispisiA
+INFO  14:12:43,352 - #40 int
+INFO  14:12:43,352 - #40 a
+INFO  14:12:43,352 - #8 ,
+INFO  14:12:43,352 - Deklarisana promenljiva a na liniji 6
+INFO  14:12:43,352 - #40 b
+INFO  14:12:43,352 - #5 ;
+INFO  14:12:43,352 - Deklarisana promenljiva b na liniji 6
+INFO  14:12:43,352 - #40 bool
+INFO  14:12:43,352 - #40 b
+INFO  14:12:43,352 - #13 =
+INFO  14:12:43,367 - #38 0
+INFO  14:12:43,367 - #5 ;
+INFO  14:12:43,367 - #40 char
+INFO  14:12:43,367 - #40 k
+INFO  14:12:43,367 - #13 =
+DEBUG 14:12:43,367 - Uspesan oporavak od greske pri definiciji globalnih promenljivih do ; u liniji 7
+INFO  14:12:43,367 - #40 L
+INFO  14:12:43,367 - #5 ;
+INFO  14:12:43,367 - #3 {
+INFO  14:12:43,367 - #14 void
+INFO  14:12:43,367 - #40 main
+DEBUG 14:12:43,367 - Uspesan oporavak od greske pri definiciji globalnih promenljivih do ; u liniji 8
+INFO  14:12:43,367 - #6 (
+INFO  14:12:43,367 - Obradjuje se funkcija main na liniji 11
+INFO  14:12:43,367 - #7 )
+INFO  14:12:43,367 - #3 {
+INFO  14:12:43,367 - #15 read
+INFO  14:12:43,367 - #6 (
+INFO  14:12:43,367 - #40 a
+INFO  14:12:43,367 - #7 )
+INFO  14:12:43,367 - #5 ;
+INFO  14:12:43,367 - #15 read
+INFO  14:12:43,367 - #6 (
+INFO  14:12:43,383 - #40 b
+INFO  14:12:43,383 - #7 )
+INFO  14:12:43,383 - #5 ;
+INFO  14:12:43,383 - #45 if
+INFO  14:12:43,383 - #6 (
+INFO  14:12:43,383 - #40 a
+INFO  14:12:43,383 - #36 <
+INFO  14:12:43,383 - #40 b
+INFO  14:12:43,383 - #7 )
+INFO  14:12:43,383 - #3 {
+INFO  14:12:43,383 - #40 b
+INFO  14:12:43,383 - #13 =
+INFO  14:12:43,383 - #38 1
+INFO  14:12:43,383 - #5 ;
+INFO  14:12:43,383 - #4 }
+INFO  14:12:43,383 - #46 else
+INFO  14:12:43,383 - #3 {
+INFO  14:12:43,383 - #40 b
+INFO  14:12:43,383 - #13 =
+INFO  14:12:43,383 - #38 0
+INFO  14:12:43,383 - #5 ;
+INFO  14:12:43,383 - #4 }
+INFO  14:12:43,383 - #45 if
+INFO  14:12:43,399 - #6 (
+INFO  14:12:43,399 - #40 b
+INFO  14:12:43,399 - #32 ==
+INFO  14:12:43,399 - #42 true
+INFO  14:12:43,399 - #7 )

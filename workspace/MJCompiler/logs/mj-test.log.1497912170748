@@ -1,0 +1,124 @@
+INFO  00:38:31,636 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test01.mj
+INFO  00:38:31,689 - #2 program
+INFO  00:38:31,689 - #40 Prilepi
+INFO  00:38:31,689 - #40 int
+INFO  00:38:31,689 - #40 a
+INFO  00:38:31,689 - #8 ,
+INFO  00:38:31,689 - Deklarisana promenljiva a na liniji 6
+INFO  00:38:31,689 - #40 b
+INFO  00:38:31,689 - #5 ;
+INFO  00:38:31,689 - Deklarisana promenljiva b na liniji 6
+INFO  00:38:31,689 - #40 int
+INFO  00:38:31,689 - #40 manji
+INFO  00:38:31,689 - #8 ,
+INFO  00:38:31,689 - Deklarisana promenljiva manji na liniji 7
+INFO  00:38:31,689 - #40 veci
+INFO  00:38:31,689 - #8 ,
+INFO  00:38:31,689 - Deklarisana promenljiva veci na liniji 7
+INFO  00:38:31,689 - #40 step
+INFO  00:38:31,689 - #8 ,
+INFO  00:38:31,689 - Deklarisana promenljiva step na liniji 7
+INFO  00:38:31,689 - #40 pom
+INFO  00:38:31,689 - #8 ,
+INFO  00:38:31,689 - Deklarisana promenljiva pom na liniji 7
+INFO  00:38:31,689 - #40 novi
+INFO  00:38:31,689 - #5 ;
+INFO  00:38:31,689 - Deklarisana promenljiva novi na liniji 7
+INFO  00:38:31,689 - #19 const
+INFO  00:38:31,689 - #40 int
+INFO  00:38:31,689 - #40 x
+INFO  00:38:31,689 - #13 =
+INFO  00:38:31,689 - #38 10
+INFO  00:38:31,689 - #5 ;
+INFO  00:38:31,689 - Deklarisana konstanta x na liniji 8
+INFO  00:38:31,689 - #3 {
+INFO  00:38:31,689 - #14 void
+INFO  00:38:31,705 - #40 main
+INFO  00:38:31,705 - #6 (
+INFO  00:38:31,705 - Obradjuje se funkcija main na liniji 11
+INFO  00:38:31,705 - #7 )
+INFO  00:38:31,705 - #3 {
+INFO  00:38:31,705 - #15 read
+INFO  00:38:31,705 - #6 (
+INFO  00:38:31,705 - #40 a
+INFO  00:38:31,705 - #7 )
+INFO  00:38:31,705 - #5 ;
+INFO  00:38:31,705 - #15 read
+INFO  00:38:31,705 - #6 (
+INFO  00:38:31,705 - #40 b
+INFO  00:38:31,705 - #7 )
+INFO  00:38:31,705 - #5 ;
+INFO  00:38:31,705 - #40 novi
+INFO  00:38:31,705 - #13 =
+INFO  00:38:31,705 - #38 5
+INFO  00:38:31,705 - #5 ;
+INFO  00:38:31,705 - #45 if
+INFO  00:38:31,705 - #6 (
+INFO  00:38:31,705 - #40 a
+INFO  00:38:31,705 - #36 <
+INFO  00:38:31,705 - #40 b
+INFO  00:38:31,705 - #7 )
+INFO  00:38:31,705 - #3 {
+INFO  00:38:31,705 - #40 manji
+INFO  00:38:31,705 - #13 =
+INFO  00:38:31,705 - #40 a
+INFO  00:38:31,705 - #5 ;
+INFO  00:38:31,705 - #40 veci
+INFO  00:38:31,705 - #13 =
+INFO  00:38:31,705 - #40 b
+INFO  00:38:31,705 - #5 ;
+INFO  00:38:31,705 - #4 }
+INFO  00:38:31,705 - #46 else
+INFO  00:38:31,705 - #3 {
+INFO  00:38:31,720 - #40 manji
+INFO  00:38:31,720 - #13 =
+INFO  00:38:31,720 - #40 b
+INFO  00:38:31,720 - #5 ;
+INFO  00:38:31,720 - #40 veci
+INFO  00:38:31,720 - #13 =
+INFO  00:38:31,720 - #40 a
+INFO  00:38:31,720 - #5 ;
+INFO  00:38:31,720 - #4 }
+INFO  00:38:31,720 - #40 pom
+INFO  00:38:31,720 - #13 =
+INFO  00:38:31,720 - #40 manji
+INFO  00:38:31,720 - #5 ;
+INFO  00:38:31,720 - #47 for
+INFO  00:38:31,720 - #6 (
+INFO  00:38:31,720 - #5 ;
+INFO  00:38:31,720 - #40 pom
+INFO  00:38:31,720 - #34 >
+INFO  00:38:31,720 - #38 0
+INFO  00:38:31,720 - #5 ;
+INFO  00:38:31,720 - #7 )
+INFO  00:38:31,720 - #3 {
+INFO  00:38:31,720 - #40 pom
+INFO  00:38:31,720 - #13 =
+INFO  00:38:31,720 - #40 pom
+INFO  00:38:31,720 - #23 /
+INFO  00:38:31,720 - #40 x
+INFO  00:38:31,720 - #5 ;
+INFO  00:38:31,720 - #40 step
+INFO  00:38:31,720 - #13 =
+INFO  00:38:31,720 - #40 step
+INFO  00:38:31,720 - #22 *
+INFO  00:38:31,720 - #40 x
+INFO  00:38:31,720 - #5 ;
+INFO  00:38:31,720 - #4 }
+INFO  00:38:31,720 - #40 novi
+INFO  00:38:31,720 - #13 =
+INFO  00:38:31,720 - #40 veci
+INFO  00:38:31,720 - #22 *
+INFO  00:38:31,720 - #40 step
+INFO  00:38:31,720 - #24 +
+INFO  00:38:31,720 - #40 manji
+INFO  00:38:31,720 - #5 ;
+INFO  00:38:31,720 - #4 }
+INFO  00:38:31,720 - #4 }
+INFO  00:38:31,720 - Definicije globalnih promenljivih = 7
+INFO  00:38:31,720 - Definicije lokalnih promenjivih = 0
+INFO  00:38:31,720 - Definicije globalnih konstanti = 1
+INFO  00:38:31,720 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 1
+INFO  00:38:31,720 - Pozivi funkcija u telu metode main = 2
+INFO  00:38:31,720 - Deklaracije formalnih argumenata funkcija = 0
+INFO  00:38:31,736 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,20 @@
+INFO  03:17:59,722 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\program2.mj
+INFO  03:17:59,772 - #2 program
+INFO  03:17:59,772 - #16 test2
+INFO  03:17:59,772 - #10 const
+INFO  03:17:59,772 - #16 int
+INFO  03:17:59,772 - #16 c
+INFO  03:17:59,772 - #37 =
+INFO  03:17:59,772 - #51 2
+INFO  03:17:59,772 - #9 ;
+INFO  03:17:59,772 - Deklarisana konstanta c na liniji 3
+INFO  03:17:59,772 - #14 class
+INFO  03:17:59,772 - #16 B
+INFO  03:17:59,772 - #16 int
+INFO  03:17:59,772 - Definicije globalnih promenljivih = 0
+INFO  03:17:59,772 - Definicije lokalnih promenjivih = 0
+INFO  03:17:59,772 - Definicije globalnih konstanti = 1
+INFO  03:17:59,772 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 0
+INFO  03:17:59,772 - Pozivi funkcija u telu metode main = 0
+INFO  03:17:59,772 - Deklaracije formalnih argumenata funkcija = 0
+ERROR 03:17:59,777 - Parsiranje NIJE uspesno zavrseno!

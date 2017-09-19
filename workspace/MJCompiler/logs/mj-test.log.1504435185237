@@ -1,0 +1,75 @@
+INFO  12:39:20,279 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\program2.mj
+INFO  12:39:20,419 - #2 program
+INFO  12:39:20,419 - #42 test2
+INFO  12:39:20,419 - #19 const
+INFO  12:39:20,434 - #42 int
+INFO  12:39:20,434 - #42 c
+INFO  12:39:20,444 - #13 =
+INFO  12:39:20,444 - #40 2
+INFO  12:39:20,449 - #5 ;
+INFO  12:39:20,449 - Deklarisana konstanta c na liniji 3
+INFO  12:39:20,449 - #3 {
+INFO  12:39:20,449 - #14 void
+INFO  12:39:20,449 - #42 main
+INFO  12:39:20,449 - #6 (
+INFO  12:39:20,449 - Obradjuje se funkcija main na liniji 6
+INFO  12:39:20,449 - #7 )
+INFO  12:39:20,449 - #42 int
+INFO  12:39:20,449 - #42 a
+INFO  12:39:20,449 - #8 ,
+INFO  12:39:20,449 - Deklarisana promenljiva a na liniji 7
+INFO  12:39:20,449 - #42 b
+INFO  12:39:20,449 - #5 ;
+INFO  12:39:20,449 - Deklarisana promenljiva b na liniji 7
+INFO  12:39:20,449 - #42 set
+INFO  12:39:20,449 - #42 s
+INFO  12:39:20,449 - #5 ;
+INFO  12:39:20,449 - Deklarisana promenljiva s na liniji 8
+INFO  12:39:20,449 - #3 {
+INFO  12:39:20,449 - #42 a
+INFO  12:39:20,454 - #13 =
+INFO  12:39:20,454 - #40 3
+INFO  12:39:20,454 - #5 ;
+INFO  12:39:20,479 - #42 b
+INFO  12:39:20,479 - #13 =
+INFO  12:39:20,479 - #40 4
+INFO  12:39:20,479 - #5 ;
+INFO  12:39:20,484 - #9 print
+INFO  12:39:20,484 - #6 (
+INFO  12:39:20,484 - #42 a
+INFO  12:39:20,484 - #22 #
+INFO  12:39:20,484 - #42 b
+INFO  12:39:20,484 - #7 )
+INFO  12:39:20,484 - #5 ;
+INFO  12:39:20,484 - #42 s
+INFO  12:39:20,484 - #13 =
+INFO  12:39:20,484 - #18 new
+INFO  12:39:20,484 - #42 set
+INFO  12:39:20,484 - #5 ;
+INFO  12:39:20,484 - #42 s
+INFO  12:39:20,484 - #29 +=
+INFO  12:39:20,484 - #40 5
+INFO  12:39:20,484 - #5 ;
+INFO  12:39:20,484 - #9 print
+INFO  12:39:20,489 - #6 (
+INFO  12:39:20,489 - #42 s
+INFO  12:39:20,489 - #23 ??
+INFO  12:39:20,489 - #40 5
+INFO  12:39:20,489 - #7 )
+INFO  12:39:20,489 - #5 ;
+INFO  12:39:20,489 - #9 print
+INFO  12:39:20,489 - #6 (
+INFO  12:39:20,489 - #42 s
+INFO  12:39:20,489 - #23 ??
+INFO  12:39:20,489 - #40 7
+INFO  12:39:20,489 - #7 )
+INFO  12:39:20,489 - #5 ;
+INFO  12:39:20,489 - #4 }
+INFO  12:39:20,489 - #4 }
+INFO  12:39:20,489 - Definicije globalnih promenljivih = 0
+INFO  12:39:20,489 - Definicije lokalnih promenjivih = 3
+INFO  12:39:20,489 - Definicije globalnih konstanti = 1
+INFO  12:39:20,489 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 1
+INFO  12:39:20,489 - Pozivi funkcija u telu metode main = 3
+INFO  12:39:20,489 - Deklaracije formalnih argumenata funkcija = 0
+INFO  12:39:20,624 - Parsiranje uspesno zavrseno!

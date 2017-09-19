@@ -1,0 +1,139 @@
+INFO  18:44:54,946 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test301.mj
+INFO  18:44:55,031 - #2 program
+INFO  18:44:55,031 - #40 test301
+INFO  18:44:55,047 - #19 const
+INFO  18:44:55,047 - #40 int
+INFO  18:44:55,047 - #40 jedan
+INFO  18:44:55,047 - #13 =
+INFO  18:44:55,047 - #38 1
+INFO  18:44:55,047 - #5 ;
+INFO  18:44:55,047 - Deklarisana konstanta jedan na liniji 4
+INFO  18:44:55,047 - #19 const
+INFO  18:44:55,047 - #40 int
+INFO  18:44:55,047 - #40 pet
+INFO  18:44:55,047 - #13 =
+INFO  18:44:55,047 - #38 5
+INFO  18:44:55,047 - #5 ;
+INFO  18:44:55,047 - Deklarisana konstanta pet na liniji 5
+INFO  18:44:55,047 - #40 int
+INFO  18:44:55,047 - #40 niz
+INFO  18:44:55,047 - #16 [
+INFO  18:44:55,047 - #17 ]
+INFO  18:44:55,047 - #5 ;
+INFO  18:44:55,047 - Deklarisan niz niz na liniji 7
+INFO  18:44:55,047 - #40 char
+INFO  18:44:55,047 - #40 nizch
+INFO  18:44:55,047 - #16 [
+INFO  18:44:55,047 - #17 ]
+INFO  18:44:55,047 - #5 ;
+INFO  18:44:55,047 - Deklarisan niz nizch na liniji 9
+INFO  18:44:55,047 - #3 {
+INFO  18:44:55,047 - #40 int
+INFO  18:44:55,047 - #40 sum
+INFO  18:44:55,047 - #6 (
+INFO  18:44:55,047 - Obradjuje se funkcija sum na liniji 12
+INFO  18:44:55,047 - #40 int
+INFO  18:44:55,047 - #40 d
+INFO  18:44:55,047 - #8 ,
+INFO  18:44:55,047 - Deklarisana promenljiva d na liniji 12
+INFO  18:44:55,047 - #40 int
+INFO  18:44:55,047 - #40 c
+INFO  18:44:55,047 - #8 ,
+INFO  18:44:55,047 - Deklarisana promenljiva c na liniji 12
+INFO  18:44:55,047 - #40 int
+INFO  18:44:55,047 - #21 .
+INFO  18:44:55,047 - #21 .
+INFO  18:44:55,047 - #21 .
+INFO  18:44:55,047 - #40 a
+INFO  18:44:55,047 - #7 )
+INFO  18:44:55,047 - #40 int
+INFO  18:44:55,047 - #40 r
+INFO  18:44:55,047 - #5 ;
+INFO  18:44:55,062 - Deklarisana promenljiva r na liniji 12
+INFO  18:44:55,062 - #3 {
+INFO  18:44:55,062 - #40 r
+INFO  18:44:55,062 - #13 =
+INFO  18:44:55,062 - #40 a
+INFO  18:44:55,062 - #16 [
+INFO  18:44:55,062 - #40 a
+INFO  18:44:55,062 - #16 [
+INFO  18:44:55,062 - #38 0
+INFO  18:44:55,062 - #17 ]
+INFO  18:44:55,062 - #29 *=
+INFO  18:44:55,062 - #38 2
+INFO  18:44:55,062 - #17 ]
+INFO  18:44:55,062 - #29 *=
+INFO  18:44:55,062 - #40 d
+INFO  18:44:55,062 - #24 +
+INFO  18:44:55,062 - #40 c
+INFO  18:44:55,062 - #5 ;
+INFO  18:44:55,062 - #9 print
+INFO  18:44:55,062 - #6 (
+INFO  18:44:55,062 - #40 a
+INFO  18:44:55,062 - #16 [
+INFO  18:44:55,062 - #38 1
+INFO  18:44:55,062 - #17 ]
+INFO  18:44:55,062 - #7 )
+INFO  18:44:55,062 - #5 ;
+INFO  18:44:55,062 - #9 print
+INFO  18:44:55,062 - #6 (
+INFO  18:44:55,078 - #40 a
+INFO  18:44:55,078 - #16 [
+INFO  18:44:55,078 - #38 0
+INFO  18:44:55,078 - #17 ]
+INFO  18:44:55,078 - #7 )
+INFO  18:44:55,078 - #5 ;
+INFO  18:44:55,078 - #10 return
+INFO  18:44:55,078 - #40 r
+INFO  18:44:55,078 - #5 ;
+INFO  18:44:55,078 - #4 }
+INFO  18:44:55,078 - #14 void
+INFO  18:44:55,078 - #40 main
+INFO  18:44:55,078 - #6 (
+INFO  18:44:55,078 - Obradjuje se funkcija main na liniji 20
+INFO  18:44:55,078 - #7 )
+INFO  18:44:55,078 - #40 int
+INFO  18:44:55,078 - #40 bodovi
+INFO  18:44:55,078 - #5 ;
+INFO  18:44:55,078 - Deklarisana promenljiva bodovi na liniji 20
+INFO  18:44:55,078 - #3 {
+INFO  18:44:55,078 - #40 bodovi
+INFO  18:44:55,078 - #13 =
+INFO  18:44:55,078 - #38 1
+INFO  18:44:55,078 - #5 ;
+INFO  18:44:55,078 - #9 print
+INFO  18:44:55,078 - #6 (
+INFO  18:44:55,078 - #40 bodovi
+INFO  18:44:55,078 - #7 )
+INFO  18:44:55,078 - #5 ;
+INFO  18:44:55,078 - #40 bodovi
+INFO  18:44:55,078 - #13 =
+INFO  18:44:55,078 - #40 sum
+INFO  18:44:55,078 - #6 (
+INFO  18:44:55,078 - #38 3
+INFO  18:44:55,078 - #8 ,
+INFO  18:44:55,078 - #38 4
+INFO  18:44:55,078 - #8 ,
+INFO  18:44:55,078 - #38 1
+INFO  18:44:55,078 - #8 ,
+INFO  18:44:55,078 - #38 0
+INFO  18:44:55,078 - #8 ,
+INFO  18:44:55,078 - #38 9
+INFO  18:44:55,078 - #7 )
+INFO  18:44:55,078 - #5 ;
+INFO  18:44:55,078 - Pronadjen poziv funkcije sum na liniji 24
+INFO  18:44:55,078 - #9 print
+INFO  18:44:55,078 - #6 (
+INFO  18:44:55,078 - #40 bodovi
+INFO  18:44:55,078 - #7 )
+INFO  18:44:55,078 - #5 ;
+INFO  18:44:55,078 - #47 for
+INFO  18:44:55,078 - #6 (
+INFO  18:44:55,078 - #13 =
+INFO  18:44:55,078 - #40 grace
+INFO  18:44:55,094 - #5 ;
+INFO  18:44:55,094 - #40 i
+INFO  18:44:55,094 - #36 <
+INFO  18:44:55,094 - #38 1
+DEBUG 18:44:55,094 - Uspesan oporavak od greske unutar for petlje do prvog znaka ; 26
+INFO  18:44:55,094 - #5 ;

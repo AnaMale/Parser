@@ -1,0 +1,11 @@
+INFO  01:32:25,801 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\test301.mj
+INFO  01:32:25,870 - #2 program
+INFO  01:32:25,870 - #16 test301
+INFO  01:32:25,870 - #16 int
+INFO  01:32:25,870 - Definicije globalnih promenljivih = 0
+INFO  01:32:25,870 - Definicije lokalnih promenjivih = 0
+INFO  01:32:25,870 - Definicije globalnih konstanti = 0
+INFO  01:32:25,870 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 0
+INFO  01:32:25,870 - Pozivi funkcija u telu metode main = 0
+INFO  01:32:25,870 - Deklaracije formalnih argumenata funkcija = 0
+ERROR 01:32:25,870 - Parsiranje NIJE uspesno zavrseno!

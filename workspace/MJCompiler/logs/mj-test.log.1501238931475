@@ -1,0 +1,37 @@
+INFO  12:44:20,619 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\program.mj
+INFO  12:44:20,703 - #2 program
+INFO  12:44:20,703 - #16 test301
+INFO  12:44:20,703 - #10 const
+INFO  12:44:20,703 - #16 int
+INFO  12:44:20,703 - #16 jedan
+INFO  12:44:20,719 - #37 =
+INFO  12:44:20,734 - #50 1
+INFO  12:44:20,734 - #9 ;
+INFO  12:44:20,735 - Deklarisana konstanta jedan na liniji 4
+INFO  12:44:20,735 - #10 const
+INFO  12:44:20,735 - #16 int
+INFO  12:44:20,736 - #16 pet
+INFO  12:44:20,736 - #37 =
+INFO  12:44:20,736 - #50 5
+INFO  12:44:20,736 - #9 ;
+INFO  12:44:20,736 - Deklarisana konstanta pet na liniji 5
+INFO  12:44:20,736 - #16 int
+INFO  12:44:20,737 - #16 niz
+INFO  12:44:20,737 - #7 [
+INFO  12:44:20,738 - #8 ]
+INFO  12:44:20,738 - #9 ;
+INFO  12:44:20,738 - Deklarisan niz niz na liniji 7
+INFO  12:44:20,738 - #16 char
+INFO  12:44:20,738 - #16 nizch
+INFO  12:44:20,739 - #7 [
+INFO  12:44:20,739 - #8 ]
+INFO  12:44:20,739 - #9 ;
+INFO  12:44:20,739 - Deklarisan niz nizch na liniji 9
+INFO  12:44:20,739 - #16 int
+INFO  12:44:20,739 - #16 sest
+INFO  12:44:20,739 - #9 ;
+INFO  12:44:20,740 - Deklarisana promenljiva sest na liniji 12
+INFO  12:44:20,740 - #3 {
+INFO  12:44:20,740 - #28 void
+INFO  12:44:20,740 - #16 main
+INFO  12:44:20,740 - #5 (

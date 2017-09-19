@@ -1,0 +1,40 @@
+INFO  12:57:02,214 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\test301.mj
+INFO  12:57:02,252 - #2 program
+INFO  12:57:02,252 - #16 test301
+INFO  12:57:02,252 - #10 const
+INFO  12:57:02,252 - #16 int
+INFO  12:57:02,252 - #16 jedan
+INFO  12:57:02,252 - #37 =
+INFO  12:57:02,252 - #50 1
+INFO  12:57:02,252 - #9 ;
+INFO  12:57:02,252 - Deklarisana konstanta jedan na liniji 4
+INFO  12:57:02,252 - #10 const
+INFO  12:57:02,252 - #16 int
+INFO  12:57:02,252 - #16 pet
+INFO  12:57:02,252 - #37 =
+INFO  12:57:02,252 - #50 5
+INFO  12:57:02,252 - #9 ;
+INFO  12:57:02,252 - Deklarisana konstanta pet na liniji 5
+INFO  12:57:02,252 - #16 int
+INFO  12:57:02,252 - #16 a
+INFO  12:57:02,252 - #12 ,
+INFO  12:57:02,252 - Deklarisana promenljiva a na liniji 6
+INFO  12:57:02,267 - #16 b
+INFO  12:57:02,267 - #9 ;
+INFO  12:57:02,267 - Deklarisana promenljiva b na liniji 6
+INFO  12:57:02,267 - #16 int
+INFO  12:57:02,267 - #16 niz
+INFO  12:57:02,267 - #7 [
+INFO  12:57:02,267 - #8 ]
+INFO  12:57:02,267 - #9 ;
+INFO  12:57:02,267 - Deklarisan niz niz na liniji 8
+INFO  12:57:02,267 - #16 char
+INFO  12:57:02,267 - #16 nizch
+INFO  12:57:02,267 - #7 [
+INFO  12:57:02,267 - #8 ]
+INFO  12:57:02,267 - #9 ;
+INFO  12:57:02,267 - Deklarisan niz nizch na liniji 10
+INFO  12:57:02,267 - #3 {
+INFO  12:57:02,267 - #16 int
+INFO  12:57:02,267 - #16 sum
+INFO  12:57:02,267 - #5 (

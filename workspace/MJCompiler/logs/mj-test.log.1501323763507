@@ -1,0 +1,63 @@
+INFO  12:22:24,689 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\program.mj
+INFO  12:22:24,721 - #2 program
+INFO  12:22:24,721 - #16 test301
+INFO  12:22:24,721 - #10 const
+INFO  12:22:24,721 - #16 int
+INFO  12:22:24,721 - #16 jedan
+INFO  12:22:24,721 - #37 =
+INFO  12:22:24,721 - #50 1
+INFO  12:22:24,721 - #9 ;
+INFO  12:22:24,721 - Deklarisana konstanta jedan na liniji 4
+INFO  12:22:24,721 - #10 const
+INFO  12:22:24,721 - #16 int
+INFO  12:22:24,721 - #16 pet
+INFO  12:22:24,721 - #37 =
+INFO  12:22:24,721 - #50 5
+INFO  12:22:24,721 - #9 ;
+INFO  12:22:24,721 - Deklarisana konstanta pet na liniji 5
+INFO  12:22:24,721 - #16 int
+INFO  12:22:24,721 - #16 niz
+INFO  12:22:24,721 - #7 [
+INFO  12:22:24,721 - #8 ]
+INFO  12:22:24,721 - #9 ;
+INFO  12:22:24,721 - Deklarisan niz niz na liniji 7
+INFO  12:22:24,721 - #16 char
+INFO  12:22:24,721 - #16 nizch
+INFO  12:22:24,721 - #7 [
+INFO  12:22:24,721 - #8 ]
+INFO  12:22:24,721 - #9 ;
+INFO  12:22:24,721 - Deklarisan niz nizch na liniji 9
+INFO  12:22:24,721 - #16 int
+INFO  12:22:24,721 - #16 sest
+INFO  12:22:24,721 - #9 ;
+INFO  12:22:24,721 - Deklarisana promenljiva sest na liniji 12
+INFO  12:22:24,721 - #3 {
+INFO  12:22:24,721 - #28 void
+INFO  12:22:24,721 - #16 main
+INFO  12:22:24,721 - #5 (
+INFO  12:22:24,721 - Obradjuje se funkcija main na liniji 14
+INFO  12:22:24,736 - #6 )
+INFO  12:22:24,736 - #16 int
+INFO  12:22:24,737 - #16 bodovi
+INFO  12:22:24,737 - #9 ;
+INFO  12:22:24,737 - Deklarisana promenljiva bodovi na liniji 14
+INFO  12:22:24,737 - #3 {
+INFO  12:22:24,737 - #16 bodovi
+INFO  12:22:24,740 - #37 =
+INFO  12:22:24,740 - #50 0
+INFO  12:22:24,742 - #9 ;
+INFO  12:22:24,743 - #16 bodovi
+INFO  12:22:24,743 - #26 ++
+INFO  12:22:24,743 - #9 ;
+INFO  12:22:24,743 - #16 bodovi
+INFO  12:22:24,743 - #37 =
+INFO  12:22:24,743 - #16 bodovi
+INFO  12:22:24,743 - #31 +
+INFO  12:22:24,743 - #16 jedan
+INFO  12:22:24,743 - #9 ;
+INFO  12:22:24,743 - #16 bodovi
+INFO  12:22:24,743 - #32 +=
+INFO  12:22:24,743 - #16 bodovi
+INFO  12:22:24,743 - #35 *=
+INFO  12:22:24,743 - #16 pet
+INFO  12:22:24,743 - #9 ;

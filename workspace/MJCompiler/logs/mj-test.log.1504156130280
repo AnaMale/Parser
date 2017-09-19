@@ -1,0 +1,199 @@
+INFO  07:07:01,274 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\program1.mj
+INFO  07:07:01,312 - #2 program
+INFO  07:07:01,312 - #40 test301
+INFO  07:07:01,312 - #19 const
+INFO  07:07:01,312 - #40 int
+INFO  07:07:01,312 - #40 jedan
+INFO  07:07:01,312 - #13 =
+INFO  07:07:01,312 - #38 1
+INFO  07:07:01,312 - #5 ;
+INFO  07:07:01,312 - Deklarisana konstanta jedan na liniji 4
+INFO  07:07:01,312 - #19 const
+INFO  07:07:01,312 - #40 int
+INFO  07:07:01,312 - #40 pet
+INFO  07:07:01,312 - #13 =
+INFO  07:07:01,312 - #38 5
+INFO  07:07:01,312 - #5 ;
+INFO  07:07:01,312 - Deklarisana konstanta pet na liniji 5
+INFO  07:07:01,312 - #40 int
+INFO  07:07:01,312 - #40 a
+INFO  07:07:01,312 - #8 ,
+INFO  07:07:01,312 - Deklarisana promenljiva a na liniji 7
+INFO  07:07:01,312 - #40 b
+INFO  07:07:01,317 - #5 ;
+INFO  07:07:01,317 - Deklarisana promenljiva b na liniji 7
+INFO  07:07:01,317 - #40 int
+INFO  07:07:01,317 - #40 c
+INFO  07:07:01,317 - #13 =
+INFO  07:07:01,317 - #24 +
+INFO  07:07:01,317 - #40 l
+INFO  07:07:01,317 - #5 ;
+INFO  07:07:01,317 - #40 int
+INFO  07:07:01,317 - #24 +
+INFO  07:07:01,317 - #38 4
+INFO  07:07:01,317 - #8 ,
+INFO  07:07:01,317 - #40 r
+INFO  07:07:01,317 - #5 ;
+INFO  07:07:01,317 - #50 class
+INFO  07:07:01,317 - Deklarisana promenljiva r na liniji 10
+DEBUG 07:07:01,317 - Uspesan oporavak od greske pri definiciji globalnih promenljivih do sledeceg , u liniji 8
+INFO  07:07:01,317 - #40 A
+INFO  07:07:01,322 - #3 {
+INFO  07:07:01,322 - #40 int
+INFO  07:07:01,322 - #40 c
+INFO  07:07:01,322 - #8 ,
+INFO  07:07:01,322 - Deklarisano polje klase c na liniji 12
+INFO  07:07:01,322 - #40 d
+INFO  07:07:01,322 - #5 ;
+INFO  07:07:01,322 - Deklarisano polje klase d na liniji 12
+INFO  07:07:01,322 - #4 }
+INFO  07:07:01,322 - #40 int
+INFO  07:07:01,322 - #40 niz
+INFO  07:07:01,322 - #16 [
+INFO  07:07:01,322 - #17 ]
+INFO  07:07:01,322 - #5 ;
+INFO  07:07:01,322 - Deklarisan niz niz na liniji 15
+INFO  07:07:01,322 - #40 char
+INFO  07:07:01,322 - #40 nizch
+INFO  07:07:01,322 - #16 [
+INFO  07:07:01,322 - #17 ]
+INFO  07:07:01,322 - #5 ;
+INFO  07:07:01,322 - Deklarisan niz nizch na liniji 17
+INFO  07:07:01,322 - #3 {
+INFO  07:07:01,322 - #40 int
+INFO  07:07:01,322 - #40 sum
+INFO  07:07:01,322 - #6 (
+INFO  07:07:01,327 - Obradjuje se funkcija sum na liniji 20
+INFO  07:07:01,327 - #24 +
+INFO  07:07:01,327 - #38 9
+INFO  07:07:01,327 - #40 p
+INFO  07:07:01,327 - #8 ,
+INFO  07:07:01,327 - #40 int
+INFO  07:07:01,327 - #40 d
+INFO  07:07:01,327 - #8 ,
+INFO  07:07:01,327 - Deklarisana promenljiva d na liniji 20
+DEBUG 07:07:01,327 - Uspesan oporavak od greske pri deklaraciji formalnog parametra funkcije do , u liniji 20
+INFO  07:07:01,327 - #40 int
+INFO  07:07:01,327 - #40 c
+INFO  07:07:01,327 - #8 ,
+INFO  07:07:01,327 - Deklarisana promenljiva c na liniji 20
+INFO  07:07:01,327 - #40 int
+INFO  07:07:01,327 - #21 .
+INFO  07:07:01,327 - #21 .
+INFO  07:07:01,327 - #21 .
+INFO  07:07:01,327 - #40 a
+INFO  07:07:01,327 - #7 )
+INFO  07:07:01,327 - #40 int
+INFO  07:07:01,332 - #40 r
+INFO  07:07:01,332 - #5 ;
+INFO  07:07:01,332 - Deklarisana promenljiva r na liniji 20
+INFO  07:07:01,332 - #3 {
+INFO  07:07:01,332 - #40 r
+INFO  07:07:01,332 - #13 =
+INFO  07:07:01,332 - #40 a
+INFO  07:07:01,337 - #16 [
+INFO  07:07:01,337 - #40 a
+INFO  07:07:01,337 - #16 [
+INFO  07:07:01,337 - #38 0
+INFO  07:07:01,337 - #17 ]
+INFO  07:07:01,337 - #29 *=
+INFO  07:07:01,337 - #38 2
+INFO  07:07:01,337 - #17 ]
+INFO  07:07:01,337 - #29 *=
+INFO  07:07:01,337 - #40 d
+INFO  07:07:01,337 - #24 +
+INFO  07:07:01,337 - #40 c
+INFO  07:07:01,337 - #5 ;
+INFO  07:07:01,342 - #9 print
+INFO  07:07:01,342 - #6 (
+INFO  07:07:01,342 - #40 a
+INFO  07:07:01,342 - #16 [
+INFO  07:07:01,342 - #38 1
+INFO  07:07:01,342 - #17 ]
+INFO  07:07:01,342 - #7 )
+INFO  07:07:01,342 - #5 ;
+INFO  07:07:01,342 - #9 print
+INFO  07:07:01,342 - #6 (
+INFO  07:07:01,342 - #40 a
+INFO  07:07:01,342 - #16 [
+INFO  07:07:01,342 - #38 0
+INFO  07:07:01,342 - #17 ]
+INFO  07:07:01,342 - #7 )
+INFO  07:07:01,342 - #5 ;
+INFO  07:07:01,342 - #10 return
+INFO  07:07:01,342 - #40 r
+INFO  07:07:01,342 - #5 ;
+INFO  07:07:01,342 - #4 }
+INFO  07:07:01,342 - #14 void
+INFO  07:07:01,342 - #40 main
+INFO  07:07:01,342 - #6 (
+INFO  07:07:01,342 - Obradjuje se funkcija main na liniji 28
+INFO  07:07:01,342 - #40 greska
+INFO  07:07:01,342 - #7 )
+INFO  07:07:01,342 - #40 int
+INFO  07:07:01,342 - #40 bodovi
+INFO  07:07:01,347 - #5 ;
+DEBUG 07:07:01,347 - Uspesan oporavak od greske pri deklaraciji formalnog parametra funkcije do ) u liniji 28
+INFO  07:07:01,347 - Deklarisana promenljiva bodovi na liniji 29
+INFO  07:07:01,347 - #3 {
+INFO  07:07:01,347 - #47 for
+INFO  07:07:01,347 - #6 (
+INFO  07:07:01,347 - #24 +
+INFO  07:07:01,347 - #38 6
+INFO  07:07:01,347 - #5 ;
+INFO  07:07:01,347 - #40 a
+INFO  07:07:01,347 - #36 <
+INFO  07:07:01,347 - #38 1
+DEBUG 07:07:01,347 - Uspesan oporavak od greske unutar for petlje do prvog znaka ; ili ) 31
+INFO  07:07:01,347 - #5 ;
+INFO  07:07:01,347 - #7 )
+INFO  07:07:01,347 - #3 {
+INFO  07:07:01,347 - #40 bodovi
+INFO  07:07:01,347 - #13 =
+INFO  07:07:01,347 - #38 0
+INFO  07:07:01,347 - #5 ;
+INFO  07:07:01,347 - #4 }
+INFO  07:07:01,347 - #40 bodovi
+INFO  07:07:01,347 - #13 =
+INFO  07:07:01,347 - #38 1
+INFO  07:07:01,347 - #5 ;
+INFO  07:07:01,347 - #9 print
+INFO  07:07:01,347 - #6 (
+INFO  07:07:01,347 - #40 bodovi
+INFO  07:07:01,347 - #7 )
+INFO  07:07:01,347 - #5 ;
+INFO  07:07:01,347 - #40 bodovi
+INFO  07:07:01,347 - #13 =
+INFO  07:07:01,352 - #40 sum
+INFO  07:07:01,352 - #6 (
+INFO  07:07:01,352 - #38 3
+INFO  07:07:01,352 - #8 ,
+INFO  07:07:01,352 - #38 4
+INFO  07:07:01,352 - #8 ,
+INFO  07:07:01,352 - #38 1
+INFO  07:07:01,352 - #8 ,
+INFO  07:07:01,352 - #38 0
+INFO  07:07:01,352 - #8 ,
+INFO  07:07:01,352 - #38 9
+INFO  07:07:01,352 - #7 )
+INFO  07:07:01,352 - #5 ;
+INFO  07:07:01,352 - Pronadjen poziv funkcije sum na liniji 34
+INFO  07:07:01,352 - #9 print
+INFO  07:07:01,352 - #6 (
+INFO  07:07:01,352 - #40 bodovi
+INFO  07:07:01,352 - #7 )
+INFO  07:07:01,352 - #5 ;
+INFO  07:07:01,352 - #40 bodovi
+INFO  07:07:01,352 - #13 =
+INFO  07:07:01,352 - #24 +
+INFO  07:07:01,352 - #40 ll
+INFO  07:07:01,352 - #5 ;
+INFO  07:07:01,352 - #4 }
+INFO  07:07:01,352 - #4 }
+INFO  07:07:01,352 - Definicije globalnih promenljivih = 5
+INFO  07:07:01,352 - Definicije lokalnih promenjivih = 1
+INFO  07:07:01,352 - Definicije globalnih konstanti = 2
+INFO  07:07:01,352 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 2
+INFO  07:07:01,352 - Pozivi funkcija u telu metode main = 3
+INFO  07:07:01,357 - Deklaracije formalnih argumenata funkcija = 2
+ERROR 07:07:01,357 - Parsiranje NIJE uspesno zavrseno!

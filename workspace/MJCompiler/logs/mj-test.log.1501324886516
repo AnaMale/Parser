@@ -1,0 +1,77 @@
+INFO  12:39:40,869 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\program.mj
+INFO  12:39:40,907 - #2 program
+INFO  12:39:40,907 - #16 test301
+INFO  12:39:40,907 - #10 const
+INFO  12:39:40,907 - #16 int
+INFO  12:39:40,907 - #16 jedan
+INFO  12:39:40,907 - #37 =
+INFO  12:39:40,907 - #50 1
+INFO  12:39:40,907 - #9 ;
+INFO  12:39:40,907 - Deklarisana konstanta jedan na liniji 4
+INFO  12:39:40,907 - #10 const
+INFO  12:39:40,907 - #16 int
+INFO  12:39:40,907 - #16 pet
+INFO  12:39:40,907 - #37 =
+INFO  12:39:40,907 - #50 5
+INFO  12:39:40,907 - #9 ;
+INFO  12:39:40,907 - Deklarisana konstanta pet na liniji 5
+INFO  12:39:40,907 - #16 int
+INFO  12:39:40,907 - #16 niz
+INFO  12:39:40,907 - #7 [
+INFO  12:39:40,907 - #8 ]
+INFO  12:39:40,907 - #9 ;
+INFO  12:39:40,907 - Deklarisan niz niz na liniji 7
+INFO  12:39:40,907 - #16 char
+INFO  12:39:40,907 - #16 nizch
+INFO  12:39:40,907 - #7 [
+INFO  12:39:40,907 - #8 ]
+INFO  12:39:40,907 - #9 ;
+INFO  12:39:40,907 - Deklarisan niz nizch na liniji 9
+INFO  12:39:40,907 - #16 int
+INFO  12:39:40,922 - #16 sest
+INFO  12:39:40,922 - #9 ;
+INFO  12:39:40,922 - Deklarisana promenljiva sest na liniji 12
+INFO  12:39:40,922 - #3 {
+INFO  12:39:40,922 - #28 void
+INFO  12:39:40,922 - #16 main
+INFO  12:39:40,922 - #5 (
+INFO  12:39:40,922 - Obradjuje se funkcija main na liniji 14
+INFO  12:39:40,922 - #6 )
+INFO  12:39:40,922 - #16 int
+INFO  12:39:40,922 - #16 bodovi
+INFO  12:39:40,922 - #9 ;
+INFO  12:39:40,922 - Deklarisana promenljiva bodovi na liniji 14
+INFO  12:39:40,922 - #3 {
+INFO  12:39:40,922 - #16 bodovi
+INFO  12:39:40,922 - #37 =
+INFO  12:39:40,922 - #50 0
+INFO  12:39:40,922 - #9 ;
+INFO  12:39:40,922 - #16 bodovi
+INFO  12:39:40,922 - #26 ++
+INFO  12:39:40,922 - #9 ;
+INFO  12:39:40,922 - #16 bodovi
+INFO  12:39:40,922 - #37 =
+INFO  12:39:40,922 - #16 bodovi
+INFO  12:39:40,922 - #31 +
+INFO  12:39:40,922 - #16 jedan
+INFO  12:39:40,922 - #9 ;
+INFO  12:39:40,922 - #16 bodovi
+INFO  12:39:40,922 - #32 +=
+INFO  12:39:40,922 - #16 bodovi
+INFO  12:39:40,922 - #35 *=
+INFO  12:39:40,922 - #16 pet
+INFO  12:39:40,922 - #9 ;
+INFO  12:39:40,922 - #16 bodovi
+INFO  12:39:40,938 - #27 --
+INFO  12:39:40,938 - #9 ;
+INFO  12:39:40,938 - #18 print
+INFO  12:39:40,938 - #5 (
+INFO  12:39:40,938 - #16 bodovi
+INFO  12:39:40,938 - #6 )
+INFO  12:39:40,938 - Definicije globalnih promenljivih = 3
+INFO  12:39:40,938 - Definicije lokalnih promenjivih = 1
+INFO  12:39:40,938 - Definicije globalnih konstanti = 2
+INFO  12:39:40,938 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 1
+INFO  12:39:40,938 - Pozivi funkcija u telu metode main = 0
+INFO  12:39:40,938 - Deklaracije formalnih argumenata funkcija = 0
+ERROR 12:39:40,938 - Parsiranje NIJE uspesno zavrseno!

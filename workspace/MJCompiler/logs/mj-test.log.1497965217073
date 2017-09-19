@@ -1,0 +1,81 @@
+INFO  15:26:29,005 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test02.mj
+INFO  15:26:29,040 - #2 program
+INFO  15:26:29,040 - #40 MaxCifra
+INFO  15:26:29,040 - #19 const
+INFO  15:26:29,040 - #40 int
+INFO  15:26:29,040 - #40 x
+INFO  15:26:29,040 - #13 =
+INFO  15:26:29,040 - #38 4
+INFO  15:26:29,056 - #5 ;
+INFO  15:26:29,056 - Deklarisana konstanta x na liniji 4
+INFO  15:26:29,056 - #40 int
+INFO  15:26:29,056 - #40 a
+INFO  15:26:29,056 - #8 ,
+INFO  15:26:29,056 - Deklarisana promenljiva a na liniji 6
+INFO  15:26:29,056 - #40 c
+INFO  15:26:29,056 - #8 ,
+INFO  15:26:29,056 - Deklarisana promenljiva c na liniji 6
+INFO  15:26:29,056 - #40 maxcif
+INFO  15:26:29,056 - #5 ;
+INFO  15:26:29,056 - Deklarisana promenljiva maxcif na liniji 6
+INFO  15:26:29,056 - #40 char
+INFO  15:26:29,056 - #40 e
+INFO  15:26:29,056 - #13 =
+INFO  15:26:29,056 - #39 2
+INFO  15:26:29,056 - #8 ,
+INFO  15:26:29,056 - #40 b
+INFO  15:26:29,056 - #5 ;
+INFO  15:26:29,056 - #40 int
+INFO  15:26:29,056 - Deklarisana promenljiva b na liniji 7
+DEBUG 15:26:29,056 - Uspesan oporavak od greske pri definiciji globalnih promenljivih do sledeceg , u liniji 7
+INFO  15:26:29,056 - #40 c
+INFO  15:26:29,056 - #5 ;
+INFO  15:26:29,056 - Deklarisana promenljiva c na liniji 8
+INFO  15:26:29,056 - Greska na liniji, nije jedinstveno ime 8
+INFO  15:26:29,056 - #3 {
+INFO  15:26:29,056 - #14 void
+INFO  15:26:29,056 - #40 main
+INFO  15:26:29,056 - #6 (
+INFO  15:26:29,056 - Obradjuje se funkcija main na liniji 10
+INFO  15:26:29,056 - #7 )
+INFO  15:26:29,056 - #40 int
+INFO  15:26:29,056 - #40 z
+INFO  15:26:29,056 - #5 ;
+INFO  15:26:29,056 - Deklarisana promenljiva z na liniji 10
+INFO  15:26:29,056 - #3 {
+INFO  15:26:29,056 - #15 read
+INFO  15:26:29,071 - #6 (
+INFO  15:26:29,071 - #40 a
+INFO  15:26:29,071 - #7 )
+INFO  15:26:29,071 - #5 ;
+INFO  15:26:29,071 - #40 maxcif
+INFO  15:26:29,071 - #13 =
+INFO  15:26:29,071 - #5 ;
+INFO  15:26:29,071 - #47 for
+INFO  15:26:29,071 - #6 (
+INFO  15:26:29,071 - #5 ;
+DEBUG 15:26:29,071 - Uspesan oporavak od greske pri konstrukciji iskaza dodele vrednosti do ; u liniji 12
+INFO  15:26:29,071 - #40 a
+INFO  15:26:29,071 - #36 <
+INFO  15:26:29,071 - #38 5
+INFO  15:26:29,071 - #5 ;
+INFO  15:26:29,071 - #24 +
+INFO  15:26:29,071 - #40 w
+INFO  15:26:29,071 - #7 )
+INFO  15:26:29,071 - #40 a
+INFO  15:26:29,071 - #13 =
+INFO  15:26:29,071 - #40 a
+DEBUG 15:26:29,071 - Uspesan oporavak od greske unutar for petlje do prvog znaka ; ili ) 13
+INFO  15:26:29,071 - #23 /
+INFO  15:26:29,071 - #38 10
+INFO  15:26:29,071 - #5 ;
+INFO  15:26:29,071 - #4 }
+INFO  15:26:29,071 - #40 x
+INFO  15:26:29,071 - #11 ++
+INFO  15:26:29,071 - Definicije globalnih promenljivih = 5
+INFO  15:26:29,071 - Definicije lokalnih promenjivih = 1
+INFO  15:26:29,071 - Definicije globalnih konstanti = 1
+INFO  15:26:29,071 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 1
+INFO  15:26:29,071 - Pozivi funkcija u telu metode main = 1
+INFO  15:26:29,071 - Deklaracije formalnih argumenata funkcija = 0
+ERROR 15:26:29,087 - Parsiranje NIJE uspesno zavrseno!

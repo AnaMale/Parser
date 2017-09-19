@@ -1,0 +1,90 @@
+INFO  12:38:53,809 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\test301.mj
+INFO  12:38:53,840 - #2 program
+INFO  12:38:53,840 - #16 test301
+INFO  12:38:53,840 - #10 const
+INFO  12:38:53,840 - #16 int
+INFO  12:38:53,840 - #16 jedan
+INFO  12:38:53,840 - #37 =
+INFO  12:38:53,840 - #50 1
+INFO  12:38:53,840 - #9 ;
+INFO  12:38:53,840 - Deklarisana konstanta jedan na liniji 4
+INFO  12:38:53,840 - #10 const
+INFO  12:38:53,840 - #16 int
+INFO  12:38:53,840 - #16 pet
+INFO  12:38:53,840 - #37 =
+INFO  12:38:53,840 - #50 5
+INFO  12:38:53,840 - #9 ;
+INFO  12:38:53,840 - Deklarisana konstanta pet na liniji 5
+INFO  12:38:53,840 - #16 int
+INFO  12:38:53,840 - #16 a
+INFO  12:38:53,840 - #12 ,
+INFO  12:38:53,840 - Deklarisana promenljiva a na liniji 6
+INFO  12:38:53,840 - #16 b
+INFO  12:38:53,840 - #9 ;
+INFO  12:38:53,840 - Deklarisana promenljiva b na liniji 6
+INFO  12:38:53,840 - #16 int
+INFO  12:38:53,840 - #16 niz
+INFO  12:38:53,840 - #7 [
+INFO  12:38:53,840 - #8 ]
+INFO  12:38:53,840 - #9 ;
+INFO  12:38:53,840 - Deklarisan niz niz na liniji 8
+INFO  12:38:53,840 - #16 char
+INFO  12:38:53,840 - #16 nizch
+INFO  12:38:53,840 - #7 [
+INFO  12:38:53,840 - #8 ]
+INFO  12:38:53,856 - #9 ;
+INFO  12:38:53,856 - Deklarisan niz nizch na liniji 10
+INFO  12:38:53,856 - #3 {
+INFO  12:38:53,856 - #16 int
+INFO  12:38:53,856 - #16 sum
+INFO  12:38:53,857 - #5 (
+INFO  12:38:53,857 - Obradjuje se funkcija sum na liniji 13
+INFO  12:38:53,857 - #16 int
+INFO  12:38:53,857 - #16 d
+INFO  12:38:53,857 - #12 ,
+INFO  12:38:53,857 - Deklarisana promenljiva d na liniji 13
+INFO  12:38:53,857 - #16 int
+INFO  12:38:53,858 - #16 c
+INFO  12:38:53,858 - #12 ,
+INFO  12:38:53,858 - Deklarisana promenljiva c na liniji 13
+INFO  12:38:53,858 - #16 int
+INFO  12:38:53,858 - #15 .
+INFO  12:38:53,858 - #15 .
+INFO  12:38:53,858 - #15 .
+INFO  12:38:53,858 - #16 a
+INFO  12:38:53,859 - #6 )
+INFO  12:38:53,859 - #16 int
+INFO  12:38:53,859 - #16 r
+INFO  12:38:53,859 - #9 ;
+INFO  12:38:53,859 - Deklarisana promenljiva r na liniji 13
+INFO  12:38:53,859 - #3 {
+INFO  12:38:53,859 - #16 r
+INFO  12:38:53,862 - #37 =
+INFO  12:38:53,862 - #16 a
+INFO  12:38:53,862 - #7 [
+INFO  12:38:53,862 - #16 a
+INFO  12:38:53,862 - #7 [
+INFO  12:38:53,862 - #50 0
+INFO  12:38:53,862 - #8 ]
+INFO  12:38:53,862 - #35 *=
+INFO  12:38:53,862 - #50 2
+INFO  12:38:53,862 - #8 ]
+INFO  12:38:53,862 - #35 *=
+INFO  12:38:53,862 - #16 d
+INFO  12:38:53,862 - #31 +
+INFO  12:38:53,862 - #16 c
+INFO  12:38:53,862 - #9 ;
+INFO  12:38:53,862 - #18 print
+INFO  12:38:53,862 - #5 (
+INFO  12:38:53,862 - #16 a
+INFO  12:38:53,862 - #7 [
+INFO  12:38:53,862 - #50 1
+INFO  12:38:53,862 - #8 ]
+INFO  12:38:53,862 - #6 )
+INFO  12:38:53,862 - Definicije globalnih promenljivih = 4
+INFO  12:38:53,862 - Definicije lokalnih promenjivih = 0
+INFO  12:38:53,862 - Definicije globalnih konstanti = 2
+INFO  12:38:53,862 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 1
+INFO  12:38:53,862 - Pozivi funkcija u telu metode main = 0
+INFO  12:38:53,862 - Deklaracije formalnih argumenata funkcija = 2
+ERROR 12:38:53,862 - Parsiranje NIJE uspesno zavrseno!

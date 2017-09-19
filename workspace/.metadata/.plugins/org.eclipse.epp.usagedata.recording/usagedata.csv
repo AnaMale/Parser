@@ -1,0 +1,48 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338128322
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338130413
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338131677
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338134734
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338153465
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338155823
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338156910
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338159614
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338190520
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338192571
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338193629
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338197797
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338239538
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.ClassFileEditor",1505338242368
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1505338243120
+closed,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.ClassFileEditor",1505338243120
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338244280
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338245539
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.ClassFileEditor",1505338245695
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338260605
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.findReplace",1505338260658
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338268777
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338274150
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338284974
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338288291
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338376373
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1505338381970
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338384762
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338399611
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.properties",1505338399642
+error,log,,,"Core exception while retrieving the content description",1505338400173
+error,log,,,"Core exception while retrieving the content description",1505338400189
+error,log,,,"Core exception while retrieving the content description",1505338400189
+error,log,,,"Core exception while retrieving the content description",1505338400205
+started,bundle,org.eclipse.jpt.common.core,1.0.2.v201111103010,"org.eclipse.jpt.common.core",1505338402830
+started,bundle,org.eclipse.jpt.jpa.core,3.0.2.v201201243020,"org.eclipse.jpt.jpa.core",1505338402877
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.refresh",1505338407999
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.refresh",1505338414523
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338424977
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338426259
+closed,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1505338427368
+stopped,bundle,org.eclipse.jst.ws.axis.creation.ui,1.0.700.v201104070312,"org.eclipse.jst.ws.axis.creation.ui",1505338430926
+stopped,bundle,org.eclipse.jst.ws.axis.consumption.ui,1.0.505.v201004211805,"org.eclipse.jst.ws.axis.consumption.ui",1505338431025
+stopped,bundle,org.eclipse.jst.ws.axis.consumption.core,1.0.407.v201104071820,"org.eclipse.jst.ws.axis.consumption.core",1505338431077
+stopped,bundle,org.eclipse.jst.ws.axis2.creation.ui,1.0.104.v201004211805,"org.eclipse.jst.ws.axis2.creation.ui",1505338431143
+stopped,bundle,org.eclipse.jst.ws.axis2.consumption.ui,1.0.103.v201004211805,"org.eclipse.jst.ws.axis2.consumption.ui",1505338431232
+stopped,bundle,org.eclipse.jst.ws.axis2.creation.core,1.0.106.v201004211805,"org.eclipse.jst.ws.axis2.creation.core",1505338431268

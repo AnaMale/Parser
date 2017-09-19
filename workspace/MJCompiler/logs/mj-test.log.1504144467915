@@ -1,0 +1,30 @@
+INFO  03:54:17,231 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\program2.mj
+INFO  03:54:17,271 - #2 program
+INFO  03:54:17,271 - #41 test2
+INFO  03:54:17,271 - #19 const
+INFO  03:54:17,271 - #41 int
+INFO  03:54:17,271 - #41 c
+INFO  03:54:17,271 - #13 =
+INFO  03:54:17,271 - #39 2
+INFO  03:54:17,271 - #5 ;
+INFO  03:54:17,276 - Deklarisana konstanta c na liniji 3
+INFO  03:54:17,276 - #51 class
+INFO  03:54:17,276 - #41 B
+INFO  03:54:17,276 - #3 {
+INFO  03:54:17,276 - #41 int
+INFO  03:54:17,276 - #41 b
+INFO  03:54:17,276 - #8 ,
+INFO  03:54:17,276 - Deklarisano polje klase b na liniji 7
+INFO  03:54:17,276 - #41 d
+INFO  03:54:17,276 - #5 ;
+INFO  03:54:17,276 - Deklarisano polje klase d na liniji 7
+INFO  03:54:17,276 - #4 }
+INFO  03:54:17,276 - #3 {
+INFO  03:54:17,276 - #22 set
+INFO  03:54:17,281 - Definicije globalnih promenljivih = 0
+INFO  03:54:17,281 - Definicije lokalnih promenjivih = 0
+INFO  03:54:17,281 - Definicije globalnih konstanti = 1
+INFO  03:54:17,281 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 0
+INFO  03:54:17,281 - Pozivi funkcija u telu metode main = 0
+INFO  03:54:17,281 - Deklaracije formalnih argumenata funkcija = 0
+ERROR 03:54:17,281 - Parsiranje NIJE uspesno zavrseno!

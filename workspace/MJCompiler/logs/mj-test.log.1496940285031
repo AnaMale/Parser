@@ -1,0 +1,74 @@
+INFO  18:43:27,014 - Compiling source file: C:\Users\males\Desktop\PP1\pp1domaci\workspace\MJCompiler\test\test301.mj
+INFO  18:43:27,061 - #2 program
+INFO  18:43:27,061 - #40 test301
+INFO  18:43:27,061 - #19 const
+INFO  18:43:27,061 - #40 int
+INFO  18:43:27,061 - #40 jedan
+INFO  18:43:27,061 - #13 =
+INFO  18:43:27,061 - #38 1
+INFO  18:43:27,061 - #5 ;
+INFO  18:43:27,061 - Deklarisana konstanta jedan na liniji 4
+INFO  18:43:27,061 - #19 const
+INFO  18:43:27,061 - #40 int
+INFO  18:43:27,061 - #40 pet
+INFO  18:43:27,061 - #13 =
+INFO  18:43:27,061 - #38 5
+INFO  18:43:27,061 - #5 ;
+INFO  18:43:27,061 - Deklarisana konstanta pet na liniji 5
+INFO  18:43:27,061 - #40 int
+INFO  18:43:27,061 - #40 niz
+INFO  18:43:27,061 - #16 [
+INFO  18:43:27,061 - #17 ]
+INFO  18:43:27,061 - #5 ;
+INFO  18:43:27,061 - Deklarisan niz niz na liniji 7
+INFO  18:43:27,061 - Greska na liniji: 7
+INFO  18:43:27,061 - #40 char
+INFO  18:43:27,061 - #40 nizch
+INFO  18:43:27,061 - #16 [
+INFO  18:43:27,061 - #17 ]
+INFO  18:43:27,061 - #5 ;
+INFO  18:43:27,061 - Deklarisan niz nizch na liniji 9
+INFO  18:43:27,061 - Greska na liniji: 9
+INFO  18:43:27,061 - #3 {
+INFO  18:43:27,061 - #14 void
+INFO  18:43:27,061 - #40 main
+INFO  18:43:27,061 - #6 (
+INFO  18:43:27,061 - Obradjuje se funkcija main na liniji 12
+INFO  18:43:27,061 - #7 )
+INFO  18:43:27,061 - #40 int
+INFO  18:43:27,061 - #40 bodovi
+INFO  18:43:27,061 - #5 ;
+INFO  18:43:27,061 - Deklarisana promenljiva bodovi na liniji 12
+INFO  18:43:27,061 - Greska na liniji: 12
+INFO  18:43:27,061 - #3 {
+INFO  18:43:27,061 - #40 bodovi
+INFO  18:43:27,061 - #13 =
+ERROR 18:43:27,061 - Greska na liniji 15 : ime bodovi nije deklarisano! 
+INFO  18:43:27,061 - #38 0
+INFO  18:43:27,061 - #5 ;
+ERROR 18:43:27,076 - Greska na liniji 15 : Designator nije varijabla, element niza ili polje unutar objekta
+ERROR 18:43:27,114 - Greska na liniji 15 :  nekompatibilni tipovi u dodeli vrednosti 
+INFO  18:43:27,114 - #40 bodovi
+INFO  18:43:27,114 - #11 ++
+ERROR 18:43:27,114 - Greska na liniji 16 : ime bodovi nije deklarisano! 
+INFO  18:43:27,114 - #5 ;
+ERROR 18:43:27,114 - Greska na liniji 16 : Designator nije tipa int, pa ne moze biti inkrementiran.
+INFO  18:43:27,114 - #40 bodovi
+INFO  18:43:27,114 - #13 =
+ERROR 18:43:27,114 - Greska na liniji 17 : ime bodovi nije deklarisano! 
+INFO  18:43:27,114 - #40 bodovi
+INFO  18:43:27,114 - #24 +
+ERROR 18:43:27,114 - Greska na liniji 17 : ime bodovi nije deklarisano! 
+INFO  18:43:27,114 - #40 jedan
+INFO  18:43:27,114 - #5 ;
+ERROR 18:43:27,114 - Greska na liniji 17 : nekompatibilni tipovi u izrazu za sabiranje.
+ERROR 18:43:27,114 - Greska na liniji 17 : Designator nije varijabla, element niza ili polje unutar objekta
+INFO  18:43:27,114 - #40 bodovi
+INFO  18:43:27,114 - #27 +=
+ERROR 18:43:27,114 - Greska na liniji 18 : ime bodovi nije deklarisano! 
+INFO  18:43:27,114 - #40 bodovi
+INFO  18:43:27,114 - #29 *=
+ERROR 18:43:27,114 - Greska na liniji 18 : ime bodovi nije deklarisano! 
+INFO  18:43:27,114 - #40 pet
+INFO  18:43:27,114 - #5 ;
+ERROR 18:43:27,114 - Greska na liniji 18 : nekompatibilni tipovi u izrazu za mozenje.

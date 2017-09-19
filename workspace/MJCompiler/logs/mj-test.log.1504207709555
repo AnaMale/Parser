@@ -1,0 +1,59 @@
+INFO  21:27:28,328 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\program2.mj
+INFO  21:27:28,363 - #2 program
+INFO  21:27:28,363 - #42 test2
+INFO  21:27:28,368 - #19 const
+INFO  21:27:28,368 - #42 int
+INFO  21:27:28,368 - #42 c
+INFO  21:27:28,368 - #13 =
+INFO  21:27:28,368 - #40 2
+INFO  21:27:28,368 - #5 ;
+INFO  21:27:28,368 - Deklarisana konstanta c na liniji 3
+INFO  21:27:28,368 - #52 class
+INFO  21:27:28,368 - #42 B
+INFO  21:27:28,368 - #3 {
+INFO  21:27:28,368 - #42 int
+INFO  21:27:28,368 - #42 b
+INFO  21:27:28,368 - #8 ,
+INFO  21:27:28,368 - Deklarisano polje klase b na liniji 6
+INFO  21:27:28,368 - #42 d
+INFO  21:27:28,368 - #5 ;
+INFO  21:27:28,368 - Deklarisano polje klase d na liniji 6
+INFO  21:27:28,373 - #4 }
+INFO  21:27:28,373 - #3 {
+INFO  21:27:28,373 - #14 void
+INFO  21:27:28,373 - #42 main
+INFO  21:27:28,373 - #6 (
+INFO  21:27:28,373 - Obradjuje se funkcija main na liniji 10
+INFO  21:27:28,373 - #7 )
+INFO  21:27:28,373 - #42 int
+INFO  21:27:28,373 - #42 a
+INFO  21:27:28,373 - #8 ,
+INFO  21:27:28,373 - Deklarisana promenljiva a na liniji 11
+INFO  21:27:28,373 - #42 b
+INFO  21:27:28,373 - #5 ;
+INFO  21:27:28,373 - Deklarisana promenljiva b na liniji 11
+INFO  21:27:28,373 - #3 {
+INFO  21:27:28,373 - #42 a
+INFO  21:27:28,379 - #13 =
+INFO  21:27:28,379 - #40 3
+INFO  21:27:28,380 - #5 ;
+INFO  21:27:28,382 - #42 b
+INFO  21:27:28,382 - #13 =
+INFO  21:27:28,382 - #40 4
+INFO  21:27:28,382 - #5 ;
+INFO  21:27:28,383 - #9 print
+INFO  21:27:28,383 - #6 (
+INFO  21:27:28,383 - #42 a
+INFO  21:27:28,383 - #23 #
+INFO  21:27:28,383 - #42 b
+INFO  21:27:28,383 - #7 )
+INFO  21:27:28,384 - #5 ;
+INFO  21:27:28,385 - #4 }
+INFO  21:27:28,385 - #4 }
+INFO  21:27:28,386 - Definicije globalnih promenljivih = 0
+INFO  21:27:28,386 - Definicije lokalnih promenjivih = 2
+INFO  21:27:28,386 - Definicije globalnih konstanti = 1
+INFO  21:27:28,386 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 1
+INFO  21:27:28,386 - Pozivi funkcija u telu metode main = 0
+INFO  21:27:28,386 - Deklaracije formalnih argumenata funkcija = 0
+ERROR 21:27:28,388 - Parsiranje NIJE uspesno zavrseno!

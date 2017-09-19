@@ -1,0 +1,22 @@
+INFO  18:39:32,558 - Compiling source file: C:\Users\males\Desktop\sept\workspace\MJCompiler\test\program1.mj
+INFO  18:39:32,598 - #2 program
+INFO  18:39:32,598 - #16 test301
+INFO  18:39:32,598 - #10 const
+INFO  18:39:32,598 - #16 int
+INFO  18:39:32,598 - #16 jedan
+INFO  18:39:32,602 - #37 =
+INFO  18:39:32,602 - #51 1
+INFO  18:39:32,602 - #9 ;
+INFO  18:39:32,602 - Deklarisana konstanta jedan na liniji 4
+INFO  18:39:32,602 - #10 const
+INFO  18:39:32,602 - #16 int
+INFO  18:39:32,602 - #16 pet
+INFO  18:39:32,602 - #37 =
+INFO  18:39:32,602 - #31 +
+INFO  18:39:32,602 - Definicije globalnih promenljivih = 0
+INFO  18:39:32,602 - Definicije lokalnih promenjivih = 0
+INFO  18:39:32,602 - Definicije globalnih konstanti = 1
+INFO  18:39:32,617 - Definicije globalnih i statickih funkcija unutrasnjih klasa = 0
+INFO  18:39:32,617 - Pozivi funkcija u telu metode main = 0
+INFO  18:39:32,617 - Deklaracije formalnih argumenata funkcija = 0
+ERROR 18:39:32,619 - Parsiranje NIJE uspesno zavrseno!
