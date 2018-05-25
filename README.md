@@ -1,5 +1,7 @@
 # sept
 
+This is edu project implementing MikroJava parser and lexer generator
+
 pokrecemo nasu klasu JFlex.Main
 i to je LexerGenerator
 argumenti: -d src\rs\ac\bg\etf\pp1 spec\mjlexer.flex
