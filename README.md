@@ -2,14 +2,13 @@
 
 This is edu project implementing MikroJava parser and lexer generator
 
-pokrecemo nasu klasu JFlex.Main
-i to je LexerGenerator
+runnung our JFlex.Main, this is LexerGenerator
 argumenti: -d src\rs\ac\bg\etf\pp1 spec\mjlexer.flex
 
 
-pokrecemo novu run configuration i zovemo je ParserGenerator 
-(koristimo java_cup.Main)	
-argumenti: -destdir src\rs\ac\bg\etf\pp1 -parser MJParser spec\mjparser.cup
-ako hocemo da vidimo ceo LR(0) automat dodamo opciju -dump_states : -destdir    src\rs\ac\bg\etf\pp1 -dump_states -parser MJParser spec\mjparser.cup
+we add new run configuration and call it ParserGenerator 
+(using java_cup.Main)	
+arguments: -destdir src\rs\ac\bg\etf\pp1 -parser MJParser spec\mjparser.cup
+if we want to see whole LR(0) machine we have to add option -dump_states : -destdir    src\rs\ac\bg\etf\pp1 -dump_states -parser MJParser spec\mjparser.cup
 
 test\program.obj
