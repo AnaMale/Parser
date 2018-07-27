@@ -1,4 +1,4 @@
-# sept
+# Parser
 
 This is edu project implementing MikroJava parser and lexer generator
 
